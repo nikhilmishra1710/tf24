@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh; /* Set the body height to 100% of the viewport */
+    overflow-y: scroll;
+    /* background-image: url("../assets/bck.jpg"); */
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keep the background fixed */
+    background-position: center; /* Center the background image */
+}
+
+/* Hide the scrollbar */
+&::-webkit-scrollbar {
+    width: 0;
+}

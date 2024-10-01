@@ -1,0 +1,193 @@
+#main{
+    position: relative;
+    overflow: hidden;
+    /* background-color: black; */
+}
+
+#page1{
+    height: 50vh;
+    width: 100vw;
+    position: relative;
+    /* display: flex; */
+}
+
+#page1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page2 {
+    height: 50vh;
+    background-color: black;
+    overflow-x: hidden; /* Set hidden for scroll pinning */
+}
+
+#page2 .horizontal {
+    height: 80vw;
+    width: 400%; /* Enough width to allow horizontal scrolling */
+    /* padding-left: 2vw; */
+    padding-right: 4vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    background-color: rgb(190, 81, 81);
+    color: blanchedalmond;
+}
+
+.loading, .text, .card {
+    height: 80%;
+    width: 15%;
+    /* background-color: rgb(80, 80, 218); */
+}
+
+.loading h4 {
+    position: absolute;
+    bottom: 55px;
+    left: 160px;
+    font-size: 1.2vw;
+    letter-spacing: -1.6px;
+    font-weight: 500;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.text h4{
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    font-size: 1.4vw;
+    font-weight: 900;
+    color: blanchedalmond;
+}
+
+.text h1{
+    text-transform: uppercase;
+    letter-spacing: -6px;
+    font-size: 6vw;
+    font-weight: 900;
+    line-height: 1;
+    color: blanchedalmond;
+}
+
+/* .card {
+   width: 20%;
+   position: relative;
+  
+}
+
+.card .img-div{
+   
+    width: 60%;
+    background-color: aquamarine;
+ }
+
+ .card .text-div{
+    width: 40%;
+    background-color: brown;
+ }
+
+ .img-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+ } */
+
+ .card {
+    width: 20%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* Make sure this is set to row (default), but good to be explicit */
+    gap: 44px;
+}
+
+.card .img-div {
+    width: 50%; /* 60% of the .card width */
+    height: 100%;
+    position: relative;
+    /* background-color: aquamarine; */
+}
+
+.card .text-div {
+    width: 45%; /* 40% of the .card width */
+    height: 100%;
+    /* background-color: brown; */
+}
+
+.img-div img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+#page3{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+#page3 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.marque{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+    padding: 0.8vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-bottom: 10vh;
+}
+
+.marque h1{
+    display: inline-block;
+    font-size: 14vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: beige;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "PP Supply Mono";
+    margin-right: 16px;
+    letter-spacing: 3px;
+    animation-name: move;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+
+
+
+
+
