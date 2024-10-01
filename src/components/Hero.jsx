@@ -108,90 +108,92 @@ function Hero() {
     };
 
     return (
-        <motion.div className="hero-container" variants={containerVariants} initial="hidden" animate="visible">
-            <div className="hazy"></div>
-            <div className="line"></div>
-            <div className="tint"></div>
+        <>
+            <motion.div className="hero-container" variants={containerVariants} initial="hidden" animate="visible">
+                <div className="hazy"></div>
+                <div className="line"></div>
+                <div className="tint"></div>
 
-            <div className="main">
-                <div className="content">
-                    <video autoPlay muted loop className="background-video">
-                        <source src={backgroundVideo} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                <div className="main">
+                    <div className="content">
+                        <video autoPlay muted loop className="background-video">
+                            <source src={backgroundVideo} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
 
-                    <motion.div className="data-left" variants={slideInLeft} initial="hidden" animate="visible">
-                        <div className="time">
-                            <div>{currentTime}</div>
-                        </div>
-                        <div className="title">
-                            <h1>WELCOME TO </h1>
-                            <h1>TANTRAFIESTA</h1>
-                        </div>
-                        <div className="loaders">
-                            <div className="loader1"></div>
-                            <div className="loader2"></div>
-                            <div className="loader3"></div>
-                            <div className="loader4"></div>
-                            <div className="loader5"></div>
-                        </div>
-                        <div className="desc">
-                            <p className="desc-data">Welcome To Tantra Fiesta</p>
-                            <p className="desc-data">Welcome To Tantra Fiesta</p>
-                            <p className="desc-data">Welcome To Tantra Fiesta</p>
-                        </div>
-                    </motion.div>
-
-                    <motion.div className="data-right" variants={slideInRight} initial="hidden" animate="visible">
-                        <div className="card">
-                            <div className="sub-card">
-                                <div>
-                                    <p className="card-data">hello this is card</p>
-                                </div>
-                                <div>
-                                    <p className="card-data">hello this is card</p>
-                                </div>
-                                <div>
-                                    <p className="card-data">hello this is card</p>
-                                </div>
+                        <motion.div className="data-left" variants={slideInLeft} initial="hidden" animate="visible">
+                            <div className="time">
+                                <div>{currentTime}</div>
                             </div>
-                            <div className="corner bottom-left"></div>
-                            <div className="corner top-right"></div>
+                            <div className="title">
+                                <h1>WELCOME TO </h1>
+                                <h1>TANTRAFIESTA</h1>
+                            </div>
+                            <div className="loaders">
+                                <div className="loader1"></div>
+                                <div className="loader2"></div>
+                                <div className="loader3"></div>
+                                <div className="loader4"></div>
+                                <div className="loader5"></div>
+                            </div>
+                            <div className="desc">
+                                <p className="desc-data">Welcome To Tantra Fiesta</p>
+                                <p className="desc-data">Welcome To Tantra Fiesta</p>
+                                <p className="desc-data">Welcome To Tantra Fiesta</p>
+                            </div>
+                        </motion.div>
+
+                        <motion.div className="data-right" variants={slideInRight} initial="hidden" animate="visible">
+                            <div className="card">
+                                <div className="sub-card">
+                                    <div>
+                                        <p className="card-data">hello this is card</p>
+                                    </div>
+                                    <div>
+                                        <p className="card-data">hello this is card</p>
+                                    </div>
+                                    <div>
+                                        <p className="card-data">hello this is card</p>
+                                    </div>
+                                </div>
+                                <div className="corner bottom-left"></div>
+                                <div className="corner top-right"></div>
+                            </div>
+                        </motion.div>
+                    </div>
+
+                    <motion.div className="data-notch" variants={slideInTop} initial="hidden" animate="visible">
+                        <div className="data-notch-wrapper">
+                            <AnimatePresence mode="wait">
+                                {showToggleDiv && (
+                                    <motion.div
+                                        key={soundActive ? "deactivate" : "activate"}
+                                        className={`top-notch ${soundActive ? "sound-on" : ""}`}
+                                        onClick={handleSoundToggle}
+                                        variants={notchVariants}
+                                        initial="enter"
+                                        animate="visible"
+                                        exit="exit"
+                                        whileTap={{ scale: 0.95 }}
+                                    >
+                                        <p>{soundActive ? "[ DEACTIVATE SOUND ]" : "[ ACTIVATE SOUND ]"}</p>
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                            <div className="notch right-notch">
+                                <p>Right Notch</p>
+                            </div>
+                            <div className="notch left-notch">
+                                <p>Left Notch</p>
+                            </div>
+                            <div className="notch bottom-notch">
+                                <p>SYSTEM: LOADING</p>
+                            </div>
                         </div>
                     </motion.div>
                 </div>
-
-                <motion.div className="data-notch" variants={slideInTop} initial="hidden" animate="visible">
-                    <div className="data-notch-wrapper">
-                        <AnimatePresence mode="wait">
-                            {showToggleDiv && (
-                                <motion.div
-                                    key={soundActive ? "deactivate" : "activate"}
-                                    className={`top-notch ${soundActive ? "sound-on" : ""}`}
-                                    onClick={handleSoundToggle}
-                                    variants={notchVariants}
-                                    initial="enter"
-                                    animate="visible"
-                                    exit="exit"
-                                    whileTap={{ scale: 0.95 }}
-                                >
-                                    <p>{soundActive ? "[ DEACTIVATE SOUND ]" : "[ ACTIVATE SOUND ]"}</p>
-                                </motion.div>
-                            )}
-                        </AnimatePresence>
-                        <div className="notch right-notch">
-                            <p>Right Notch</p>
-                        </div>
-                        <div className="notch left-notch">
-                            <p>Left Notch</p>
-                        </div>
-                        <div className="notch bottom-notch">
-                            <p>SYSTEM: LOADING</p>
-                        </div>
-                    </div>
-                </motion.div>
-            </div>
-        </motion.div>
+            </motion.div>
+        </>
     );
 }
 
