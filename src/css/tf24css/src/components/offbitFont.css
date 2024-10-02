@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "offbit-bold";
+    src: url("../../public/OffBit-Bold.ttf") format("truetype");
+}
+
+.offbit-bold{
+    font-family: "offbit-bold";
+}

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "bstyle.bold";
+    src: url("../../public/bstyle.bold.ttf") format("truetype");
+}
+
+.bstyle-bold{
+    font-family: "bstyle.bold";
+}

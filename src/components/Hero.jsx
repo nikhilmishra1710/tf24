@@ -2,10 +2,10 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "../css/hero.css";
 import soundFile from "../assets/sound.mp3";
-import backgroundVideo from "../assets/video2.mp4";
+import backgroundVideo from "../assets/video.mp4";
 import icon from "../assets/icon.jpg";
 
-function Hero() {
+function Hero2() {
     const [soundActive, setSoundActive] = useState(false);
     const [showToggleDiv, setShowToggleDiv] = useState(true);
     const [currentTime, setCurrentTime] = useState("");
@@ -109,7 +109,7 @@ function Hero() {
 
     return (
         <>
-            <motion.div className="hero-container" variants={containerVariants} initial="hidden" animate="visible">
+            <motion.div className="hero-container pb-8" variants={containerVariants} initial="hidden" animate="visible">
                 <div className="hazy"></div>
                 <div className="line"></div>
                 <div className="tint"></div>
@@ -126,8 +126,7 @@ function Hero() {
                                 <div>{currentTime}</div>
                             </div>
                             <div className="title">
-                                <h1>WELCOME TO </h1>
-                                <h1>TANTRAFIESTA</h1>
+                                <h1>TANTRAFIESTA 24</h1>
                             </div>
                             <div className="loaders">
                                 <div className="loader1"></div>
@@ -137,9 +136,9 @@ function Hero() {
                                 <div className="loader5"></div>
                             </div>
                             <div className="desc">
-                                <p className="desc-data">Welcome To Tantra Fiesta</p>
-                                <p className="desc-data">Welcome To Tantra Fiesta</p>
-                                <p className="desc-data">Welcome To Tantra Fiesta</p>
+                                <p className="desc-data">DIGITAL BIG BANG</p>
+                                <p className="desc-data">UNCHARTED REALMS</p>
+                                <p className="desc-data">AWAIT</p>
                             </div>
                         </motion.div>
 
@@ -197,4 +196,4 @@ function Hero() {
     );
 }
 
-export default Hero;
+export default Hero2;

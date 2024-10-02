@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "ttAutonomousLight";
+    src: url("../../public/TTAutonomousReverseTrialLight.ttf") format("truetype");
+}
+
+.ttAutonomous-light{
+    font-family: "ttAutonomousLight";
+}
