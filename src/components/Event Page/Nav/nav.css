@@ -1,0 +1,83 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #333;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu .menu-item {
+    position: relative;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.menu .menu-item:hover {
+    color: #ffcc00;
+}
+
+.menu .menu-item .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background-color: #444;
+    display: none;
+    flex-direction: column;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.menu .menu-item:hover .dropdown{
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu .menu-item .dropdown-option {
+    padding: 0.5rem 1rem;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.menu .menu-item .dropdown-option:hover {
+    background-color: #555;
+    color: #ffcc00;
+}
+
+.navbar .go-top-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 0px 15px;
+    background-color: #ff717f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0.7;
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 1000;
+}
+
+.navbar .go-top-btn:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
