@@ -6,6 +6,7 @@ import { useState } from "react";
 // import './bstyleFont.css'
 import "./font.css";
 import Galaxy from "../Galaxy/Galaxy";
+import GalaxyScene from "../galaxy/GalaxyScene";
 
 export default function About() {
     const [ref, inView] = useInView({ threshold: 0.2 });
@@ -18,7 +19,8 @@ export default function About() {
         <div ref={ref} className="w-[100vw] md:h-[100vh] relative min-h-screen h-auto flex flex-col justify-between bg-black text-[#f3edd8] px-8 md:px-10 py-10 overflow-hidden">
             <div className="w-screen md:w-[70vw] h-[90vh] top-[15vh] md:top-0 absolute -z-1 right-1">
                 {/* canvas */}
-                <Galaxy />
+                {/* <Galaxy /> */}
+                <GalaxyScene />
             </div>
             <div className="z-10">
                 <div className="uppercase text-lg offbit-bold flex md:gap-2 gap-1">
