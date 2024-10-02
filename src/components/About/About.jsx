@@ -4,42 +4,46 @@ import { RandomReveal } from "react-random-reveal";
 import { useState } from "react";
 
 // import './bstyleFont.css'
-import "../css/font.css";
+import "./font.css";
+import Galaxy from "../Galaxy/Galaxy";
 
 export default function About() {
-    const [ref, inView] = useInView({ threshold: 0.5 });
+    const [ref, inView] = useInView({ threshold: 0.2 });
     const [hover, setHover] = useState(true);
 
     const characterSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz,.;'[]<>?:{}0123456789*-+`~!@#$%^&()_=";
     const characterSetArray = characterSet.split("");
 
     return (
-        <div ref={ref} className="w-[100vw] h-[100vh] flex flex-col justify-between bg-red-500 text-[#f3edd8] px-8 md:px-10 py-10">
-            <div className="w-full md:w-[70vw] h-[90vh] -z-50 absolute right-1"></div>
-            <div>
-                <div className="uppercase text-lg offbit-bold flex gap-2">
+        <div ref={ref} className="w-[100vw] md:h-[100vh] relative min-h-screen h-auto flex flex-col justify-between bg-black text-[#f3edd8] px-8 md:px-10 py-10 overflow-hidden">
+            <div className="w-screen md:w-[70vw] h-[90vh] top-[15vh] md:top-0 absolute -z-1 right-1">
+                {/* canvas */}
+                <Galaxy />
+            </div>
+            <div className="z-10">
+                <div className="uppercase text-lg offbit-bold flex md:gap-2 gap-1">
                     <span>//</span>
                     <span>THE</span>
                     <span>STORY</span>
                 </div>
-                <div className="-ml-3">
-                    <div className="uppercase bstyle-bold text-5xl md:text-7xl lg:text-9xl tracking-tight flex gap-1.5 -mt-2 md:-mt-3 lg:-mt-4">
+                <div className="-ml-2">
+                    <div className="uppercase bstyle-bold text-5xl md:text-7xl lg:text-9xl tracking-tight flex gap-1.5 md:-mt-3 lg:-mt-4">
                         <span>
                             <RandomReveal isPlaying={inView} duration={1} revealDuration={1} characters="ABOUT" characterSet={characterSetArray} />
                         </span>
                         <span>
-                            <RandomReveal isPlaying={inView} duration={1} revealDuration={1} characters="US" characterSet={characterSetArray} />
+                            <RandomReveal isPlaying={inView} duration={1} revealDuration={1} characters="TF" characterSet={characterSetArray} />
                         </span>
                         
                     </div>
-                    <div className="h-72 md:w-[40rem] px-2 text-sm md:text-lg pt-10 break-words">
+                    <div className="h-72 md:w-[40rem]  px-2 text-sm md:text-lg md:pt-10 pt-4 break-words">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae molestias atque voluptatem assumenda hic? Consectetur vero, deserunt, laborum tenetur,
                         quidem sed provident iure impedit quasi alias id veritatis cum officiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae molestias atque
                         voluptatem assumenda hic? Consectetur vero, deserunt, laborum tenetur, quidem sed provident iure impedit quasi alias id veritatis cum officiis.
                     </div>
                 </div>
             </div>
-            <div className="w-full h-48 flex items-end justify-between">
+            <div className="w-full h-48 flex items-end justify-between z-10">
                 <div className="h-full flex flex-col justify-end">
                     <div className="h-[0.7vw] flex justify-start gap-2 mb-5">
                         <motion.div
