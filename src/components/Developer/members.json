@@ -1,0 +1,51 @@
+[
+    {
+        "name": "John Doe",
+        "role": "Co-Lead",
+        "githubLink": "https://github.com/johndoe",
+        "linkedinLink": "https://linkedin.com/in/johndoe",
+        "dataImage": "https://preview.redd.it/what-would-an-interaction-between-homelander-and-tony-stark-v0-ahd3xqf1hgjb1.jpg?width=640&crop=smart&auto=webp&s=ce38e1c74e127a5c06581b01a0d9a54117979367"
+    },
+    {
+        "name": "Jane Smith",
+        "role": "Lead",
+        "githubLink": "https://github.com/janesmith",
+        "linkedinLink": "https://linkedin.com/in/janesmith",
+        "dataImage": "https://preview.redd.it/what-would-an-interaction-between-homelander-and-tony-stark-v0-ahd3xqf1hgjb1.jpg?width=640&crop=smart&auto=webp&s=ce38e1c74e127a5c06581b01a0d9a54117979367"
+    },
+    {
+        "name": "Michael Brown",
+        "role": "Co-Lead",
+        "githubLink": "https://github.com/michaelbrown",
+        "linkedinLink": "https://linkedin.com/in/michaelbrown",
+        "dataImage": "https://preview.redd.it/what-would-an-interaction-between-homelander-and-tony-stark-v0-ahd3xqf1hgjb1.jpg?width=640&crop=smart&auto=webp&s=ce38e1c74e127a5c06581b01a0d9a54117979367"
+    },
+    {
+        "name": "Alice Green",
+        "role": "Member",
+        "githubLink": "https://github.com/alicegreen",
+        "linkedinLink": "https://linkedin.com/in/alicegreen",
+        "dataImage": "https://preview.redd.it/what-would-an-interaction-between-homelander-and-tony-stark-v0-ahd3xqf1hgjb1.jpg?width=640&crop=smart&auto=webp&s=ce38e1c74e127a5c06581b01a0d9a54117979367"
+    },
+    {
+        "name": "Bob White",
+        "role": "Member",
+        "githubLink": "https://github.com/bobwhite",
+        "linkedinLink": "https://linkedin.com/in/bobwhite",
+        "dataImage": "https://preview.redd.it/what-would-an-interaction-between-homelander-and-tony-stark-v0-ahd3xqf1hgjb1.jpg?width=640&crop=smart&auto=webp&s=ce38e1c74e127a5c06581b01a0d9a54117979367"
+    },
+    {
+        "name": "Charlie Black",
+        "role": "Member",
+        "githubLink": "https://github.com/charlieblack",
+        "linkedinLink": "https://linkedin.com/in/charlieblack",
+        "dataImage": "https://preview.redd.it/what-would-an-interaction-between-homelander-and-tony-stark-v0-ahd3xqf1hgjb1.jpg?width=640&crop=smart&auto=webp&s=ce38e1c74e127a5c06581b01a0d9a54117979367"
+    },
+    {
+        "name": "Eve Blue",
+        "role": "Member",
+        "githubLink": "https://github.com/eveblue",
+        "linkedinLink": "https://linkedin.com/in/eveblue",
+        "dataImage": "https://preview.redd.it/what-would-an-interaction-between-homelander-and-tony-stark-v0-ahd3xqf1hgjb1.jpg?width=640&crop=smart&auto=webp&s=ce38e1c74e127a5c06581b01a0d9a54117979367"
+    }
+]
