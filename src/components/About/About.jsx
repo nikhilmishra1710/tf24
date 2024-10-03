@@ -5,7 +5,7 @@ import { useState } from "react";
 
 // import './bstyleFont.css'
 import "./font.css";
-import Galaxy from "../Galaxy/Galaxy";
+import Galaxy from "../galaxy/Galaxy";
 import GalaxyScene from "../galaxy/GalaxyScene";
 
 export default function About() {
