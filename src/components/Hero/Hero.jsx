@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import "../css/hero.css";
-import soundFile from "../assets/sound.mp3";
-import backgroundVideo from "../assets/video.mp4";
-import icon from "../assets/icon.jpg";
+import "./hero.css";
+import soundFile from "../../assets/sound.mp3";
+import backgroundVideo from "../../assets/video.mp4";
+import icon from "../../assets/icon.jpg";
 
 function Hero2() {
     const [soundActive, setSoundActive] = useState(false);
@@ -91,7 +91,7 @@ function Hero2() {
             const hours = now.getHours().toString().padStart(2, "0");
             const minutes = now.getMinutes().toString().padStart(2, "0");
             const seconds = now.getSeconds().toString().padStart(2, "0");
-            setCurrentTime(`[ TIME : ${hours} : ${minutes} : ${seconds} ]`);
+            setCurrentTime(`[ TIME : ${hours} : ${minutes} ]`);
         };
 
         const interval = setInterval(updateTime, 1000);
@@ -145,10 +145,10 @@ function Hero2() {
                         <motion.div className="data-right" variants={slideInRight} initial="hidden" animate="visible">
                             <div className="card">
                                 <div className="sub-card">
-                                    <div>
+                                    <div className="h-auto">
                                         <p className="card-data">hello this is card</p>
                                     </div>
-                                    <div>
+                                    <div className="h-auto">
                                         <p className="card-data">hello this is card</p>
                                     </div>
                                     <div>

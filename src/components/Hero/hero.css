@@ -69,7 +69,7 @@
     z-index: 1;
     border-radius: 1rem;
 }
-
+/* 
 .hero-container .line {
     width: calc(100vw - 2rem);
     height: calc(100vh - 2rem);
@@ -83,7 +83,7 @@
     margin: 1rem;
     clip-path: polygon(3% 0%, 97% 0%, 100% 8%, 100% 95%, 97% 100%, 3% 100%, 0% 95%, 0% 8%);
     border-radius: 1rem;
-}
+} */
 
 .hero-container .tint {
     width: calc(100vw - 2rem);
@@ -91,7 +91,7 @@
     overflow: hidden;
     position: absolute;
     background: rgba(0, 0, 0, 1);
-    background-size: 0 0;
+    background-position: 0 0;
     animation: scan-overlay 16s linear infinite;
     opacity: 0.1;
     z-index: 3;
@@ -169,15 +169,19 @@ border-radius: 1rem;
     position: relative;
     background: transparent;
     top: 12vh;
-    font-size: 5rem;
-    font-weight: 100;
+    font-size: 7.5rem;
+    font-weight: 900;
+    width: fit-content;
     text-transform: uppercase;
+    background: linear-gradient(120deg, #d6ffd2, #4030f6);
+    background-clip: text;
 }
 
 .hero-container .main .content .data-left .title h1 {
     background: transparent;
-    height: 25vh;
+    height: auto;
     font-family: "bstyle.bold";
+    color: transparent;
 }
 
 .hero-container .main .content .data-left .loaders {
@@ -227,14 +231,14 @@ border-radius: 1rem;
     position: relative;
     background: transparent;
     top: 21vh;
-    font-size: 1.2rem;
+    font-size: 5rem;
     display: flex;
     flex-direction: column;
 }
 
 .hero-container .main .content .data-left .desc p {
     background: transparent;
-    height: 1rem;
+    height: 4.5rem;
     margin-right: 0.2rem;
 }
 
@@ -334,7 +338,7 @@ border-radius: 1rem;
     left: 1rem;
     height: calc(100vh - 2rem);
     width: calc(100vw - 2rem);
-    z-index: 1;
+    z-index: 10;
 }
 
 .hero-container .main .data-notch .data-notch-wrapper {
@@ -573,14 +577,6 @@ border-radius: 1rem;
 @media (max-width: 1024px) {
     
 
-    .hero-container .logo{
-        display: none;
-    }
-
-    .hero-container .navbar{
-        display: none;
-    }
-
     .hero-container .main .content {
         display: flex;
         flex-direction: column;
@@ -629,7 +625,7 @@ border-radius: 1rem;
 
     .hero-container .main .content .data-left .desc {
         top: 13vh;
-        font-size: 2rem;
+        font-size: 3.5vh;
     }
 
     .hero-container .main .content .data-left .desc p {
@@ -676,7 +672,7 @@ border-radius: 1rem;
 
     .hero-container .main .content .data-left .time {
         top: 0vh;
-        font-size: 1rem;
+        font-size: 0.75rem;
         text-align: left;
     }
     .hero-container .main .content .data-left .time div{
@@ -686,11 +682,11 @@ border-radius: 1rem;
     }
     .hero-container .main .content .data-left .title {
         top: 4vh;
-        line-height: 5rem;
+        /* line-height: 5rem; */
     }
 
     .hero-container .main .content .data-left .title h1 {
-        height: 10vh;
+        /* height: 10vh; */
         text-align: center;
         font-size: 6rem;
     }
@@ -716,7 +712,8 @@ border-radius: 1rem;
         top: 10vh;
     }
     .hero-container .main .content .data-left .desc p{
-        font-size: 1rem;
+        font-size: 2.2rem;
+        height: 1.7rem;
     }
     .hero-container .main .content .data-right {
         margin-right: 0vw;
@@ -745,32 +742,28 @@ border-radius: 1rem;
 }
 
 @media (max-width: 540px) {
-    .hero-container .main .content .data-left .title {
-        top: 4vh;
-    }
+    
 
-    .hero-container .main .content .data-left .title h1{
-        font-size: 5rem;
+    .hero-container .main .content .data-left .title{
+        font-size: 5.5rem;
     }
 
 }
 
 @media (max-width: 440px) {
     .hero-container .main .content .data-left .title{
+        font-size: 4.5rem;
         margin-bottom: 5vh;
     }
-    .hero-container .main .content .data-left .title h1{
-        font-size: 4rem;
-        height: 4rem;
-    }
+    
 
 }
 
 @media (max-width: 420px) {
     .hero-container .main .content .data-left .title {
-        top: 4vh;
-        font-size: 3rem;
-        line-height: 5rem;
+        /* top: 4vh; */
+        font-size: 10rem;
+        /* line-height: 5rem; */
     }
 
     .hero-container .main .content .data-left {
@@ -778,8 +771,8 @@ border-radius: 1rem;
     }
 
     .hero-container .main .content .data-left .title h1 {
-        height: 4rem;
-        font-size: 3rem;
+        height: 6rem;
+        font-size: 4rem;
     }
 
     
