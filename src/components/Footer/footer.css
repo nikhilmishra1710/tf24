@@ -3,7 +3,7 @@
 	font-size: 15px;
 	line-height: 24px;
 	width: 100vw;
-	margin-top: 5vh;
+	/* margin-top: 5vh; */
 	color: #a0a0a0;
 	padding: 1rem 3rem 0.4rem 3rem;
 }
@@ -202,6 +202,7 @@
 		padding-bottom: 2vh;
 		font-size: 1.1rem;
 		line-height: 1.2rem;
+		height: auto;
 	}
 }
 

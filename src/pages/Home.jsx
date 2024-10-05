@@ -1,18 +1,24 @@
 import React from 'react'
-import Hero from '../components/Hero'
-import About from '../components/About'
+import Hero from '../components/Hero/Hero'
+import About from '../components/About/About'
 import EventPage from '../components/Eventpage/EventPage'
 import NewComp from './../components/NewComp';
-// import Hero2 from './../components/Hero2';
+import Footer from '../components/Footer/Footer';
+import Sponsors from './../components/Sponsors/Sponsors';
+import Navbar from './../components/Navbar/Navbar';
+// import Navbar from './../components/Navbar2/Navbar/Navbar';
 
 function Home() {
     return (
         <>
+            {/* <Navbar /> */}
+            <Navbar/>
             <Hero />
-            {/* <Hero2 /> */}
             <About />
+            <Sponsors />
             <EventPage />
             <NewComp />
+            <Footer />
         </>
     )
 }

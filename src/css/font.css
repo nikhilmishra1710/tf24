@@ -1,6 +1,6 @@
 @font-face {
     font-family: "bstyle.bold";
-    src: url("/bstyle.bold.ttf") format("truetype");
+    src: url("/fonts/bstyle.bold.ttf") format("truetype");
 }
 
 .bstyle-bold{
@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: "offbit-bold";
-    src: url("/OffBit-Bold.ttf") format("truetype");
+    src: url("/fonts/OffBit-Bold.ttf") format("truetype");
 }
 
 .offbit-bold{

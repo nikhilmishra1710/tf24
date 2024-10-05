@@ -12,14 +12,17 @@
   "dependencies": {
     "@react-three/drei": "^9.114.0",
     "@react-three/fiber": "^8.17.8",
+    "dat.gui": "^0.7.9",
     "framer-motion": "^11.8.0",
     "gsap": "^3.12.5",
     "locomotive-scroll": "^4.1.4",
+    "lucide-react": "^0.447.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
     "react-helmet-async": "^2.0.5",
     "react-hook-inview": "^4.5.1",
+    "react-icons": "^5.3.0",
     "react-random-reveal": "^2.0.1",
     "react-router-dom": "^6.26.2",
     "three": "^0.169.0"
