@@ -5,10 +5,14 @@ import EventPage from '../components/Eventpage/EventPage'
 import NewComp from './../components/NewComp';
 import Footer from '../components/Footer/Footer';
 import Sponsors from './../components/Sponsors/Sponsors';
+import Navbar from './../components/Navbar/Navbar';
+// import Navbar from './../components/Navbar2/Navbar/Navbar';
 
 function Home() {
     return (
         <>
+            {/* <Navbar /> */}
+            <Navbar/>
             <Hero />
             <About />
             <Sponsors />
