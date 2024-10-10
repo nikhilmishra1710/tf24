@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./hero.css";
-import soundFile from "../../assets/sound.mp3";
+import soundFile from "/audio/TF_audio.mp3";
 import backgroundVideo from "../../assets/video.mp4";
 import icon from "../../assets/icon.jpg";
 
