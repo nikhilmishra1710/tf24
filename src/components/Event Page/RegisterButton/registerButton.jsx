@@ -1,11 +1,11 @@
 import React from "react";
 import "./registerButton.css"
+// import "./regBx`utton2.css"
 
-const RegisterButton = ({link}) => {
+const RegisterButton = ({ link }) => {
     return (
-        /* From Uiverse.io by 212004ALJI */
-        <a href={link} style={{"--text":"'REGISTER'","--c":"rgb(0, 255, 213)"}} className="reg-btn">
-            REGISTER
+        <a href={link} style={{"--text":"'Register'","--c":"rgb(0, 255, 213)"}} className="reg-btn z-50">
+            Register
         </a>
     );
 };
