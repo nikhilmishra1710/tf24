@@ -52,7 +52,8 @@ const NewComp = () => {
                         <div className="loading">
                             <h4>// uploading collection...</h4>
                         </div>
-                        <div className="text card-wrapper">
+                        <div className="text card-wrapper max-sm:absolute max-sm:top-0 max-w-40:left-20 max-sm:left-28 ">
+
                             <h4>// into the past</h4>
                             <h1>Explore</h1>
                             <h1>AI wonders</h1>

@@ -155,6 +155,23 @@
     animation-timing-function: linear;
 }
 
+@media only screen and (max-width: 768px) {
+    #page1 {
+        height: 50vh;
+        width: 100vw;
+        position: relative;
+        /* display: flex; */
+    }
+    #page3 {
+        height: 50vh;
+        width: 100vw;
+        position: relative;
+        /* display: flex; */
+    }
+    
+}
+
+
 @keyframes move {
     from {
         transform: translateX(0);
