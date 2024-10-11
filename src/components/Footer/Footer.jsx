@@ -1,56 +1,63 @@
 import React from 'react';
 import './footer.css';
-import { google, facebook, insta, twitter, youtube } from './logos/logos';
+import { faInstagram,faLinkedin, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import tflogo from "./logos/tflogo.jpg";
 
 const Footer = () => {
     return (
         <div>
             <footer className="site-footer" id="contact">
+                <div class="animation">
+                    <div id="stars"></div>
+                    <div id="stars2"></div>
+                    <div id="stars3"></div>
+                </div>
                 <div className="fcontainer">
                     <div className="row">
                         <div className="about">
                             <div className="brand">
-                                <img src="" alt="Pristine Estates Logo" />
+                                <img className='tf-logo' src={tflogo} alt="TF" />
                                 <div className="brand-name">
-                                    <h1>PRISTINE</h1>
-                                    <h1>ESTATES</h1>
+                                    <a href="/">
+                                        <img src="/images/TF name.png" height={350} width={350} alt="Logo" />
+                                    </a>
                                 </div>
                             </div>
                             <p className="text-justify">
-                            antraFiesta is the prestigious technical fest of IIIT Nagpur, showcasing innovative projects, workshops, and competitions, fostering creativity and collaboration among students in various fields of technology and engineering.
+                                23-24 October, 2024
                             </p>
                         </div>
 
-                        <div className="col-xs-6 col-md-3">
-                            <h6>Clubs</h6>
+                        <div className="sub-foot">
+                            <h6>QUICK LINKS</h6>
                             <ul className="footer-links">
-                                <li><a href="/properties/luxury">Luxury Apartments</a></li>
-                                <li><a href="/properties/commercial">Commercial Spaces</a></li>
-                                <li><a href="/properties/rentals">Rental Properties</a></li>
-                                <li><a href="/properties/villas">Exclusive Villas</a></li>
-                                <li><a href="/properties/plots">Residential Plots</a></li>
+                                <li><a href="/#about">About</a></li>
+                                <li><a href="/#events">Events</a></li>
+                                <li><a href="/#speakers">Speakers</a></li>
+                                <li><a href="/team">Teams</a></li>
+                                <li><a href="/#contact">Contact Us</a></li>
                             </ul>
                         </div>
 
-                        <div className="col-xs-6 col-md-3">
-                            <h6>Social</h6>
+                        <div className="sub-foot">
+                            <h6>SOCIAL</h6>
                             <ul className="footer-links">
-                                <li><a href="/services/consultation">Property Consultation</a></li>
-                                <li><a href="/services/valuation">Property Valuation</a></li>
-                                <li><a href="/services/legal">Legal Assistance</a></li>
-                                <li><a href="/services/mortgage">Mortgage Solutions</a></li>
-                                <li><a href="/services/investment">Real Estate Investment</a></li>
-                            </ul>
-                        </div>
-
-                        <div className="col-xs-6 col-md-3">
-                            <h6>Contact Us</h6>
-                            <ul className="footer-links">
-                                <li><a href="/about">About Us</a></li>
-                                <li><a href="/contact">Contact Us</a></li>
-                                <li><a href="/privacy-policy">Privacy Policy</a></li>
-                                <li><a href="/terms-of-service">Terms of Service</a></li>
-                                <li><a href="/careers">Careers</a></li>
+                                <li>
+                                    <a href="https://www.instagram.com/tantrafiesta?igsh=OWVoY2NqNHRjejVo" target="_blank" rel="noopener noreferrer">
+                                        <FontAwesomeIcon icon={faInstagram} /> Instagram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                                        <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                                        <FontAwesomeIcon icon={faTwitter} /> Twitter
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -58,22 +65,10 @@ const Footer = () => {
                 </div>
 
                 <div className="fcontainer">
-                    <div className="row">
-                        <div className="col-md-8 col-sm-6 col-xs-12">
-                            <p className="copyright-text">
-                                &copy; TantraFiesta 2024, Website created and Maintained by <a href="#">Students</a>.
-                            </p>
-                        </div>
-
-                        <div className="col-md-4 col-sm-6 col-xs-12">
-                            <ul className="social-icons">
-                                <li><a className="facebook" href="#"><img src={facebook} alt="Facebook" /></a></li>
-                                <li><a className="twitter" href="#"><img src={twitter} alt="Twitter" /></a></li>
-                                <li><a className="instagram" href="#"><img src={insta} alt="Instagram" /></a></li>
-                                <li><a className="youtube" href="#"><img src={youtube} alt="YouTube" /></a></li>
-                                <li><a className="google" href="#"><img src={google} alt="Google" /></a></li>
-                            </ul>
-                        </div>
+                    <div className="row2">
+                        <p className="copyright-text">
+                            TantraFiesta 2024 &copy; Website Created and Maintained by <a href="/developers">Students</a>.
+                        </p>
                     </div>
                 </div>
             </footer>
