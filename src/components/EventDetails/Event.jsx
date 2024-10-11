@@ -83,8 +83,7 @@ function Event() {
 
     return (
         <>
-            <Navbar />
-            {/* <Nav /> */}
+            
             {data.map((club, index) => {
                 return <ClubEvents name={club.name} description={club.description} image={club.image} events={club.events} key={index} id={club.name} />;
             })}
