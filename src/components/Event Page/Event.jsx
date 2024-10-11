@@ -1,7 +1,7 @@
-import { Slash } from "lucide-react";
+import { Slash, ChevronsLeft, ChevronsRight } from "lucide-react";
 import "./event.css";
 import "../../css/font.css";
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import RegisterButton from "./RegisterButton/registerButton";
@@ -17,17 +17,17 @@ function Event() {
             events: [
                 {
                     image: "/test.png",
-                    name: "Cosmic Craftathon Game Jam",
+                    name: "Cosmic Craftathon Game Jam 1",
                     description:
                         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum corporis voluptatum saepe maiores nulla temporibus cumque nostrum a accusamus dolores omnis, aspernatur, aliquam sunt assumenda adipisci reiciendis facilis quo.",
                     prize: "30000",
                     date: "24 October,2024",
                     link: "https://www.google.com",
-                    
+
                 },
                 {
                     image: "/test.png",
-                    name: "Cosmic Craftathon Game Jam",
+                    name: "Cosmic Craftathon Game Jam 2",
                     description:
                         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum corporis voluptatum saepe maiores nulla temporibus cumque nostrum a accusamus dolores omnis, aspernatur, aliquam sunt assumenda adipisci reiciendis facilis quo.",
                     prize: "30000",
@@ -36,7 +36,7 @@ function Event() {
                 },
                 {
                     image: "/test.png",
-                    name: "Cosmic Craftathon Game Jam",
+                    name: "Cosmic Craftathon Game Jam 3",
                     description:
                         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum corporis voluptatum saepe maiores nulla temporibus cumque nostrum a accusamus dolores omnis, aspernatur, aliquam sunt assumenda adipisci reiciendis facilis quo.",
                     prize: "30000",
@@ -97,30 +97,37 @@ export default Event;
 gsap.registerPlugin(ScrollTrigger);
 
 const ClubEvents = ({ name, description, image, events, id }) => {
-    const component = useRef();
-    const sliderRef = useRef();
-    const slider = useRef();
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const [width, setWidth] = useState(0);
 
-    useLayoutEffect(() => {
-        const ctx = gsap.context(() => {
-            const cards = gsap.utils.toArray(".card");
-            gsap.to(cards, {
-                x: () => -(slider.current.scrollWidth - window.innerWidth + 100),
-                ease: "none",
-                scrollTrigger: {
-                    trigger: component.current,
-                    start: () => "bottom bottom",
-                    end: () => `+=${slider.current.scrollWidth}`,
-                    scrub: true,
-                    pin: true,
-                },
-            });
-        }, component);
-        return () => ctx.revert();
-    });
+    const slider = useRef(null);
+    const buttonRight = useRef(null)
+
+    useEffect(() => {
+
+        setWidth(document.querySelector(".card").offsetWidth + 100);
+
+        // setInterval(() => {
+        //     buttonRight?.current.click()
+            // console.log("Interval : ",width)
+            // handleScroll(width)
+
+        // }, 2000);
+
+    },[])
+
+    const handleScroll = (scrollAmount) => {
+        let newScrollPosition = scrollPosition + scrollAmount;
+        if (newScrollPosition < 0) return
+        if (newScrollPosition > slider.current.scrollWidth) newScrollPosition = 0
+
+        setScrollPosition(newScrollPosition);
+
+        slider.current.scrollLeft = newScrollPosition;
+    };
 
     return (
-        <div className="w-[100vw] lg:h-[145vh] md:h-[110vh] h-[130vh] flex flex-col mb-20 px-0 md:px-16 text-white" ref={component} id={id}>
+        <div className="w-[100vw] lg:h-[145vh] md:h-[110vh] h-[130vh] flex flex-col mb-20 px-0 md:px-16 text-white" id={id}>
             {/* <div className="h-[15vh] w-full bg-green-200">Logo</div> */}
             <div className=" lg:h-[45vh] md:h-[30vh] h-[30vh] w-full flex justify-between mt-14">
                 <div className="h-full w-full items-start justify-between px-10 flex text-white">
@@ -162,14 +169,20 @@ const ClubEvents = ({ name, description, image, events, id }) => {
                     </div>
                 </div>
             </div>
-            <div className="h-[80vh] w-full" ref={sliderRef}>
-                <div className="h-[100vh] lg:h-[30rem] w-full flex items-start px-6 md:pr-10 gap-20 overflow-hidden no-scrollbar" ref={slider}>
+            <div className="h-[80vh] w-full flex items-center">
+                <button className="h-[50%] w-10 lg:mx-5 flex justify-center items-center nextBtn hover:animate-pulse" onClick={() => handleScroll(-width)}>
+                    <ChevronsLeft />
+                </button>
+                <div className="h-[100vh] lg:h-[30rem] w-full flex items-center lg:items-start px-6 md:pr-10 gap-24 overflow-auto scroll-smooth no-scrollbar" ref={slider}>
                     {events.map((event, index) => {
                         return (
                             <EventCard image={event.image} name={event.name} description={event.description} prize={event.prize} date={event.data} link={event.link} key={index} />
                         );
                     })}
                 </div>
+                <button className="h-[50%] w-10 lg:mx-5 flex justify-center items-center nextBtn hover:animate-pulse" onClick={() => handleScroll(width)} ref={buttonRight}>
+                    <ChevronsRight />
+                </button>
             </div>
         </div>
     );
@@ -189,7 +202,7 @@ const EventCard = ({ image, name, description, prize, date, link }) => {
 
     return (
         <div
-            className="relative h-[75vh] md:h-[90vh] lg:h-[100%] w-[100%] md:w-[10rem] lg:w-[46%] flex flex-none flex-col glass-morph card lg:px-0 clip-path bg-gradient-to-br from-[#aa14f0] via-[#aa14f02e] to-[#b936f500] overflow-hidden"
+            className="relative h-[75vh] md:h-[90vh] lg:h-[100%] w-[100%] md:w-[10rem] lg:w-[44%] flex flex-none flex-col glass-morph card lg:px-0 clip-path bg-gradient-to-br from-[#aa14f0] via-[#aa14f02e] to-[#b936f500] overflow-hidden"
             style={{
                 "--x": `${coords.x}px`,
                 "--y": `${coords.y}px`,
@@ -202,7 +215,7 @@ const EventCard = ({ image, name, description, prize, date, link }) => {
             <div className="h-full w-full flex flex-col lg:flex-row justify-between items-start px-5 py-10 tracking-wide z-9">
                 <div className="w-full lg:w-1/2">
                     <p className="text-lg lg:text-xl font-extrabold break-words tracking-wide mb-5 orbitron">{name}</p>
-                    <p className="text-xs lg:text-sm font-normal">{description}</p>
+                    <p className="text-xs font-normal">{description}</p>
                 </div>
                 <div className="h-full flex flex-col justify-between items-center">
                     <div className="my-8 lg:my-0 text-left lg:text-right">
