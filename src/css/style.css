@@ -5,7 +5,7 @@
 }
 
 #page1 {
-    height: 50vh;
+    height: 70vh;
     width: 100vw;
     position: relative;
     /* display: flex; */
@@ -115,7 +115,7 @@
 }
 
 #page3 {
-    height: 50vh;
+    height: 70vh;
     width: 100vw;
     position: relative;
 }
@@ -170,7 +170,6 @@
     }
     
 }
-
 
 @keyframes move {
     from {
