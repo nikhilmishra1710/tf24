@@ -26,6 +26,19 @@
 	overflow: hidden;
 }
 
+.site-footer .hazy{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100vw;
+	z-index: -2;
+	background-image: url("https://cdn.prod.website-files.com/6654d3c17b8020f4b7ba121d/665c8d2c94e29f993fd958f1_Grain.gif");
+    background-position: 0 0;
+    opacity: 0.045;
+	overflow: hidden;
+}
+
 #stars,
 #stars2,
 #stars3 {

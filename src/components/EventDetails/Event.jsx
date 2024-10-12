@@ -2,84 +2,12 @@ import { Slash, ChevronsLeft, ChevronsRight } from "lucide-react";
 import "./event.css";
 import "../../css/font.css";
 import { useEffect, useLayoutEffect, useRef } from "react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
 import RegisterButton from "./RegisterButton/registerButton";
-import Navbar from "../Navbar/Navbar";
+import data from "./data.js";
 // import Nav from "../Nav/Nav";
 
 function Event() {
-    const data = [
-        {
-            name: "things agency",
-            description: "European design & innovation agency pioneering in IoT experience for humans.",
-            image: "/3.jpg",
-            events: [
-                {
-                    image: "/test.png",
-                    name: "Cosmic Craftathon Game Jam 1",
-                    description:
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum corporis voluptatum saepe maiores nulla temporibus cumque nostrum a accusamus dolores omnis, aspernatur, aliquam sunt assumenda adipisci reiciendis facilis quo.",
-                    prize: "30000",
-                    date: "24 October,2024",
-                    link: "https://www.google.com",
-
-                },
-                {
-                    image: "/test.png",
-                    name: "Cosmic Craftathon Game Jam 2",
-                    description:
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum corporis voluptatum saepe maiores nulla temporibus cumque nostrum a accusamus dolores omnis, aspernatur, aliquam sunt assumenda adipisci reiciendis facilis quo.",
-                    prize: "30000",
-                    date: "24 October,2024",
-                    link: "https://www.google.com",
-                },
-                {
-                    image: "/test.png",
-                    name: "Cosmic Craftathon Game Jam 3",
-                    description:
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum corporis voluptatum saepe maiores nulla temporibus cumque nostrum a accusamus dolores omnis, aspernatur, aliquam sunt assumenda adipisci reiciendis facilis quo.",
-                    prize: "30000",
-                    date: "24 October,2024",
-                    link: "https://www.google.com",
-                },
-            ],
-        },
-        {
-            name: "things agency2",
-            description: "European design & innovation agency pioneering in IoT experience for humans.",
-            image: "/3.jpg",
-            events: [
-                {
-                    image: "/test.png",
-                    name: "Cosmic Craftathon Game Jam",
-                    description:
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum corporis voluptatum saepe maiores nulla temporibus cumque nostrum a accusamus dolores omnis, aspernatur, aliquam sunt assumenda adipisci reiciendis facilis quo.",
-                    prize: "30000",
-                    date: "24 October,2024",
-                    link: "https://www.google.com",
-                },
-                {
-                    image: "/test.png",
-                    name: "Cosmic Craftathon Game Jam",
-                    description:
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum corporis voluptatum saepe maiores nulla temporibus cumque nostrum a accusamus dolores omnis, aspernatur, aliquam sunt assumenda adipisci reiciendis facilis quo.",
-                    prize: "30000",
-                    date: "24 October,2024",
-                    link: "https://www.google.com",
-                },
-                {
-                    image: "/test.png",
-                    name: "Cosmic Craftathon Game Jam",
-                    description:
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eum corporis voluptatum saepe maiores nulla temporibus cumque nostrum a accusamus dolores omnis, aspernatur, aliquam sunt assumenda adipisci reiciendis facilis quo.",
-                    prize: "30000",
-                    date: "24 October,2024",
-                    link: "https://www.google.com",
-                },
-            ],
-        },
-    ];
+    
 
     return (
         <>
@@ -93,7 +21,6 @@ function Event() {
 
 export default Event;
 
-gsap.registerPlugin(ScrollTrigger);
 
 const ClubEvents = ({ name, description, image, events, id }) => {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -175,7 +102,7 @@ const ClubEvents = ({ name, description, image, events, id }) => {
                 <div className="h-[100vh] lg:h-[30rem] w-full flex items-center lg:items-start px-6 md:pr-10 gap-24 overflow-auto scroll-smooth no-scrollbar" ref={slider}>
                     {events.map((event, index) => {
                         return (
-                            <EventCard image={event.image} name={event.name} description={event.description} prize={event.prize} date={event.data} link={event.link} key={index} />
+                            <EventCard image={event.image} name={event.name} description={event.description} prize={event.prize} date={event.date} link={event.link} key={index} />
                         );
                     })}
                 </div>

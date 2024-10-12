@@ -136,6 +136,7 @@ function Hero2() {
                                 <div className="loader5"></div>
                             </div>
                             <div className="desc">
+                                <span className="desc-data date-font">24-25 OCT</span>
                                 <p className="desc-data">DIGITAL BIG BANG</p>
                                 <p className="desc-data">UNCHARTED REALMS</p>
                                 <p className="desc-data">AWAIT</p>
