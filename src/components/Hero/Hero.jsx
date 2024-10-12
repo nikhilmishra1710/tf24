@@ -164,22 +164,23 @@ function Hero2() {
 
                     <motion.div className="data-notch" variants={slideInTop} initial="hidden" animate="visible">
                         <div className="data-notch-wrapper">
-                            <AnimatePresence mode="wait">
-                                {showToggleDiv && (
-                                    <motion.div
-                                        key={soundActive ? "deactivate" : "activate"}
-                                        className={`top-notch ${soundActive ? "sound-on" : ""}`}
-                                        onClick={handleSoundToggle}
-                                        variants={notchVariants}
-                                        initial="enter"
-                                        animate="visible"
-                                        exit="exit"
-                                        whileTap={{ scale: 0.95 }}
-                                    >
-                                        <p>{soundActive ? "[ DEACTIVATE SOUND ]" : "[ ACTIVATE SOUND ]"}</p>
-                                    </motion.div>
-                                )}
-                            </AnimatePresence>
+                            <div className={`top-notch ${soundActive ? "sound-on" : ""}`}>
+                                <AnimatePresence mode="wait">
+                                    {showToggleDiv && (
+                                        <motion.p
+                                            key={soundActive ? "deactivate" : "activate"}
+                                            onClick={handleSoundToggle}
+                                            initial="enter"
+                                            animate="visible"
+                                            exit="exit"
+                                            variants={notchVariants}
+                                            whileTap={{ scale: 0.95 }}
+                                        >
+                                            {soundActive ? "[ DEACTIVATE SOUND ]" : "[ ACTIVATE SOUND ]"}
+                                        </motion.p>
+                                    )}
+                                </AnimatePresence>
+                            </div>
                             <div className="notch right-notch">
                                 <p>Right Notch</p>
                             </div>
