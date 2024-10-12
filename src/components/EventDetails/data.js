@@ -1,3 +1,5 @@
+import { images } from "./EventImages/Images"; 
+
 const data = [
     {
         name: "DOTSLASH",
@@ -5,7 +7,7 @@ const data = [
         image: "/3.jpg",
         events: [
             {
-                image: "/test.png",
+                image: images[0],
                 name: "QUANT QUEST",
                 description:
                     "Quant Quest is an algorithmic trading competition hosted by IIIT Nagpur. Participants, either solo or in teams of up to three, design trading strategies to maximize Gross ROI. The strategies are tested in a simulated market environment reflecting real-world scenarios, with a focus on Indian or US markets.",
@@ -15,7 +17,7 @@ const data = [
                 
             },
             {
-                image: "/test.png",
+                image: images[1],
                 name: "Algorithimia",
                 description:
                     "Algorithmia is an ICPC-style competitive programming contest by IIIT Nagpur, featuring two rounds: an online round on Codeforces, and an offline round at IIITN campus. Teams of 1-3 solve 6-10 problems across varying difficulty levels.",
