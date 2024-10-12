@@ -424,6 +424,21 @@ border-radius: 1rem;
     z-index: 2;
 }
 
+.hero-container .main .data-notch .data-notch-wrapper .sound-on {
+    background-color: #cc6a02;
+    transition: background-color 1.5s ease;
+}
+
+.hero-container .main .data-notch .data-notch-wrapper .sound-on::before {
+    border-right: 1.4rem #cc6a02 solid;
+    transition: border-right-color 1.5s ease;
+}
+
+.hero-container .main .data-notch .data-notch-wrapper .sound-on::after {
+    border-left: 1.4rem #cc6a02 solid;
+    transition: border-left-color 1.5s ease;
+}
+
 .hero-container .main .data-notch .data-notch-wrapper .right-notch{
     position: absolute;
     right: 0;
