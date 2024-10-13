@@ -18,7 +18,7 @@ const NewComp = () => {
                 scrollTrigger: {
                     trigger: component.current,
                     start: "top top", // Start when the section reaches the top of the viewport
-                    end: () => `+=${horizontalRef.current.scrollWidth}`, // End after full scroll
+                    end: () => `+=${horizontalRef.current.scrollWidth/6}`, // End after full scroll
                     scrub: true, // Smooth scrolling
                     pin: true, // Pinned scroll
                     // markers: true
@@ -60,7 +60,7 @@ const NewComp = () => {
                         </div>
                         <div className="card card-wrapper">
                             <div className="img-div">
-                                <img src="src\assets\galleryImages\IMG_0108.JPG" alt="" />
+                                <img src="\galleryImages\IMG_0108.JPG" alt="" />
                             </div>
                             {/* <div className="text-div">
                                 <h1>hello</h1>
@@ -69,7 +69,7 @@ const NewComp = () => {
                         <div className="card card-wrapper">
                             <div className="img-div">
                                 <img
-                                    src="src\assets\galleryImages\DSC00145.JPG"
+                                    src="\galleryImages\IMG_20231016_030245.jpg"
                                     alt=""
                                 />
                             </div>
@@ -79,7 +79,7 @@ const NewComp = () => {
                         </div>
                         <div className="card card-wrapper">
                             <div className="img-div">
-                                <img src="src\assets\galleryImages\DSC00155.JPG" alt="" />
+                                <img src="\galleryImages\DSC00155.JPG" alt="" />
                             </div>
                             {/* <div className="text-div">
                                 <h1>hello</h1>
@@ -87,7 +87,7 @@ const NewComp = () => {
                         </div>
                         <div className="card card-wrapper">
                             <div className="img-div">
-                                <img src="src\assets\galleryImages\DSC00166.JPG" alt="" />
+                                <img src="\galleryImages\DSC00166.JPG" alt="" />
                             </div>
                             {/* <div className="text-div">
                                 <h1>hello</h1>
@@ -95,7 +95,7 @@ const NewComp = () => {
                         </div>
                         <div className="card card-wrapper">
                             <div className="img-div">
-                                <img src="src\assets\galleryImages\DSC04241.JPG" alt="" />
+                                <img src="\galleryImages\DSC04241.JPG" alt="" />
                             </div>
                             {/* <div className="text-div">
                                 <h1>hello</h1>
@@ -103,7 +103,7 @@ const NewComp = () => {
                         </div>
                         {/* <div className="card card-wrapper">
                             <div className="img-div">
-                                <img src="src\assets\galleryImages\DSC04393.JPG" alt="" />
+                                <img src="\galleryImages\DSC04393.JPG" alt="" />
                             </div>
                             <div className="text-div">
                                 <h1>hello</h1>
@@ -111,7 +111,7 @@ const NewComp = () => {
                         </div> */}
                         {/* <div className="card card-wrapper">
                             <div className="img-div">
-                                <img src="src\assets\galleryImages\DSC04393.JPG" alt="" />
+                                <img src="\galleryImages\DSC04393.JPG" alt="" />
                             </div>
                             <div className="text-div">
                                 <h1>hello</h1>
@@ -119,7 +119,7 @@ const NewComp = () => {
                         </div> */}
                         {/* <div className="card card-wrapper">
                             <div className="img-div">
-                                <img src="src\assets\galleryImages\DSC04441.JPG" alt="" />
+                                <img src="\galleryImages\DSC04441.JPG" alt="" />
                             </div>
                             <div className="text-div">
                                 <h1>hello</h1>
