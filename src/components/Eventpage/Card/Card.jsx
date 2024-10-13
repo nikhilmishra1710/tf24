@@ -5,7 +5,7 @@ const Card = ({ classModifier1, classModifier2, classModifier3, project, sceneId
   const charsArray = charsString.split('');
 
   return (
-    <div className={`card ${classModifier1} content__section`} data-animated="true">
+    <div className={`cardofevent ${classModifier1} content__section`} data-animated="true">
       <div className={`card-outer ${classModifier2}`}></div>
       <div className="card-image-border"></div>
       <div
