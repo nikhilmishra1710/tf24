@@ -201,7 +201,7 @@ const data = [
                 image: images[1],
                 name: "Cypher Chronicles",
                 description:
-                    "NO ACCESS",
+                    "Become an investigative reporter who will explore, digest, and discover new, undiscovered facts for your readers. Like seasoned journalists, explore mysteries that lie deep inside, and unravel the unknown!",
                 prize: "25000",
                 date: "24 October,2024",
                 link: "https://unstop.com/p/the-cypher-chronicles-tantrafiesta24-iiit-nagpur-1154112",
