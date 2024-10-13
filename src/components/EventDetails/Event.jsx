@@ -1,20 +1,29 @@
 import { Slash, ChevronsLeft, ChevronsRight } from "lucide-react";
 import "./event.css";
 import "../../css/font.css";
-import { useEffect, useLayoutEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import RegisterButton from "./RegisterButton/registerButton";
 import data from "./data.js";
 // import Nav from "../Nav/Nav";
 
 function Event() {
-    
+
 
     return (
         <>
-            
-            {data.map((club, index) => {
-                return <ClubEvents name={club.name} description={club.description} image={club.image} events={club.events} key={index} id={club.name} />;
-            })}
+            <div className="events-bg fixed top-0 left-0 right-0 bottom-0 -z-50">
+                <div class="animation">
+                    <div id="events-stars"></div>
+                    <div id="events-stars2"></div>
+                    <div id="events-stars3"></div>
+                </div>
+                <div className="hazy"></div>
+            </div>
+            {
+                data.map((club, index) => {
+                    return <ClubEvents name={club.name} description={club.description} image={club.image} events={club.events} key={index} id={club.name} />;
+                })
+            }
         </>
     );
 }
@@ -35,12 +44,12 @@ const ClubEvents = ({ name, description, image, events, id }) => {
 
         // setInterval(() => {
         //     buttonRight?.current.click()
-            // console.log("Interval : ",width)
-            // handleScroll(width)
+        // console.log("Interval : ",width)
+        // handleScroll(width)
 
         // }, 2000);
 
-    },[])
+    }, [])
 
     const handleScroll = (scrollAmount) => {
         let newScrollPosition = scrollPosition + scrollAmount;
@@ -62,7 +71,7 @@ const ClubEvents = ({ name, description, image, events, id }) => {
                             <div className="h-20 md:h-36 lg:h-64 aspect-square rounded-full img mr-10" style={{ backgroundImage: `url(${image})` }} />
                         </div>
                         <div>
-                            <p className="flex flex-col text-3xl md:text-7xl break-words">{name}</p>
+                            <p className="flex flex-col text-3xl md:text-7xl uppercase break-words">{name}</p>
                             <p className="flex flex-col text-xs md:text-sm mt-4 md:my-8 break-words text-[#717A80]">{description}</p>
                         </div>
                     </div>
@@ -114,8 +123,6 @@ const ClubEvents = ({ name, description, image, events, id }) => {
     );
 };
 
-import { useState } from "react";
-
 const EventCard = ({ image, name, description, prize, date, link }) => {
     const [coords, setCoords] = useState({ x: 0, y: 0 });
 
@@ -136,19 +143,19 @@ const EventCard = ({ image, name, description, prize, date, link }) => {
             onMouseMove={handleMouseMove}
         >
             <div className="absolute inset-0 z-10 before:absolute before:content-[''] before:top-[var(--y)] before:left-[var(--x)] before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:bg-[radial-gradient(circle,var(--clr,rgba(255,255,255,0.2)),transparent,transparent)] before:w-[700px] before:h-[700px] before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500"></div>
-            <div className="h-[60%] lg:h-full w-full lg:w-full bg-contain bg-center bg-no-repeat z-0" style={{ backgroundImage: `url(${image})` }}></div>
+            <div className="h-[40%] lg:h-[750px] w-full lg:w-full bg-cover bg-top bg-no-repeat z-0 event-img" style={{ backgroundImage: `url(${image})` }}></div>
 
-            <div className="h-full w-full flex flex-col lg:flex-row justify-between items-start px-5 py-10 tracking-wide z-9">
+            <div className="h-[800px] w-full lg:max-h-60 flex flex-col lg:flex-row justify-between items-start px-5 pb-10 tracking-wide z-9">
                 <div className="w-full lg:w-1/2">
-                    <p className="text-lg lg:text-xl font-extrabold break-words tracking-wide mb-5 orbitron">{name}</p>
+                    <p className="text-lg lg:text-xl font-extrabold break-words uppercase tracking-wide mb-5 orbitron">{name}</p>
                     <p className="text-xs font-normal">{description}</p>
                 </div>
-                <div className="h-full flex flex-col justify-between items-center">
+                <div className="h-full flex flex-col justify-between items-start lg:items-center">
                     <div className="my-8 lg:my-0 text-left lg:text-right">
                         <p className="text-xl font-bold">{`Prize Pool : ₹ ${prize}`}</p>
                         <p className="font-bold">{`Date : ${date}`}</p>
                     </div>
-                    <div>
+                    <div className="mb-5">
                         <RegisterButton link={link} />
                     </div>
                 </div>

@@ -4,7 +4,7 @@ import "./registerButton.css"
 
 const RegisterButton = ({ link }) => {
     return (
-        <a href={link} style={{"--text":"'Register'","--c":"rgb(0, 255, 213)"}} className="reg-btn z-50">
+        <a href={link} target="_blank" style={{"--text":"'Register'","--c":"rgb(0, 255, 213)"}} className="reg-btn z-50">
             Register
         </a>
     );
