@@ -21,7 +21,7 @@
 #page2 {
     position: relative;
     height: 100vh;
-    width: 600vw;
+    width: 700vw;
     /* background-color: rgba(255, 0, 0, 0.33); */
     overflow-x: hidden;
     /* Set hidden for scroll pinning */
@@ -29,15 +29,15 @@
 
 #page2 .horizontal {
     height: 80%;
-    width: 600%; /* Enough width to allow horizontal scrolling */
+    width: 700%; /* Enough width to allow horizontal scrolling */
     /* padding-left: 2vw; */
-    padding-right: 4vw;
+    /* padding-right: 8vw; */
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
     align-items: center;
-    gap: 4vw;
+    gap:10vw;
     /* background-color: rgba(0, 26, 255, 0.305); */
     color: blanchedalmond;
 }
@@ -81,10 +81,11 @@
     color: blanchedalmond;
     /* background: palegreen; */
     height: fit-content;
+    height: fit-content;
 }
 
-.card {
-    width: 2%;
+.pcard {
+    width: 1%;
     position: relative;
     display: flex;
     align-items: center;
@@ -93,14 +94,14 @@
     gap: 44px;
 }
 
-.card .img-div {
-    width: 50%; /* 60% of the .card width */
+.pcard .img-div {
+    width: 100%; /* 60% of the .card width */
     height: 100%;
     position: relative;
     /* background-color: aquamarine; */
 }
 
-.card .text-div {
+.pcard .text-div {
     width: 45%; /* 40% of the .card width */
     height: 100%;
     /* background-color: brown; */
@@ -170,7 +171,7 @@
     }
 
 
-    .card {
+    .pcard {
         width: 2%;
         position: relative;
         display: flex;
@@ -180,11 +181,32 @@
         gap: 44px;
     }
 
-    .card .img-div {
+    .pcard .img-div {
         width: 90%; /* 60% of the .card width */
         height: 100%;
         position: relative;
         /* background-color: aquamarine; */
+    }
+    .text h4 {
+        text-transform: uppercase;
+        /* letter-spacing: -2px; */
+        font-size: 3vw;
+        font-weight: 900;
+        width: auto;
+        color: rgb(21, 255, 0);
+        height: fit-content;
+    }
+    
+    .text h1 {
+        text-transform: uppercase;
+        /* letter-spacing: -6px; */
+        font-size: 9vw;
+        font-weight: 900;
+        line-height: 1;
+        color: blanchedalmond;
+        /* background: palegreen; */
+        height: fit-content;
+        height: fit-content;
     }
 }
 
