@@ -7,7 +7,7 @@ import { cardsData } from './data/data';
 
 const EventPage = () => {
     return (
-        <section className="section_retro-inspired">
+        <section className="section_retro-inspired" id="events">
             <div className="retro-inspired_overlay is-top is-retro"></div>
             <div className="padding-global padding-section-medium">
                 <div className="container-large">

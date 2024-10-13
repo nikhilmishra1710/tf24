@@ -16,7 +16,7 @@ export default function About() {
     const characterSetArray = characterSet.split("");
 
     return (
-        <div ref={ref} className="w-[100vw] md:h-[100vh] relative min-h-screen h-auto flex flex-col justify-between bg-black text-[#f3edd8] px-8 md:px-10 py-10 overflow-hidden">
+        <div ref={ref} id="about" className="w-[100vw] md:h-[100vh] relative min-h-screen h-auto flex flex-col justify-between bg-black text-[#f3edd8] px-8 md:px-10 py-10 overflow-hidden">
             <div className="w-screen md:w-[70vw] h-[90vh] top-[15vh] md:top-0 absolute -z-1 right-1">
                 {/* canvas */}
                 {/* <Galaxy /> */}
