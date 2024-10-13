@@ -8,6 +8,7 @@ import Sponsors from "./../components/Sponsors/Sponsors";
 import Navbar from "./../components/Navbar/Navbar";
 // import Navbar from './../components/Navbar2/Navbar/Navbar';
 import NewComp from "./../components/Gallery/NewComp";
+import Speaker from "../components/speakers/Speaker";
 
 function Home() {
     return (
@@ -17,6 +18,7 @@ function Home() {
             <Hero />
             <About />
             <Sponsors />
+            <Speaker/>
             <EventPage />
             {/* <NewComp /> */}
             <NewComp />

@@ -6,18 +6,20 @@
 }
 
 .card {
+	width: 100%;
 	color: var(--color-text);
 	aspect-ratio: 1;
 	overflow: hidden;
 	position: relative;
 	display: grid;
+	border: 1px solid #fff;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	gap: 0.5rem;
 	padding: 0.5rem;
 	grid-template-areas: 'box-a box-b' 'box-c box-d';
 	cursor: pointer;
-	height: 50vh; /*Change this to modify the size of card*/
+	min-height: 250px; /*Change this to modify the size of card*/
 }
 
 .card__img {
