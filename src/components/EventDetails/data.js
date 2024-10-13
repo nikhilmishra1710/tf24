@@ -24,7 +24,16 @@ const data = [
                 prize: "30000",
                 date: "24 October,2024",
                 link: "https://unstop.com/p/algorithmia-tantrafiesta24-iiit-nagpur-1152434",
-            }
+            },
+            // {
+            //     image: images[1],
+            //     name: "Codefiesta",
+            //     description:
+            //         "NA",
+            //     prize: "NA",
+            //     date: "NA",
+            //     link: "NA",
+            // }
         ],
     },
     {
