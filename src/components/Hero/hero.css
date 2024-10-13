@@ -178,7 +178,7 @@ border-radius: 1rem;
     font-weight: 900;
     width: fit-content;
     text-transform: uppercase;
-    background: linear-gradient(120deg,#FFFF 50%, #0FF0FC , #80E961);
+    background: linear-gradient(120deg,#FFFF 30%, #0FF0FC , #80E961);
     background-clip: text;
 }
 
@@ -245,6 +245,11 @@ border-radius: 1rem;
     background: transparent;
     height: 4.5rem;
     margin-right: 0.2rem;
+}
+
+.hero-container .main .content .data-left .desc .date-font{
+    font-family: "bord";
+    font-size: 1.5rem;
 }
 
 .hero-container .main .content .data-right {
@@ -417,6 +422,21 @@ border-radius: 1rem;
     border-left: 1.4rem rgb(0, 0, 0) solid;
     /* border-bottom-right-radius: 15px; */
     z-index: 2;
+}
+
+.hero-container .main .data-notch .data-notch-wrapper .sound-on {
+    background-color: #cc6a02;
+    transition: background-color 1.5s ease;
+}
+
+.hero-container .main .data-notch .data-notch-wrapper .sound-on::before {
+    border-right: 1.4rem #cc6a02 solid;
+    transition: border-right-color 1.5s ease;
+}
+
+.hero-container .main .data-notch .data-notch-wrapper .sound-on::after {
+    border-left: 1.4rem #cc6a02 solid;
+    transition: border-left-color 1.5s ease;
 }
 
 .hero-container .main .data-notch .data-notch-wrapper .right-notch{
@@ -784,6 +804,7 @@ border-radius: 1rem;
 
     .hero-container .main .content .data-left {
         margin-top: -8vh;
+        margin-left: 20px;
     }
 
     .hero-container .main .content .data-left .title h1 {
