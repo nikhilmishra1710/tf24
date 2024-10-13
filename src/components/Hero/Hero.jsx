@@ -147,13 +147,13 @@ function Hero2() {
                             <div className="card">
                                 <div className="sub-card">
                                     <div className="h-auto">
-                                        <p className="card-data">hello this is card</p>
+                                        <p className="card-data">Innovate. Compete. Celebrate.</p>
                                     </div>
                                     <div className="h-auto">
-                                        <p className="card-data">hello this is card</p>
+                                        <p className="card-data">Where Ideas Ignite, </p>
                                     </div>
                                     <div>
-                                        <p className="card-data">hello this is card</p>
+                                        <p className="card-data">And the Future Begins.</p>
                                     </div>
                                 </div>
                                 <div className="corner bottom-left"></div>

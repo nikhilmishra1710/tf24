@@ -1,8 +1,8 @@
 import React from 'react';
 import './footer.css';
-import { faInstagram,faLinkedin, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faLinkedin, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import tflogo from "./logos/tflogo.jpg";
+import tflogo from "./logos/tflogo.png";
 
 const Footer = () => {
     return (
@@ -14,7 +14,7 @@ const Footer = () => {
                     <div id="stars3"></div>
                 </div>
                 <div className="hazy">
-                    
+
                 </div>
                 <div className="fcontainer">
                     <div className="row">
@@ -31,15 +31,21 @@ const Footer = () => {
                                 23-24 October, 2024
                             </p>
                         </div>
-
+                        <div className="sub-foot">
+                            <h6>CONTACT US</h6>
+                            <ul className="footer-links">
+                                <li><a href="mailto:tantrafiesta@iiitn.ac.in">tantrafiesta@iiitn.ac.in</a></li>
+                                <li><a href="tel:+919300319597">+91 9300319597</a></li>
+                            </ul>
+                        </div>
                         <div className="sub-foot">
                             <h6>QUICK LINKS</h6>
                             <ul className="footer-links">
                                 <li><a href="/#about">About</a></li>
                                 <li><a href="/#events">Events</a></li>
+                                <li><a href="/#sponsors">Sponsors</a></li>
                                 <li><a href="/#speakers">Speakers</a></li>
                                 <li><a href="/team">Teams</a></li>
-                                <li><a href="/#contact">Contact Us</a></li>
                             </ul>
                         </div>
 
@@ -47,18 +53,13 @@ const Footer = () => {
                             <h6>SOCIAL</h6>
                             <ul className="footer-links">
                                 <li>
-                                    <a href="https://www.instagram.com/tantrafiesta?igsh=OWVoY2NqNHRjejVo" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.instagram.com/tantrafiesta/" target="_blank" rel="noopener noreferrer">
                                         <FontAwesomeIcon icon={faInstagram} /> Instagram
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.linkedin.com/company/tantrafiesta-iiitn/" target="_blank" rel="noopener noreferrer">
                                         <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                                        <FontAwesomeIcon icon={faTwitter} /> Twitter
                                     </a>
                                 </li>
                             </ul>
