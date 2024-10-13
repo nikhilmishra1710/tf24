@@ -79,7 +79,7 @@
     height: 120%;
     padding: 20px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 20%;
     background-size: cover;
     transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
     pointer-events: none;
@@ -121,6 +121,7 @@
     text-align: center;
     font-weight: 700;
     text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
+    text-wrap: nowrap;
 }
 
 .card .card-info p {

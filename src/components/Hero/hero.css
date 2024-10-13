@@ -259,7 +259,7 @@ border-radius: 1rem;
 }
 
 .hero-container .main .content .data-right .card {
-    width: 14rem;
+    width: 16rem;
     height: 11rem;
     padding: 0.4rem;
     /* background: transparent; */
@@ -282,6 +282,7 @@ border-radius: 1rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     background: rgba(239, 222, 74, 0.638);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(9.5px);
