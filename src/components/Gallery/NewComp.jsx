@@ -58,7 +58,7 @@ const NewComp = () => {
                             <h1>Explore</h1>
                             <h1>AI wonders</h1>
                         </div>
-                        <div className="card card-wrapper">
+                        <div className="pcard card-wrapper">
                             <div className="img-div">
                                 <img src="\galleryImages\IMG_0108.JPG" alt="" />
                             </div>
@@ -66,7 +66,7 @@ const NewComp = () => {
                                 <h1>hello</h1>
                             </div> */}
                         </div>
-                        <div className="card card-wrapper">
+                        <div className="pcard card-wrapper">
                             <div className="img-div">
                                 <img
                                     src="\galleryImages\IMG_20231016_030245.jpg"
@@ -77,7 +77,7 @@ const NewComp = () => {
                                 <h1>hello</h1>
                             </div> */}
                         </div>
-                        <div className="card card-wrapper">
+                        <div className="pcard card-wrapper">
                             <div className="img-div">
                                 <img src="\galleryImages\DSC00155.JPG" alt="" />
                             </div>
@@ -85,7 +85,7 @@ const NewComp = () => {
                                 <h1>hello</h1>
                             </div> */}
                         </div>
-                        <div className="card card-wrapper">
+                        <div className="pcard card-wrapper">
                             <div className="img-div">
                                 <img src="\galleryImages\DSC00166.JPG" alt="" />
                             </div>
@@ -93,7 +93,7 @@ const NewComp = () => {
                                 <h1>hello</h1>
                             </div> */}
                         </div>
-                        <div className="card card-wrapper">
+                        <div className="pcard card-wrapper">
                             <div className="img-div">
                                 <img src="\galleryImages\DSC04241.JPG" alt="" />
                             </div>
