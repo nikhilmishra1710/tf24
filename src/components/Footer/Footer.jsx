@@ -13,6 +13,9 @@ const Footer = () => {
                     <div id="stars2"></div>
                     <div id="stars3"></div>
                 </div>
+                <div className="hazy">
+                    
+                </div>
                 <div className="fcontainer">
                     <div className="row">
                         <div className="about">
