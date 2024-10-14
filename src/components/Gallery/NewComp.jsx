@@ -18,7 +18,7 @@ const NewComp = () => {
                 scrollTrigger: {
                     trigger: component.current,
                     start: "top top", // Start when the section reaches the top of the viewport
-                    end: () => `+=${horizontalRef.current.scrollWidth/6}`, // End after full scroll
+                    end: () => `+=${horizontalRef.current.scrollWidth/10}`, // End after full scroll
                     scrub: true, // Smooth scrolling
                     pin: true, // Pinned scroll
                     // markers: true
