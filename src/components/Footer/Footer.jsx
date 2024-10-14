@@ -28,7 +28,7 @@ const Footer = () => {
                                 </div>
                             </div>
                             <p className="text-justify">
-                                23-24 October, 2024
+                                24-25 October, 2024
                             </p>
                         </div>
                         <div className="sub-foot">

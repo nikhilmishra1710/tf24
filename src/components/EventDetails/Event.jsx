@@ -21,7 +21,7 @@ function Event() {
             </div>
             {
                 data.map((club, index) => {
-                    return <ClubEvents name={club.name} description={club.description} image={club.image} events={club.events} key={index} id={club.name} />;
+                    return <ClubEvents name={club.name} description={club.description} image={club.image} events={club.events} key={index} id={club.name.toLowerCase()} />;
                 })
             }
         </>
@@ -41,11 +41,17 @@ const ClubEvents = ({ name, description, image, events, id }) => {
     const buttonRight = useRef(null)
 
     useEffect(() => {
-
+        document.title = "Events | Tantra Fiesta";
+        const hash = window.location.hash;
+        const element = document.querySelector(hash);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        } else {
+            alert(hash, element);
+        }
         setWidth(document.querySelector(".card").offsetWidth + 96);
 
-        if(slider?.current.scrollWidth < document.querySelector(`#${id}`)?.scrollWidth-btnRef.current.scrollWidth*2)
-        {
+        if (slider?.current.scrollWidth < document.querySelector(`#${id}`)?.scrollWidth - btnRef.current.scrollWidth * 2) {
             setArrows(false);
         }
 

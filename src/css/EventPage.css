@@ -1406,11 +1406,11 @@
 
 
 .cardofevent.is-first {
-  transform: rotate(4deg)translate(-32vw);
+  transform: rotate(4deg)translate(-26vw);
   transition: 0.5s ease-in-out;
 }
 .cardofevent.is-first:hover {
-  transform: rotate(4deg) translate(-32vw) scale(1.2);
+  transform: rotate(4deg) translate(-26vw) scale(1.2);
   transition: 0.5s ease-in-out;
 }
 
@@ -1426,10 +1426,10 @@
   width: 20.833vw;
   height: 27.6vw;
   transition: 0.5s ease-in-out;
-  transform: rotate(4deg)translate(-32vw);
+  transform: rotate(4deg)translate(-26vw);
 }
 .cardofevent.is-second:hover {
-  transform: rotate(4deg)translate(-32vw)scale(1.2);
+  transform: rotate(4deg)translate(-26vw)scale(1.2);
   transition: 0.5s ease-in-out;
 }
 
