@@ -1375,7 +1375,7 @@
 
 .retro_cards {
   width: 100%;
-  margin-top: 100vh;
+  margin-top: 50vh;
   margin-bottom: 50vh;
 }
 
@@ -3604,7 +3604,7 @@
   }
 
   .retro_cards {
-    margin-top: 100vh;
+    margin-top: 50vh;
   }
 
   .retro_cards-wrapper {
