@@ -1400,15 +1400,20 @@
   height: 27.6vw;
   display: flex;
   position: relative;
+  transition: 0.5s ease-in-out;
 }
+
+
 
 .cardofevent.is-first {
   transform: rotate(4deg)translate(-32vw);
+  transition: 0.5s ease-in-out;
+}
+.cardofevent.is-first:hover {
+  transform: rotate(4deg) translate(-32vw) scale(1.2);
+  transition: 0.5s ease-in-out;
 }
 
-.cardofevent.is-first.components {
-  transform: none;
-}
 
 .cardofevent.is-first.is-retro1 {
   z-index: 2;
@@ -1420,22 +1425,26 @@
 .cardofevent.is-second {
   width: 20.833vw;
   height: 27.6vw;
+  transition: 0.5s ease-in-out;
   transform: rotate(4deg)translate(-32vw);
+}
+.cardofevent.is-second:hover {
+  transform: rotate(4deg)translate(-32vw)scale(1.2);
+  transition: 0.5s ease-in-out;
 }
 
 .cardofevent.is-third, .cardofevent.is-fourth {
   width: 20.833vw;
   height: 27.6vw;
+  transition: 0.5s ;
   transform: translate(32vw)rotate(-4deg);
+  
+}
+.cardofevent.is-third:hover, .cardofevent.is-fourth:hover {
+  transform: translate(32vw)rotate(-4deg)scale(1.2);
+  transition: 0.5s ease-in-out;
 }
 
-.cardofevent.is-past, .cardofevent.is-future {
-  width: 5vw;
-  height: 7vw;
-  position: absolute;
-  bottom: 0;
-  transform: rotate(4deg);
-}
 
 .card-outer {
   background-image: url("https://cdn.prod.website-files.com/6654d3c17b8020f4b7ba121d/6666b1b0e3f8d71eea99bc46_Mask%20group.png");
@@ -2220,23 +2229,31 @@
     width: 25vw;
     height: 35vw;
   }
+  
 
   .cardofevent.is-first.is-retro1, .cardofevent.is-second {
     width: 35vw;
     height: 50vw;
     transform: rotate(4deg)translate(-25vw);
+    transition: 0.5s ease-in-out;
+  }
+  .cardofevent.is-first.is-retro1:hover,.cardofevent.is-second:hover {
+    transform: rotate(4deg) translate(-25vw) scale(1.2);
+    transition: 0.5s ease-in-out;
   }
 
   .cardofevent.is-third, .cardofevent.is-fourth {
     width: 35vw;
     height: 50vw;
     transform: translate(25vw)rotate(-4deg);
+    transition: 0.5s ease-in-out;
+  }
+  .cardofevent.is-third:hover,.cardofevent.is-fourth:hover {
+    transform: translate(25vw)rotate(-4deg) scale(1.2);
+    transition: 0.5s ease-in-out;
   }
 
-  .cardofevent.is-mobile {
-    width: 25vw;
-    height: 35vw;
-  }
+  
 
   .cardofevent.is-past, .cardofevent.is-future {
     width: 7vw;
@@ -3603,25 +3620,29 @@
   .cardofevent.is-first.is-retro1, .cardofevent.is-second {
     width: 45vw;
     height: 60vw;
+    transition: 0.5s ease-in-out;
     transform: rotate(4deg)translate(-22vw);
+  }
+  .cardofevent.is-first.is-retro1:hover, .cardofevent.is-second:hover {
+    transition: 0.5s ease-in-out;
+    transform: rotate(4deg)translate(-22vw) scale(1.3);
   }
 
   .cardofevent.is-third, .cardofevent.is-fourth {
     width: 45vw;
     height: 60vw;
+    transition: 0.5s ease-in-out;
     transform: translate(22vw)rotate(-4deg);
   }
-
-  .cardofevent.is-mobile {
-    width: 45vw;
-    height: 60vw;
+  .cardofevent.is-third:hover, .cardofevent.is-fourth:hover {
+    
+    transition: 0.5s ease-in-out;
+    transform: translate(22vw)rotate(-4deg)scale(1.3);
   }
 
-  .cardofevent.is-past, .cardofevent.is-future {
-    width: 9vw;
-    height: 11vw;
-    inset: auto 0% 0% auto;
-  }
+  
+
+  
 
   .card-outer.is-first, .card-outer.is-first.is-retro {
     width: 45vw;
