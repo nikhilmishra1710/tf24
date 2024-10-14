@@ -53,7 +53,7 @@ const data = [
                 
             },
             {
-                image: images.royalShowdown,
+                image: images.gpt,
                 name: "GPT 4o mini Solve-A-Thon",
                 description:
                     "Gen-AI Hackathon is an online and offline event where participants create innovative solutions to problem statements, focusing on code functionality, efficiency, creativity, and AI model use (e.g., GPT-4).",
@@ -79,7 +79,7 @@ const data = [
                 
             },
             {
-                image: images.royalShowdown,
+                image: images.trailTracer,
                 name: "Trail Tracer: Line Following Bot",
                 description:
                     "Trail Tracer is a competition where participants build autonomous robots to follow a dark path on a white background, navigating twists and turns while avoiding dead ends to reach the endpoint with precision and speed.",
@@ -88,7 +88,7 @@ const data = [
                 link: "https://unstop.com/p/trail-tracer-line-following-bot-tantrafiesta24-iiit-nagpur-1152285",
             },
             {
-                image: images.royalShowdown,
+                image: images.byteCraft,
                 name: "ByteCraft : AIoT challenge",
                 description:
                     "This competition invites teams to explore the potential of AIoT in healthcare, developing a prototype that solves real-world problems, optimizes operations, and creates intelligent environments to improve quality of life.",
@@ -114,7 +114,7 @@ const data = [
                 
             },
             {
-                image: images.royalShowdown,
+                image: images.bugBountyBlitz,
                 name: "Bug Bounty Blitz",
                 description:
                     "Bug Bounty Blitz is a quest where participants find, report, and optionally solve bugs in designated repositories. It emphasizes technical skill and creativity, with bugs of varying difficulty.",
@@ -139,7 +139,7 @@ const data = [
         image: clubImages.dimensions,
         events: [
             {
-                image: images.royalShowdown,
+                image: images.cosmicCraftathon,
                 name: "GAME JAM: COSMIC CRAFTATHON",
                 description:
                     "Participants in this game jam are tasked with developing a 2D space exploration game. The theme encourages creativity in designing gameplay mechanics that allow players to navigate space.",
@@ -149,7 +149,7 @@ const data = [
                 
             },
             {
-                image: images.royalShowdown,
+                image: images.renderRiot,
                 name: "RENDER RIOT",
                 description:
                     "We're excited to announce our 3D animation competition with the theme 'From Stone to Silicon.' This theme challenges participants to visually depict the evolution of technology—from the earliest stone tools to the advanced digital age we live in today.",
@@ -191,7 +191,7 @@ const data = [
         image: clubImages.strokes,
         events: [
             {
-                image: images.royalShowdown,
+                image: images.designathon,
                 name: "Design-a-thon",
                 description:
                     "The design competition has two rounds: an online case study with design improvements, and a 12-hour offline round at IIITN, where participants tackle real-world design challenges with surprise twists.",
@@ -208,7 +208,7 @@ const data = [
         image: clubImages.orator,
         events: [
             {
-                image: images.royalShowdown,
+                image: images.cypherChronicles,
                 name: "Cypher Chronicles",
                 description:
                     "Become an investigative reporter who will explore, digest, and discover new, undiscovered facts for your readers. Like seasoned journalists, explore mysteries that lie deep inside, and unravel the unknown!",
@@ -225,7 +225,7 @@ const data = [
         image: clubImages.tf,
         events: [
             {
-                image: images.royalShowdown,
+                image: images.enigmaXplore,
                 name: "EnigmaXplore 2.0",
                 description:
                     "EngimaXplore will be a cyber security competition- Jeopardy Style,  for participants to show their skills in various areas of computing and solve real-life security challenges.",
@@ -235,7 +235,7 @@ const data = [
                 
             },
             {
-                image: images.royalShowdown,
+                image: images.womenInDev,
                 name: "Women Only Hackthon",
                 description:
                     "WomenInDev 1.0 is a women-only hackathon where participants solve real-world problems using technologies like web development, AI/ML, and data science. The top teams are judged on creativity, effectiveness, and real-world impact.",
@@ -244,7 +244,7 @@ const data = [
                 link: "https://unstop.com/p/womenindev-womens-only-hackathon-tantrafiesta24-iiit-nagpur-1153208",
             },
             {
-                image: images.royalShowdown,
+                image: images.freeFire,
                 name: "FreeFire",
                 description:
                     "The Free Fire Competition requires all teams to thoroughly review and follow the tournament rules and regulations. By participating, teams agree to abide by these rules, and any violations will result in immediate disqualification without further discussion.",
@@ -253,10 +253,10 @@ const data = [
                 link: "https://unstop.com/p/battle-of-fire-freefire-tantrafiesta24-iiit-nagpur-1151619",
             },
             {
-                image: images.royalShowdown,
+                image: images.codm,
                 name: "CODM",
                 description:
-                    "Call of Duty comepetition",
+                    "\"Warzone Warrior\" is an adrenaline-pumping Call of Duty Mobile (CODM) tournament designed to test your gaming prowess. Get ready for intense combat, strategic plays, and thrilling action as you battle for victory and exciting prizes.",
                 prize: "5000",
                 date: "24 October,2024",
                 link: "https://unstop.com/p/warzone-warrior-codm-tantrafiesta24-iiit-nagpur-1151609",
@@ -265,7 +265,7 @@ const data = [
                 image: images.royalShowdown,
                 name: "Clash Royale",
                 description:
-                    "Clash Royale comepetition",
+                    "Join the fast-paced arena of Clash Royale, where strategy and skill collide! Build your deck, deploy powerful troops, and outsmart your opponents in real-time battles. Prove your tactical prowess and claim victory as you rise through the ranks!",
                 prize: "2000",
                 date: "24 October,2024",
                 link: "https://unstop.com/p/royal-showdown-clash-royale-tantrafiesta24-iiit-nagpur-1151587",
@@ -287,7 +287,7 @@ const data = [
         image: clubImages.udyam,
         events: [
             {
-                image: images.royalShowdown,
+                image: images.innovationOasis,
                 name: "Innovation Oasis",
                 description:
                     "Innovation Oasis 2024 celebrates innovation and entrepreneurship, where participants pitch startup ideas to judges, focusing on creativity and business viability. It's aimed at students passionate about turning their ideas into reality.",

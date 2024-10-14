@@ -141,15 +141,15 @@ const EventCard = ({ image, name, description, prize, date, link }) => {
             onMouseMove={handleMouseMove}
         >
             <div className="absolute inset-0 z-10 before:absolute before:content-[''] before:top-[var(--y)] before:left-[var(--x)] before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:bg-[radial-gradient(circle,var(--clr,rgba(255,255,255,0.2)),transparent,transparent)] before:w-[700px] before:h-[700px] before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500"></div>
-            <div className="h-[40%] lg:h-[700px] w-full lg:w-full bg-cover bg-top bg-no-repeat z-0" style={{ backgroundImage: `url(${image})` }}></div>
+            <div className="h-[40%] lg:h-[700px] w-full lg:w-full bg-cover bg-top bg-no-repeat z-0 event-img" style={{ backgroundImage: `url(${image})` }}></div>
 
             <div className="h-[500px] w-full lg:max-h-60 flex flex-col lg:flex-row justify-between items-start px-2 lg:px-5 pb-2 lg:pb-10 pt-2 mt-2 tracking-wide z-9">
-                <div className="w-full lg:w-1/2">
+                <div className="w-full lg:w-1/2 mb-2 lg:mb-0">
                     <p className="text-lg lg:text-xl font-extrabold break-words uppercase tracking-wide mb-0 orbitron">{name}</p>
                     <p className="text-xs font-normal">{description}</p>
                 </div>
                 <div className="h-full flex flex-col justify-between items-start lg:items-center">
-                    <div className="my-8 lg:my-0 text-left lg:text-right">
+                    <div className="my-4 lg:my-0 text-left lg:text-right">
                         <p className="text-xl font-bold">{`Prize Pool : ₹ ${prize}`}</p>
                         <p className="font-bold">{`Date : ${date}`}</p>
                     </div>
