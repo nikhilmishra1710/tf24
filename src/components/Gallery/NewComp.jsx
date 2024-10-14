@@ -13,7 +13,7 @@ const NewComp = () => {
         const ctx = gsap.context(() => {
             const cards = gsap.utils.toArray(".card-wrapper");
             gsap.to(cards, {
-                xPercent: () => -(100 * 4.5), // Moves content left
+                xPercent: () => -(100 * 5.5), // Moves content left
                 ease: "none",
                 scrollTrigger: {
                     trigger: component.current,
@@ -52,7 +52,7 @@ const NewComp = () => {
                         <div className="loading">
                             <h4>// uploading collection...</h4>
                         </div>
-                        <div className="text card-wrapper max-sm:absolute max-sm:top-0 max-w-40:left-20 max-sm:left-28 ">
+                        <div className="text card-wrapper max-sm:absolute max-sm:top-0 max-w-40:left-20 max-sm:left-28 max-sm:text-6xl">
 
                             <h4>// into the past</h4>
                             <h1>Explore</h1>
