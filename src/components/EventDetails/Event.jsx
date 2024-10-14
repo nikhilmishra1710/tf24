@@ -21,7 +21,7 @@ function Event() {
             </div>
             {
                 data.map((club, index) => {
-                    return <ClubEvents name={club.name} description={club.description} image={club.image} events={club.events} key={index} id={club.name} />;
+                    return <ClubEvents name={club.name} description={club.description} image={club.image} events={club.events} key={index} id={club.name.toLowerCase()} />;
                 })
             }
         </>
@@ -41,7 +41,14 @@ const ClubEvents = ({ name, description, image, events, id }) => {
     const buttonRight = useRef(null)
 
     useEffect(() => {
-
+        document.title = "Events | Tantra Fiesta";
+        const hash = window.location.hash;
+        const element = document.querySelector(hash);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        } else {
+            alert(hash, element);
+        }
         setWidth(document.querySelector(".card").offsetWidth + 96);
 
         if(slider?.current.scrollWidth < document.querySelector(`#${id}`)?.scrollWidth-btnRef.current.scrollWidth*2)
@@ -143,7 +150,6 @@ const EventCard = ({ image, name, description, prize, date, link }) => {
         >
             <div className="absolute inset-0 z-10 before:absolute before:content-[''] before:top-[var(--y)] before:left-[var(--x)] before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:bg-[radial-gradient(circle,var(--clr,rgba(255,255,255,0.2)),transparent,transparent)] before:w-[700px] before:h-[700px] before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500"></div>
             <div className="h-[40%] lg:h-[700px] w-full lg:w-[97%] bg-cover bg-top bg-no-repeat z-0 event-img" style={{ backgroundImage: `url(${image})` }}></div>
-
             <div className="h-[500px] w-full lg:max-h-60 flex flex-col lg:flex-row justify-between items-start px-2 lg:px-5 pb-2 lg:pb-10 pt-2 mt-2 tracking-wide z-9">
                 <div className="w-full lg:w-1/2 mb-2 lg:mb-0">
                     <p className="text-lg lg:text-xl font-extrabold break-words uppercase tracking-wide mb-0 orbitron">{name}</p>

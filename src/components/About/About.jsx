@@ -2,10 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-hook-inview";
 import { RandomReveal } from "react-random-reveal";
 import { useState } from "react";
-
-// import './bstyleFont.css'
 import "./font.css";
-import Galaxy from "../galaxy/Galaxy";
 import GalaxyScene from "../galaxy/GalaxyScene";
 
 export default function About() {
@@ -18,8 +15,6 @@ export default function About() {
     return (
         <div ref={ref} id="about" className="w-[100vw] md:h-[100vh] relative min-h-screen h-auto flex flex-col justify-between bg-black text-[#f3edd8] px-8 md:px-10 py-10 overflow-hidden">
             <div className="w-screen md:w-[70vw] h-[90vh] top-[15vh] md:top-0 absolute -z-1 right-1">
-                {/* canvas */}
-                {/* <Galaxy /> */}
                 <GalaxyScene />
             </div>
             <div className="z-10">
@@ -71,14 +66,13 @@ export default function About() {
                                 isPlaying={inView}
                                 duration={1}
                                 revealDuration={1}
-                                characters="STEP INTO A WORLD WHERE THE CHARM OF YESTERYEARS COMES ALIVE"
+                                characters="ENTER A WORLD WHERE INNOVATION MEETS THE MAGIC OF TECHNOLOGY"
                                 characterSet={characterSetArray}
                             />
                         </div>
                     </div>
                     <div className="max-h-48 w-52 md:w-96 text-xs md:text-sm break-words font-semibold flex flex-col leading-tight">
-                        Reslish in the nostalgic beauty and timeless creativity that continue to inspire today's fashion visions.
-                    </div>
+                    Revel in the innovative spirit and groundbreaking creativity that shape the future of technology and design.</div>
                 </div>
                 {/* <div className="bstyle-bold">
                     <div>
