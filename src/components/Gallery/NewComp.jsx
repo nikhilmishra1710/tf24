@@ -28,11 +28,7 @@ const NewComp = () => {
         return () => ctx.revert();
     });
     return (
-        <HelmetProvider>
-            <Helmet>
-                <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
-                <script src="https://unpkg.com/sheryjs/dist/Shery.js" async></script>
-            </Helmet>
+        
             <div data-scroll-container id="main">
                 <div id="page1">
                     <img
@@ -41,10 +37,10 @@ const NewComp = () => {
                         alt=""
                     />
                     <div className="marque">
-                        <h1>// Vintage vision</h1>
-                        <h1>// Vintage vision</h1>
-                        <h1>// Vintage vision</h1>
-                        <h1>// Vintage vision</h1>
+                        <h1>// Explore new Realm</h1>
+                        <h1>// Explore new Realm</h1>
+                        <h1>// Explore new Realm</h1>
+                        <h1>// Explore new Realm</h1>
                     </div>
                 </div>
                 <div id="page2" ref={component}>
@@ -127,7 +123,7 @@ const NewComp = () => {
                         </div> */}
                     </div>
                 </div>
-                <div id="page3">
+                {/* <div id="page3">
                     <img
                         className="img"
                         src="https://assets.unicorn.studio/images/GXG3EqMyo8U7uJtwHU4g7q9bEPZ2/romzi98nicolaro8383_httpss.mj.runaiMyLIMjPpQ_vintage_style_rend_8e51a5a3-e589-41e1-8da7-0240fe221866.webp"
@@ -139,9 +135,9 @@ const NewComp = () => {
                         <h1>// Futuristic flair</h1>
                         <h1>// Futuristic flair</h1>
                     </div>
-                </div>
+                </div> */}
             </div>
-        </HelmetProvider>
+        // </HelmetProvider>
     );
 };
 export default NewComp;

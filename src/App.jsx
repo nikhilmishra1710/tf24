@@ -6,7 +6,7 @@ import Developers from "./components/Developer/Developers";
 
 function App() {
     return (
-        <Router>
+      
             <div className="App">
                 <Routes>
                     <Route path="/" element={<Home />} />
@@ -15,7 +15,7 @@ function App() {
                     <Route path="/developers" element={<Developers />} />
                 </Routes>
             </div>
-        </Router>
+        
     );
 }
 
