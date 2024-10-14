@@ -14,7 +14,7 @@ function Sponsors() {
     };
 
     return (
-        <div className="sponsors-container bg-black">
+        <div className="sponsors-container bg-black" id="sponsors">
             <div className="main">
                 <div className="title">OUR SPONSORS</div>
 

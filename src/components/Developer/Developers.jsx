@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './developers.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import members from './members.json';
+import { members } from './members.js';
 
 function Developers() {
     return (

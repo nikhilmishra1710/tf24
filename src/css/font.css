@@ -15,3 +15,12 @@
 .offbit-bold{
     font-family: "offbit-bold";
 }
+
+@font-face {
+    font-family: "frontman";
+    src: url("/fonts/frontman.ttf") format("truetype");
+}
+
+.frontman{
+    font-family: "frontman";
+}

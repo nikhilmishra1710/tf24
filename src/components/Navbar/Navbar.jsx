@@ -55,8 +55,8 @@ const Navbar = () => {
                                 </a>
                             </li>
                             <li onClick={toggleMenu}>
-                                <a href="/#workshop" className="font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
-                                    WORKSHOP
+                                <a href="/#sponsors" className="font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
+                                SPONSORS
                                 </a>
                             </li>
                             <li onClick={toggleMenu}>
@@ -96,8 +96,8 @@ const Navbar = () => {
                             EVENTS
                         </a>
 
-                        <a href="/#workshops" className="hidden lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
-                            WORKSHOPS
+                        <a href="/#sponsors" className="hidden lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
+                            SPONSORS
                         </a>
                     </div>
 

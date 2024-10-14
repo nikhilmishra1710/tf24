@@ -16,7 +16,7 @@ export default function About() {
     const characterSetArray = characterSet.split("");
 
     return (
-        <div ref={ref} className="w-[100vw] md:h-[100vh] relative min-h-screen h-auto flex flex-col justify-between bg-black text-[#f3edd8] px-8 md:px-10 py-10 overflow-hidden">
+        <div ref={ref} id="about" className="w-[100vw] md:h-[100vh] relative min-h-screen h-auto flex flex-col justify-between bg-black text-[#f3edd8] px-8 md:px-10 py-10 overflow-hidden">
             <div className="w-screen md:w-[70vw] h-[90vh] top-[15vh] md:top-0 absolute -z-1 right-1">
                 {/* canvas */}
                 {/* <Galaxy /> */}
@@ -36,12 +36,10 @@ export default function About() {
                         <span>
                             <RandomReveal isPlaying={inView} duration={1} revealDuration={1} characters="TF" characterSet={characterSetArray} />
                         </span>
-                        
+
                     </div>
                     <div className="h-72 md:w-[40rem]  px-2 text-sm md:text-lg md:pt-10 pt-4 break-words">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae molestias atque voluptatem assumenda hic? Consectetur vero, deserunt, laborum tenetur,
-                        quidem sed provident iure impedit quasi alias id veritatis cum officiis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae molestias atque
-                        voluptatem assumenda hic? Consectetur vero, deserunt, laborum tenetur, quidem sed provident iure impedit quasi alias id veritatis cum officiis.
+                        TantraFiesta is the National Level Annual Technical Fest of the Indian Institute of Information Technology, Nagpur. TantraFiesta'24 is coming back this year with more than 30+ interesting events under the theme "Digital Big Bang: Uncharted Realms Await." This theme captures the exponential growth in the evolution of technology in areas concerning breakthroughs in Artificial Intelligenceᅳespecially in Large Language Model developmentᅳand the enormous possibilities of power unleashed through GPUs.
                     </div>
                 </div>
             </div>
@@ -82,7 +80,7 @@ export default function About() {
                         Reslish in the nostalgic beauty and timeless creativity that continue to inspire today's fashion visions.
                     </div>
                 </div>
-                <div className="bstyle-bold">
+                {/* <div className="bstyle-bold">
                     <div>
                         <div className="flex flex-col-reverse md:flex-row md:justify-between md:items-end">
                             <div className="text-xl md:text-3xl flex gap-1 -mb-2">
@@ -96,7 +94,7 @@ export default function About() {
                             <span>PAST</span>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );

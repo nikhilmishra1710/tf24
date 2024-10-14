@@ -31,7 +31,9 @@
     height: 80%;
     width: 700%; /* Enough width to allow horizontal scrolling */
     /* padding-left: 2vw; */
+
     /* padding-right: 8vw; */
+
     position: relative;
     top: 50%;
     transform: translateY(-50%);
