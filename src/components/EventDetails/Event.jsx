@@ -62,7 +62,7 @@ const ClubEvents = ({ name, description, image, events, id }) => {
     };
 
     return (
-        <div className="w-[100vw] lg:h-[145vh] md:h-[110vh] h-[130vh] flex flex-col mb-20 px-0 md:px-16 text-white" id={id}>
+        <div className="w-[100vw] lg:h-[145vh] md:h-[110vh] h-[130vh] flex flex-col px-0 md:px-16 text-white" id={id}>
             {/* <div className="h-[15vh] w-full bg-green-200">Logo</div> */}
             <div className=" lg:h-[45vh] md:h-[30vh] h-[30vh] w-full flex justify-between mt-14">
                 <div className="h-full w-full items-start justify-between px-10 flex text-white">
@@ -72,15 +72,15 @@ const ClubEvents = ({ name, description, image, events, id }) => {
                         </div>
                         <div>
                             <p className="flex flex-col frontman leading-10 text-xl md:text-4xl uppercase break-words md:mr-5">{name}</p>
-                            <p className="flex flex-col text-xs md:text-sm mt-4 md:my-8 break-words text-[#717A80]">{description}</p>
+                            <p className="flex flex-col text-xs mb-3 md:text-sm mt-0.5 md:my-4 break-words text-[#717A80]">{description}</p>
                         </div>
                     </div>
-                    <div>
+                    <div className="lg:mr-16">
                         <p className="text-3xl md:text-5xl flex items-center">
-                            Contact :
+                            Contact
                         </p>
                         <div className="text-xs md:text-base">
-                            <div className="mt-10">
+                            <div className="mt-2">
                                 <p>Club Lead</p>
                                 <p className="-mt-1 md:-mt-2 text-[#717A80]">Full Stack Dev / Motion</p>
                             </div>
@@ -96,7 +96,7 @@ const ClubEvents = ({ name, description, image, events, id }) => {
                     </div>
                 </div>
             </div>
-            <div className="h-[80vh] w-full flex items-center">
+            <div className="h-[80vh] w-full flex items-center -mt-16 lg:-mt-10">
                 {/* {events.length > 2 && <button className="h-[50%] w-10 lg:mx-5 flex justify-center items-center nextBtn hover:animate-pulse" onClick={() => handleScroll(-width)}>
                     <ChevronsLeft />
                 </button>} */}
