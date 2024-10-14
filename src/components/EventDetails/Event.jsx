@@ -34,13 +34,20 @@ export default Event;
 const ClubEvents = ({ name, description, image, events, id }) => {
     const [scrollPosition, setScrollPosition] = useState(0);
     const [width, setWidth] = useState(0);
+    const [arrows, setArrows] = useState(true);
 
     const slider = useRef(null);
+    const btnRef = useRef(null);
     const buttonRight = useRef(null)
 
     useEffect(() => {
 
         setWidth(document.querySelector(".card").offsetWidth + 96);
+
+        if(slider?.current.scrollWidth < document.querySelector(`#${id}`)?.scrollWidth-btnRef.current.scrollWidth*2)
+        {
+            setArrows(false);
+        }
 
         // setInterval(() => {
         //     buttonRight?.current.click()
@@ -100,7 +107,7 @@ const ClubEvents = ({ name, description, image, events, id }) => {
                 {/* {events.length > 2 && <button className="h-[50%] w-10 lg:mx-5 flex justify-center items-center nextBtn hover:animate-pulse" onClick={() => handleScroll(-width)}>
                     <ChevronsLeft />
                 </button>} */}
-                <button className="h-[50%] w-10 lg:mx-5 flex justify-center items-center nextBtn hover:animate-pulse" onClick={() => handleScroll(-width)}>
+                <button className={`h-[50%] w-10 lg:mx-5 ${arrows ? "flex" : "hidden"} justify-center items-center nextBtn hover:animate-pulse`} onClick={() => handleScroll(-width)} ref={btnRef}>
                     <ChevronsLeft />
                 </button>
                 <div className="h-[100vh] lg:h-[30rem] w-full flex items-center lg:items-start px-6 md:pr-10 gap-24 overflow-auto scroll-smooth no-scrollbar" ref={slider}>
@@ -113,7 +120,7 @@ const ClubEvents = ({ name, description, image, events, id }) => {
                 {/* {events.length > 2 && <button className="h-[50%] w-10 lg:mx-5 flex justify-center items-center nextBtn hover:animate-pulse" onClick={() => handleScroll(width)} ref={buttonRight}>
                     <ChevronsRight />
                 </button>} */}
-                <button className="h-[50%] w-10 lg:mx-5 flex justify-center items-center nextBtn hover:animate-pulse" onClick={() => handleScroll(width)} ref={buttonRight}>
+                <button className={`h-[50%] w-10 lg:mx-5 ${arrows ? "flex" : "hidden"} justify-center items-center nextBtn hover:animate-pulse`} onClick={() => handleScroll(width)} ref={buttonRight}>
                     <ChevronsRight />
                 </button>
             </div>
