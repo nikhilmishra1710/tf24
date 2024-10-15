@@ -1,0 +1,7 @@
+.team-Page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: monospace;
+    scroll-behavior: smooth;  
+}
