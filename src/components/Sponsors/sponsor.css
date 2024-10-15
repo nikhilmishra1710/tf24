@@ -22,8 +22,6 @@
     src: url("/bstyle.bold.ttf") format("truetype");
 }
 
-.bstyle-bold{
-}
 
 .sponsors-container {
     width: 100vw;
@@ -106,6 +104,8 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     position: relative;
     z-index: 1;
+    background: rgba(255, 255, 255, 0.417);
+    mix-blend-mode: multiply;
     animation: fadeInUp 0.6s ease-in-out both;
     transition: transform 0.35s ease-in-out, opacity 0.5s ease-in-out;
 }

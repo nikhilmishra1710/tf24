@@ -29,7 +29,7 @@ const data = [
                 link: "https://unstop.com/p/algorithmia-tantrafiesta24-iiit-nagpur-1152434",
             },
             {
-                image: images.royalShowdown,
+                image: images.codefiesta,
                 name: "Codefiesta",
                 description:
                     "Come and take a part in the thrilling contest full of actual problems, creative brains only @ CODEFIESTA 2024! Show your skills and team efforts to compete with other fellow programmers, for some cool prizes as well special recognitions. Prepare yourself to show off your competitive programming skills at CODEFIESTA 2024!!",
@@ -57,7 +57,7 @@ const data = [
             },
             {
                 image: images.gpt,
-                name: "GPT 4o mini Solve-A-Thon",
+                name: "Solve-A-Thon",
                 description:
                     "Gen-AI Hackathon is an online and offline event where participants create innovative solutions to problem statements, focusing on code functionality, efficiency, creativity, and AI model use (e.g., GPT-4).",
                 prize: "25000",
@@ -82,7 +82,7 @@ const data = [
             },
             {
                 image: images.trailTracer,
-                name: "Trail Tracer: Line Following Bot",
+                name: "Trail Tracer",
                 description:
                     "Trail Tracer is a competition where participants build autonomous robots to follow a dark path on a white background, navigating twists and turns while avoiding dead ends to reach the endpoint with precision and speed.",
                 prize: "20000",
@@ -324,7 +324,7 @@ const data = [
         phone: "8109134887",
         events: [
             {
-                image: images.codm,
+                image: images.mysterySolver,
                 name: "Mystery Solver",
                 description:
                     "Uncover hidden secrets in the immersive mystery event. Work in teams to solve thrilling puzzles, crack cryptic clues, and follow an exciting storyline in the entire campus. This is to test your detective skills, creativity, and teamwork as you race to unravel the final mystery and claim the title of ultimate solver.",

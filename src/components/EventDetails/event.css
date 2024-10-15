@@ -13,6 +13,14 @@
 	scrollbar-width: none;
 }
 
+.card-wrapper-eventPage{
+
+	width: 50%;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+}
+
 .glass-morph {
 	background: rgba(255, 255, 255, 0.1);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -149,5 +157,11 @@
 @media screen and (max-width: 1245px) {
 	.clip-path {
 		clip-path: polygon(10% 0%, 85% 0%, 100.1% 0%, 100% 95%, 90% 100%, 15% 100%, 0% 100.3%, 0% 5%);
+	}
+}
+
+@media screen and (max-width: 1060px) {
+	.card-wrapper-eventPage{
+		width: 100%;
 	}
 }

@@ -4,7 +4,6 @@ import "../../css/font.css";
 import { useEffect, useRef, useState } from "react";
 import RegisterButton from "./RegisterButton/registerButton";
 import data from "./data.js";
-// import Nav from "../Nav/Nav";
 
 function Event() {
 
@@ -47,7 +46,7 @@ const ClubEvents = ({ name, image, events, id, lead, coLead, phone }) => {
     useEffect(() => {
 
         const hash = window.location.hash;
-        let element=null;
+        let element = null;
         if (hash) {
             element = document.querySelector(hash);
         }
@@ -60,19 +59,12 @@ const ClubEvents = ({ name, image, events, id, lead, coLead, phone }) => {
             setArrows(false);
         }
 
-        // setInterval(() => {
-        //     buttonRight?.current.click()
-        // console.log("Interval : ",width)
-        // handleScroll(width)
-
-        // }, 2000);
-
     }, [])
 
     const handleScroll = (scrollAmount) => {
         let newScrollPosition = scrollPosition + scrollAmount;
         if (newScrollPosition < 0) return
-        if (newScrollPosition + scrollAmount / 2 > slider.current.scrollWidth) newScrollPosition = 0
+        if (newScrollPosition + scrollAmount/2 > slider.current.scrollWidth) newScrollPosition = 0
 
         setScrollPosition(newScrollPosition);
 
@@ -101,7 +93,7 @@ const ClubEvents = ({ name, image, events, id, lead, coLead, phone }) => {
                                 <p>Lead</p>
                                 <p className="-mt-1 md:-mt-2 text-[#717A80]">{lead}</p>
                             </div>
-                            {coLead&&<div>
+                            {coLead && <div>
                                 <p>Co-Lead</p>
                                 <p className="-mt-1 md:-mt-2 text-[#717A80]">{coLead}</p>
                             </div>}
@@ -144,18 +136,18 @@ const EventCard = ({ image, name, description, prize, date, link }) => {
 
     return (
         <div
-            className="relative h-[62vh] md:h-[65vh] md-lg:h-[100%] w-[100%] md:w-[10rem] md-lg:w-[44%] min-w-[270px] max-w-[44%] flex flex-none flex-col items-center glass-morph card md-lg:px-0 clip-path overflow-hidden border-none"
-            // className="card clip-path glass-morph"
+            className="card-wrapper-eventPage
+            relative h-[62vh] md:h-[65vh] md-lg:h-[100%] w-[100%] md:w-[10rem] md-lg:w-[44%] min-w-[270px] max-w-[44%] flex flex-none flex-col items-center glass-morph card md-lg:px-0 clip-path overflow-hidden border-none"
             style={{
                 "--x": `${coords.x}px`,
                 "--y": `${coords.y}px`,
-                
+
             }}
             onMouseMove={handleMouseMove}
         >
             <div className="absolute inset-0 z-10 before:absolute before:content-[''] before:top-[var(--y)] before:left-[var(--x)] before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:bg-[radial-gradient(circle,var(--clr,rgba(255,255,255,0.2)),transparent,transparent)] before:w-[700px] before:h-[700px] before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500"></div>
 
-            <img className="h-[40%] min-h-[85px] md-lg:h-[700px] max-h-[500px] w-full md-lg:w-[97%] z-0 event-img" src={image}/>
+            <img className="h-[40%] min-h-[85px] md-lg:h-[700px] max-h-[500px] w-full md-lg:w-[97%] z-0 event-img" src={image} />
 
             <div className="h-[500px] w-full md-lg:max-h-60 flex flex-col md-lg:flex-row justify-between items-start px-2 md-lg:px-5 pb-2 md-lg:pb-10 pt-2 mt-2 tracking-wide z-9">
                 <div className="w-full md-lg:w-1/2 mb-2 md-lg:mb-0">
@@ -167,7 +159,7 @@ const EventCard = ({ image, name, description, prize, date, link }) => {
                         <p className="text-md-lg font-bold">{`Prize Pool : ₹ ${prize}`}</p>
                         <p className="text-sm font-bold">{`Date : ${date}`}</p>
                     </div>
-                    {link&&<div className="mb-5">
+                    {link && <div className="mb-5">
                         <RegisterButton link={link} />
                     </div>}
                 </div>

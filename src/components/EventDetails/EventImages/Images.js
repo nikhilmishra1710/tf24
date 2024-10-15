@@ -23,5 +23,7 @@ export const images = {
     codm: "images/EventImages/codm.png",
     vyaparVichar: "images/EventImages/vyaparVichar.png",
     innovationOasis: "images/EventImages/innovationOasis.png",
+    codefiesta: "images/EventImages/codefiesta.png",
+    mysterySolver: "images/EventImages/mysterySolver.png"
   };
   
