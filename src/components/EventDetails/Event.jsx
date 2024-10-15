@@ -9,6 +9,10 @@ import data from "./data.js";
 function Event() {
 
 
+    useEffect(() => {
+        document.title = "Events | TantraFiesta 24";
+    }, [])
+
     return (
         <>
             <div className="events-bg fixed top-0 left-0 right-0 bottom-0 -z-50">
@@ -41,18 +45,18 @@ const ClubEvents = ({ name, description, image, events, id }) => {
     const buttonRight = useRef(null)
 
     useEffect(() => {
-        document.title = "Events | Tantra Fiesta";
+
         const hash = window.location.hash;
-        const element = document.querySelector(hash);
+        let element=null;
+        if (hash) {
+            element = document.querySelector(hash);
+        }
+
         if (element) {
             element.scrollIntoView({ behavior: "smooth" });
-        } else {
-            alert(hash, element);
         }
         setWidth(document.querySelector(".card").offsetWidth + 96);
-
-        if(slider?.current.scrollWidth < document.querySelector(`#${id}`)?.scrollWidth-btnRef.current.scrollWidth*2)
-        {
+        if (slider?.current.scrollWidth < document.querySelector(`#${id}`)?.scrollWidth - btnRef.current.scrollWidth * 2 || events?.length === 1) {
             setArrows(false);
         }
 
@@ -68,7 +72,7 @@ const ClubEvents = ({ name, description, image, events, id }) => {
     const handleScroll = (scrollAmount) => {
         let newScrollPosition = scrollPosition + scrollAmount;
         if (newScrollPosition < 0) return
-        if (newScrollPosition > slider.current.scrollWidth) newScrollPosition = 0
+        if (newScrollPosition + scrollAmount / 2 > slider.current.scrollWidth) newScrollPosition = 0
 
         setScrollPosition(newScrollPosition);
 
@@ -76,7 +80,7 @@ const ClubEvents = ({ name, description, image, events, id }) => {
     };
 
     return (
-        <div className="w-[100vw] lg:h-[145vh] md:h-[110vh] h-[130vh] flex flex-col px-0 md:px-16 text-white" id={id}>
+        <div className="w-[100vw] lg:h-[135vh] md:h-[100vh] h-[120vh] flex flex-col px-0 md:px-16 text-white" id={id}>
             {/* <div className="h-[15vh] w-full bg-green-200">Logo</div> */}
             <div className=" lg:h-[35vh] md:h-[30vh] h-[30vh] w-full flex justify-between mt-14">
                 <div className="h-full w-full items-start justify-between px-10 flex text-white">
@@ -149,7 +153,7 @@ const EventCard = ({ image, name, description, prize, date, link }) => {
             onMouseMove={handleMouseMove}
         >
             <div className="absolute inset-0 z-10 before:absolute before:content-[''] before:top-[var(--y)] before:left-[var(--x)] before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:bg-[radial-gradient(circle,var(--clr,rgba(255,255,255,0.2)),transparent,transparent)] before:w-[700px] before:h-[700px] before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500"></div>
-            <div className="h-[40%] lg:h-[700px] w-full lg:w-[97%] bg-cover bg-top bg-no-repeat z-0 event-img" style={{ backgroundImage: `url(${image})` }}></div>
+            <div className="h-[40%] min-h-[85px] lg:h-[700px] w-full lg:w-[97%] bg-cover bg-top bg-no-repeat z-0 event-img" style={{ backgroundImage: `url(${image})` }}></div>
             <div className="h-[500px] w-full lg:max-h-60 flex flex-col lg:flex-row justify-between items-start px-2 lg:px-5 pb-2 lg:pb-10 pt-2 mt-2 tracking-wide z-9">
                 <div className="w-full lg:w-1/2 mb-2 lg:mb-0">
                     <p className="text-lg lg:text-xl font-extrabold break-words uppercase tracking-wide mb-0 orbitron">{name}</p>
