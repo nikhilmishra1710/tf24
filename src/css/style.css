@@ -39,7 +39,7 @@
     transform: translateY(-50%);
     display: flex;
     align-items: center;
-    gap:5vw;
+    gap:1vw;
     /* background-color: rgba(0, 26, 255, 0.305); */
     color: blanchedalmond;
 }
