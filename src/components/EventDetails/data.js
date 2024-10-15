@@ -139,7 +139,7 @@ const data = [
         name: "DIMENSIONS",
         description: "",
         image: clubImages.dimensions,
-        lead:"Devashish Athawale",
+        lead:"Devashish",
         coLead: "Sahil Sonar",
         phone: "8828960868",
         events: [
