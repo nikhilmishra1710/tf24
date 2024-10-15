@@ -1,0 +1,8 @@
+
+
+.team-Page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-behavior: smooth;  
+}

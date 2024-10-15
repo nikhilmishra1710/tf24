@@ -65,7 +65,7 @@ const Navbar = () => {
                                 </a>
                             </li>
                             <li onClick={toggleMenu}>
-                                <a href="/#team" className="font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
+                                <a href="/team" className="font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
                                     TEAM
                                 </a>
                             </li>
