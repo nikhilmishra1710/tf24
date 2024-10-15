@@ -1,0 +1,247 @@
+{
+    "TantraFiesta_Team_2024": {
+      "EM-logistics": [
+        {
+          "Name": "Siripuram Bhanu",
+          "Phone": "9866284593",
+          "image": "xyz",
+          "designation": "lead"
+        },
+        {
+          "Name": "Mridul Pandey",
+          "Phone": "9667444244",
+          "image": "xyz",
+          "designation": "co-lead"
+        }
+      ],
+      "EM-ops": [
+        {
+          "Name": "Rudra Pratap Singh",
+          "Phone": "9721124826",
+          "image": "xyz",
+          "designation": "lead"
+        },
+        {
+          "Name": "Shashi Preetham",
+          "Phone": "9989921926",
+          "image": "xyz",
+          "designation": "co-lead"
+        }
+      ],
+      "EM-stage": [
+        {
+          "Name": "Akshat Singh Chauhan",
+          "Phone": "9893766366",
+          "image": "xyz",
+          "designation": "lead"
+        },
+        {
+          "Name": "Harsh Jaiswal",
+          "Phone": "9764268681",
+          "image": "xyz",
+          "designation": "co-lead"
+        }
+      ],
+      "Corporate-Relations": [
+        {
+          "Name": "Aahil Parkar",
+          "Phone": "9049675788",
+          "image": "xyz",
+          "designation": "lead"
+        },
+        {
+          "Name": "Pradyumn Shirsath",
+          "Phone": "8080792138",
+          "image": "xyz",
+          "designation": "co-lead"
+        },
+        {
+          "Name": "Jyotiraditya Bhos",
+          "Phone": "9168389405",
+          "image": "xyz",
+          "designation": "co-lead"
+        }
+      ],
+      "Public-Relations-stall": [
+        {
+          "Name": "Hardik Deore",
+          "Phone": "9136754076",
+          "image": "xyz",
+          "designation": "lead"
+        },
+        {
+          "Name": "Vipin Mishra",
+          "Phone": "9696304749",
+          "image": "xyz",
+          "designation": "co-lead"
+        },
+        {
+          "Name": "Amitabh Mane",
+          "Phone": "8329437099",
+          "image": "xyz",
+          "designation": "co-lead"
+        }
+      ],
+      "Public-Relations-outreach": [
+        {
+          "Name": "Himanshu Singh",
+          "Phone": "7763855036",
+          "image": "xyz",
+          "designation": "lead"
+        },
+        {
+          "Name": "Johad Podili",
+          "Phone": "9652514786",
+          "image": "xyz",
+          "designation": "co-lead"
+        }
+      ],
+      "Hospitality": [
+        {
+          "Name": "Sanskar Bajaj",
+          "Phone": "9021628377",
+          "image": "xyz",
+          "designation": "lead"
+        },
+        {
+          "Name": "Hardik Sharma",
+          "Phone": "9461090239",
+          "image": "xyz",
+          "designation": "co-lead"
+        }
+      ],
+      "Marketing": [
+        {
+          "Name": "Ninad Kulkarni",
+          "Phone": "9588696937",
+          "image": "xyz",
+          "designation": "lead"
+        },
+        {
+          "Name": "Krishnasingh Thakur",
+          "Phone": "9822464846",
+          "image": "xyz",
+          "designation": "co-lead"
+        },
+        {
+          "Name": "Ruthvik Goud",
+          "Phone": "9160608422",
+          "image": "xyz",
+          "designation": "co-lead"
+        }
+      ],
+      "Videography-Photography": [
+        {
+          "Name": "Vasu Parashar",
+          "Phone": "8468938745",
+          "image": "xyz",
+          "designation": "lead"
+        },
+        {
+          "Name": "Aditya Thanvi",
+          "Phone": "8209925377",
+          "image": "xyz",
+          "designation": "co-lead"
+        }
+      ],
+      "Creatives": [
+        {
+          "Name": "Udbhav Mittal",
+          "Phone": "9893286655",
+          "image": "xyz",
+          "designation": "lead"
+        }
+      ],
+      "Content-and-Anchoring": [
+        {
+          "Name": "Divij Dudeja",
+          "Phone": "9971259691",
+          "image": "xyz",
+          "designation": "lead"
+        },
+        {
+          "Name": "Shashwat Nayak",
+          "Phone": "9653121710",
+          "image": "xyz",
+          "designation": "co-lead"
+        }
+      ],
+      "Decor": [
+        {
+          "Name": "Sahil Kumar",
+          "Phone": "8102272557",
+          "image": "xyz",
+          "designation": "lead"
+        },
+        {
+          "Name": "Sumedh More",
+          "Phone": "8668492394",
+          "image": "xyz",
+          "designation": "co-lead"
+        },
+        {
+          "Name": "Akshaya Siri",
+          "Phone": "9493442005",
+          "image": "xyz",
+          "designation": "co-lead"
+        }
+      ],
+      "Design": [
+        {
+          "Name": "Aniket Anand",
+          "Phone": "9421406930",
+          "image": "xyz",
+          "designation": "lead"
+        },
+        {
+          "Name": "Om Barapatre",
+          "Phone": "9021456521",
+          "image": "xyz",
+          "designation": "co-lead"
+        }
+      ],
+      "DISCO": [
+        {
+          "Name": "Keyur Londhe",
+          "Phone": "9766246909",
+          "image": "xyz",
+          "designation": "lead"
+        },
+        {
+          "Name": "Yuvraj Singh",
+          "Phone": "9461186757",
+          "image": "xyz",
+          "designation": "co-lead"
+        }
+      ],
+      "Web-Dev": [
+        {
+          "Name": "Nikhil Mishra",
+          "Phone": "8850952513",
+          "image": "xyz",
+          "designation": "lead"
+        },
+        {
+          "Name": "Supratit Datta",
+          "Phone": "9875324347",
+          "image": "xyz",
+          "designation": "co-lead"
+        },
+        {
+          "Name": "Sharit Vaishnav",
+          "Phone": "7223927236",
+          "image": "xyz",
+          "designation": "co-lead"
+        }
+      ],
+      "CTF": [
+        {
+          "Name": "Fazl Omar",
+          "Phone": "8328499686",
+          "image": "xyz",
+          "designation": "lead"
+        }
+      ]
+    }
+  }
+  

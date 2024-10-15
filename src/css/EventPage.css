@@ -1092,7 +1092,7 @@
 
 .text-style-eyebrow {
   text-transform: uppercase;
-  vertical-align: super;
+  /* vertical-align: super; */
   border-left: 0.25rem #e2e2e2;
   margin-bottom: 0;
   padding-top: 0.5vw;

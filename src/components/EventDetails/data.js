@@ -26,21 +26,23 @@ const data = [
                 date: "24 October,2024",
                 link: "https://unstop.com/p/algorithmia-tantrafiesta24-iiit-nagpur-1152434",
             },
-            // {
-            //     image: images.royalShowdown,
-            //     name: "Codefiesta",
-            //     description:
-            //         "NA",
-            //     prize: "NA",
-            //     date: "NA",
-            //     link: "NA",
-            // }
+            {
+                image: images.royalShowdown,
+                name: "Codefiesta",
+                description:
+                    "Come and take a part in the thrilling contest full of actual problems, creative brains only @ CODEFIESTA 2024! Show your skills and team efforts to compete with other fellow programmers, for some cool prizes as well special recognitions. Prepare yourself to show off your competitive programming skills at CODEFIESTA 2024!!",
+                prize: "10000",
+                date: "22 October,2024",
+            }
         ],
     },
     {
         name: "CRISPR",
         description: "",
         image: clubImages.crispr,
+        lead:"Shrut Jain",
+        coLead: "Jaivardhan Bhola",
+        phone: "7020162652",
         events: [
             {
                 image: images.analytica,
@@ -100,7 +102,7 @@ const data = [
     },
     {
         name: "ELEVATE",
-        description: "",
+        description: "Development Club of IIIT Nagpur",
         image: clubImages.elevate,
         events: [
             {
@@ -137,6 +139,9 @@ const data = [
         name: "DIMENSIONS",
         description: "",
         image: clubImages.dimensions,
+        lead:"Devashish Athawale",
+        coLead: "Sahil Sonar",
+        phone: "8828960868",
         events: [
             {
                 image: images.cosmicCraftathon,
@@ -285,6 +290,8 @@ const data = [
         name: "UDYAM",
         description: "",
         image: clubImages.udyam,
+        lead: "Manthan",
+        phone: "8287313694",
         events: [
             {
                 image: images.innovationOasis,
@@ -306,8 +313,27 @@ const data = [
                 link: "https://unstop.com/p/vyapar-vichar24-the-case-study-event-tantrafiesta24-iiit-nagpur-1153782",
             },
         ],
+    },
+    {
+        name: "Crestoraxia",
+        description: "",
+        image: clubImages.tf,
+        lead: "Aditya Shrivastava",
+        coLead: "Rhythm Agrawal",
+        phone: "8109134887",
+        events: [
+            {
+                image: images.codm,
+                name: "Mystery Solver",
+                description:
+                    "Uncover hidden secrets in the immersive mystery event. Work in teams to solve thrilling puzzles, crack cryptic clues, and follow an exciting storyline in the entire campus. This is to test your detective skills, creativity, and teamwork as you race to unravel the final mystery and claim the title of ultimate solver.",
+                prize: "10000",
+                date: "24 October,2024",
+                link: "https://unstop.com/p/innovation-oasis24-tantrafiesta24-iiit-nagpur-1153814",
+                
+            }
+        ],
     }
-
 ]
 
 export default  data;
