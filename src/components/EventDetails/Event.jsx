@@ -25,7 +25,7 @@ function Event() {
             </div>
             {
                 data.map((club, index) => {
-                    return <ClubEvents name={club.name} description={club.description} image={club.image} events={club.events} key={index} id={club.name.toLowerCase()} lead={club.lead} coLead={club.coLead} phone={club.phone} />;
+                    return <ClubEvents name={club.name} image={club.image} events={club.events} key={index} id={club.name.toLowerCase()} lead={club.lead} coLead={club.coLead} phone={club.phone} />;
                 })
             }
         </>
@@ -35,7 +35,7 @@ function Event() {
 export default Event;
 
 
-const ClubEvents = ({ name, description, image, events, id, lead, coLead, phone }) => {
+const ClubEvents = ({ name, image, events, id, lead, coLead, phone }) => {
     const [scrollPosition, setScrollPosition] = useState(0);
     const [width, setWidth] = useState(0);
     const [arrows, setArrows] = useState(true);
@@ -90,7 +90,6 @@ const ClubEvents = ({ name, description, image, events, id, lead, coLead, phone 
                         </div>
                         <div>
                             <p className="flex flex-col frontman leading-10 tracking-wider text-lg md:text-3xl uppercase break-words md:mr-5 font-light">{name}</p>
-                            {/* <p className="flex flex-col text-xs mb-3 md:text-sm mt-0.5 md:my-4 break-words text-[#717A80]">{description}</p> */}
                         </div>
                     </div>
                     <div className="lg:mr-16 font-light tracking-wider">

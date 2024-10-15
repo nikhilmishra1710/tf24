@@ -4,7 +4,9 @@ import { clubImages } from "./ClubLogos/images";
 const data = [
     {
         name: "DOTSLASH",
-        description: "Comepetetive Programming Club of IIIT Nagpur",
+        lead: "Gopal Kalawate",
+        coLead: "Muin Sayyad",
+        phone: "8261022826",
         image: clubImages.dotslash,
         events: [
             {
@@ -38,7 +40,6 @@ const data = [
     },
     {
         name: "CRISPR",
-        description: "",
         image: clubImages.crispr,
         lead:"Shrut Jain",
         coLead: "Jaivardhan Bhola",
@@ -67,7 +68,6 @@ const data = [
     },
     {
         name: "IOTICS",
-        description: "Internet of Things and Robotics Club of IIIT Nagpur",
         image: clubImages.iotics,
         events: [
             {
@@ -102,7 +102,9 @@ const data = [
     },
     {
         name: "ELEVATE",
-        description: "Development Club of IIIT Nagpur",
+        lead: "Ayush Ajgaonkar",
+        coLead: "Debdip Mukherjee",
+        phone: "9987105864",
         image: clubImages.elevate,
         events: [
             {
@@ -137,7 +139,6 @@ const data = [
     },
     {
         name: "DIMENSIONS",
-        description: "",
         image: clubImages.dimensions,
         lead:"Devashish",
         coLead: "Sahil Sonar",
@@ -166,7 +167,9 @@ const data = [
     },
     {
         name: "PROBE",
-        description: "",
+        lead: "Ishan Gupta",
+        coLead: "Sanket , Fahad",
+        phone:"9109644202",
         image: clubImages.probe,
         events: [
             {
@@ -192,7 +195,9 @@ const data = [
     },
     {
         name: "STROKES",
-        description: "",
+        lead: "Sumeet Kumar",
+        coLead: "Ashay Tiwari",
+        phone: "9971625842",
         image: clubImages.strokes,
         events: [
             {
@@ -209,7 +214,6 @@ const data = [
     },
     {
         name: "ORATOR",
-        description: "",
         image: clubImages.orator,
         events: [
             {
@@ -226,7 +230,6 @@ const data = [
     },
     {
         name: "TF TEAM",
-        description: "Tantra Fiesta - The Tech Fest of IIIT Nagpur",
         image: clubImages.tf,
         events: [
             {
@@ -288,7 +291,6 @@ const data = [
     },
     {
         name: "UDYAM",
-        description: "",
         image: clubImages.udyam,
         lead: "Manthan",
         phone: "8287313694",
@@ -316,7 +318,6 @@ const data = [
     },
     {
         name: "Crestoraxia",
-        description: "",
         image: clubImages.tf,
         lead: "Aditya Shrivastava",
         coLead: "Rhythm Agrawal",
