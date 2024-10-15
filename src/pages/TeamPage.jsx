@@ -1,5 +1,5 @@
-import Team from "../components/Team/Team";
-import teamData from "../components/Team/data/team";
+import Team from "../components/Team/Team.jsx";
+import teamData from "../components/Team/data/team.json";
 import '../css/TeamPage.css'
 
 const TeamPage = () => {
