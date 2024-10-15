@@ -103,7 +103,7 @@ const Navbar = () => {
 
                     <a href="/">
                         <div className="flex gap-2 justify-center items-center">
-                            <img src="/tflogo.png" height={25} className=" aspect-square h-[30px] mt-2" alt="Logo" />
+                            {/* <img src="/tflogo.png" height={25} className=" aspect-square h-[30px] mt-2" alt="Logo" /> */}
                             <img src="/images/TF name.png" height={275} width={275} alt="Logo-text" />
                         </div>
                     </a>

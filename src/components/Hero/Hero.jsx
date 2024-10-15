@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./hero.css";
 import soundFile from "/audio/TF_audio.mp3";
 import backgroundVideo from "../../assets/video.mp4";
-import icon from "../../assets/icon.jpg";
 
 function Hero2() {
     const [soundActive, setSoundActive] = useState(false);
