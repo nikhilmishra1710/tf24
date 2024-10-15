@@ -94,7 +94,7 @@ const ClubEvents = ({ name, description, image, events, id, lead, coLead, phone 
                         </div>
                     </div>
                     <div className="lg:mr-16 font-light tracking-wider">
-                        <p className="text-3xl md:text-5xl flex items-center">
+                        <p className="text-xl md:text-5xl flex items-center">
                             Contact
                         </p>
                         <div className="text-xs md:text-base">
