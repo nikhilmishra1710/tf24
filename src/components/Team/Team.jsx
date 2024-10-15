@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { motion } from 'framer-motion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import "./Team.css";
 
 const Team = ({ title, members }) => {
@@ -40,7 +42,7 @@ const Team = ({ title, members }) => {
                         <img src={"/eventcards/crispr.png"} alt={member.Name} className="member-image" />
                         <h4>{member.Name}</h4>
                         <p>{member.designation}</p>
-                        <p>Phone: {member.Phone}</p>
+                        <p><FontAwesomeIcon icon={faPhone} /> {member.Phone}</p>
                     </motion.div>
                 ))}
             </div>
