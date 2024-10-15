@@ -191,7 +191,7 @@
 .hero-container .main .content .data-left .time {
   position: relative;
   background: transparent;
-  top: 12vh;
+  top: 8vh;
   font-size: 0.75rem;
   border: 1px solid #f3edd854;
   padding: 0.3rem 0.3rem;
@@ -214,7 +214,7 @@
 .hero-container .main .content .data-left .title {
   position: relative;
   background: transparent;
-  top: 12vh;
+  top: 4vh;
   font-size: 7.5rem;
   font-weight: 900;
   width: fit-content;
@@ -233,7 +233,7 @@
 .hero-container .main .content .data-left .loaders {
   position: relative;
   background: transparent;
-  top: 20vh;
+  top: 7vh;
   font-size: 2rem;
   display: flex;
   flex-direction: row;
@@ -276,7 +276,7 @@
 .hero-container .main .content .data-left .desc {
   position: relative;
   background: transparent;
-  top: 21vh;
+  top: 7vh;
   font-size: 4rem;
   display: flex;
   flex-direction: column;
@@ -284,7 +284,7 @@
 
 .hero-container .main .content .data-left .desc p {
   background: transparent;
-  height: 4.5rem;
+  height: 4rem;
   margin-right: 0.2rem;
 }
 
@@ -694,10 +694,12 @@
   .hero-container .main .content .data-left .desc {
     top: 13vh;
     font-size: 4.5vh;
+    text-align: center;
   }
 
   .hero-container .main .content .data-left .desc p {
     height: 4vh;
+    text-align: center; 
   }
 
   .hero-container .main .content .data-right {
