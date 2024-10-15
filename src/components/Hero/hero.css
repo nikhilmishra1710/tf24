@@ -192,7 +192,7 @@
   position: relative;
   background: transparent;
   top: 12vh;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   border: 1px solid #f3edd854;
   padding: 0.3rem 0.3rem;
   width: fit-content;
@@ -662,7 +662,7 @@
 
   .hero-container .main .content .data-left .title {
     top: 8vh;
-    height: 20vh;
+    height: 15vh;
     width: 100%;
     font-size: 5rem;
     background-color: #80e961;
@@ -816,6 +816,19 @@
 }
 
 @media (max-width: 540px) {
+  .hero-container .main .content, .hero-container .hazy, .hero-container .line {
+    clip-path: polygon(
+      4% 0%,
+      97% 0%,
+      100% 4%,
+      100% 97%,
+      97% 100%,
+      4% 100%,
+      0% 97%,
+      0% 4%
+    );
+  }
+
   .hero-container .main .content .data-left .title {
     font-size: 5.5rem;
   }
@@ -824,11 +837,12 @@
 @media (max-width: 440px) {
   .hero-container .main .content .data-left .title {
     font-size: 4.5rem;
-    margin-bottom: 5vh;
+    margin-bottom: 2.5vh;
   }
 }
 
 @media (max-width: 420px) {
+  
   .hero-container .main .content .data-left .title {
     /* top: 4vh; */
     font-size: 4rem;

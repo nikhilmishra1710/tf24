@@ -56,7 +56,7 @@ const Navbar = () => {
                             </li>
                             <li onClick={toggleMenu}>
                                 <a href="/#sponsors" className="font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
-                                SPONSORS
+                                    SPONSORS
                                 </a>
                             </li>
                             <li onClick={toggleMenu}>
@@ -102,7 +102,10 @@ const Navbar = () => {
                     </div>
 
                     <a href="/">
-                        <img src="/images/TF name.png" height={350} width={350} alt="Logo" />
+                        <div className="flex gap-2 justify-center items-center">
+                            <img src="/tflogo.png" height={25} className=" aspect-square h-[30px] mt-2" alt="Logo" />
+                            <img src="/images/TF name.png" height={275} width={275} alt="Logo-text" />
+                        </div>
                     </a>
                     <div className="max-md:hidden navbar text-white w-[40%] h-16 flex justify-around  m-auto items-center">
                         <a href="/#speakers" className="hidden lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
@@ -121,7 +124,10 @@ const Navbar = () => {
                 {!menuOpen && (
                     <div className="lg:hidden w-full flex justify-between p-2 py-4">
                         <a href="/">
-                            <img src="/images/TF name.png" height={250} width={250} alt="Logo" />
+                            <div className="flex gap-2 justify-center items-center">
+                                <img src="/tflogo.png" height={25} className=" aspect-square h-[30px] mt-[0.3rem]" alt="Logo" />
+                                <img src="/images/TF name.png" height={225} width={225} alt="Logo-text" />
+                            </div>
                         </a>
                         <button className="" onClick={toggleMenu}>
                             <TbMenuDeep className="text-4xl text-white font-bold" />

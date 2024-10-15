@@ -12,7 +12,7 @@ const NewComp = () => {
         const ctx = gsap.context(() => {
             const cards = gsap.utils.toArray(".card-wrapper");
             gsap.to(cards, {
-                xPercent: () => -(100 * 4.5), // Moves content left
+                xPercent: () => -(100 * 4), // Moves content left
                 ease: "none",
                 scrollTrigger: {
                     trigger: component.current,

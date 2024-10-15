@@ -24,28 +24,28 @@ export const members = [
     },
     {
         name: "Sarvesh Bajaj",
-        role: "Member",
+        role: "Developer",
         githubLink: "https://github.com/Sarvesh804",
         linkedinLink: "https://www.linkedin.com/in/sarvesh-bajaj",
         dataImage: images[3]
     },
     {
         name: "Saksham Agrawal",
-        role: "Member",
+        role: "Developer",
         githubLink: "https://github.com/sakshamagrawal07",
         linkedinLink: "https://www.linkedin.com/in/agsaksham07",
         dataImage: images[4]
     },
     {
         name: "Krish Singh",
-        role: "Member",
+        role: "Developer",
         githubLink: "https://github.com/kakusingh120",
         linkedinLink: "https://www.linkedin.com/in/krish-singh-9023b12a8/",
         dataImage: images[5]
     },
     {
         name: "Abhimanyu Mathur",
-        role: "Member",
+        role: "Developer",
         githubLink: "https://github.com/A-KingSlayer20",
         linkedinLink: "https://www.linkedin.com/in/abhimanyu-mathur-48b941313/",
         dataImage: images[6]
