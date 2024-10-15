@@ -143,7 +143,7 @@ function Hero2() {
                             </div>
                         </motion.div>
 
-                        <motion.div className="data-right" variants={slideInRight} initial="hidden" animate="visible">
+                        {/* <motion.div className="data-right" variants={slideInRight} initial="hidden" animate="visible">
                             <div className="card">
                                 <div className="sub-card">
                                     <div className="h-auto">
@@ -159,7 +159,7 @@ function Hero2() {
                                 <div className="corner bottom-left"></div>
                                 <div className="corner top-right"></div>
                             </div>
-                        </motion.div>
+                        </motion.div> */}
                     </div>
 
                     <motion.div className="data-notch" variants={slideInTop} initial="hidden" animate="visible">
