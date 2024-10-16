@@ -31,7 +31,8 @@
         "Name": "Sujal Ahirrao",
         "designation": "Financial Secretary",
         "Phone": "7020875865",
-        "image": "xyz"
+        "image": "xyz",
+        "ytLink" : "https://youtu.be/XsOPuQ9Z7Eo?si=R-Lq70nklHU2hfQc&t=53"
       },
       {
         "Name": "Atharva Wadekar",
@@ -131,7 +132,8 @@
         "Name": "Amitabh Mane",
         "Phone": "8329437099",
         "image": "xyz",
-        "designation": "co-lead"
+        "designation": "co-lead",
+        "ytLink" : "https://youtu.be/AlnHNi0hdO0?si=37752ypJA0eQtCz2&t=4"
       }
     ],
     "Public-Relations-outreach": [
@@ -153,7 +155,8 @@
         "Name": "Sanskar V. Bajaj",
         "Phone": "9021628377",
         "image": "xyz",
-        "designation": "lead"
+        "designation": "lead",
+        "ytLink": "https://youtu.be/nwj2pPHlaMs?si=f0UAoQL1ekOJJnUr&t=72"
       },
       {
         "Name": "Hardik Sharma",
@@ -252,18 +255,20 @@
         "designation": "co-lead"
       }
     ],
-    "DISCO": [
+    "Discilinary Committee": [
       {
         "Name": "Keyur Londhe",
         "Phone": "9766246909",
         "image": "xyz",
-        "designation": "lead"
+        "designation": "lead",
+        "ytLink":"https://youtu.be/N-pQtxvTbr8?si=KcpD-e1bKkJuSoFr"
       },
       {
         "Name": "Yuvraj Singh",
         "Phone": "9461186757",
         "image": "xyz",
-        "designation": "co-lead"
+        "designation": "co-lead",
+        "ytLink" : "https://youtu.be/ktp0KdyywDc?si=2P-Q6WTscTIob64S&t=31"
       }
     ],
     "Web-Dev": [

@@ -5,7 +5,6 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import "./Team.css";
 
 const Team = ({ title, members }) => {
-
     const [mousePos, setMousePos] = useState({ x: '50%', y: '50%' });
 
     const handleMouseMove = (e) => {
@@ -13,6 +12,14 @@ const Team = ({ title, members }) => {
         const x = ((e.clientX - rect.left) / rect.width) * 100;
         const y = ((e.clientY - rect.top) / rect.height) * 100;
         setMousePos({ x: `${x}%`, y: `${y}%` });
+    };
+
+    const handleClick = (ytLink) => {
+        if (ytLink) {
+            window.location.href = ytLink; // Redirect to YouTube if a link is provided
+        } else {
+            console.log('No YouTube link provided for this member'); // You can handle no redirect scenario here
+        }
     };
 
     const cardVariants = {
@@ -26,11 +33,11 @@ const Team = ({ title, members }) => {
             <div className="line"></div>
             <div className="team-list">
                 {members.map((member) => (
-
                     <motion.div
                         className="team-member"
                         key={member.Name}
                         onMouseMove={handleMouseMove}
+                        onClick={() => handleClick(member.ytLink)} // Check if the member has a YouTube link
                         style={{
                             '--mouseX': mousePos.x, '--mouseY': mousePos.y
                         }}
@@ -39,15 +46,16 @@ const Team = ({ title, members }) => {
                         variants={cardVariants}
                         viewport={{ once: true, amount: 0.3 }}
                     >
-                        {/* <img src={"/eventcards/crispr.png"} alt={member.Name} className="member-image" /> */}
                         <h4>{member.Name}</h4>
                         <p>{member.designation}</p>
-                        {/* <p><FontAwesomeIcon icon={faPhone} /> {member.Phone}</p> */}
+                        {/* {member.Phone && (
+                            <p><FontAwesomeIcon icon={faPhone} /> {member.Phone}</p>
+                        )} */}
                     </motion.div>
                 ))}
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Team;
