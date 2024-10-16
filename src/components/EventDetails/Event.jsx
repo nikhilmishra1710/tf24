@@ -74,7 +74,7 @@ const ClubEvents = ({ name, image, events, id, lead, coLead, phone }) => {
     return (
         <div className="w-[100vw] lg:h-[135vh] md:h-[100vh] h-[120vh] flex flex-col px-0 md:px-16 lg:px-0 md-lg:px-16 text-white" id={id}>
             {/* <div className="h-[15vh] w-full bg-green-200">Logo</div> */}
-            <div className=" lg:h-[35vh] md:h-[30vh] h-[30vh] w-full flex justify-between mt-14">
+            <div className=" lg:h-[35vh] md:h-[30vh] h-[30vh] lg:min-h-[300px] w-full flex justify-between mt-14">
                 <div className="h-full w-full items-start justify-between lg:justify-evenly px-10 flex text-white">
                     <div className="h-fit w-[40%] lg:w-[70%] flex flex-col-reverse lg:flex-row items-start lg:items-center justify-start">
                         <div className="h-full flex items-center justify-between">
