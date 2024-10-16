@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { TbMenuDeep } from "react-icons/tb";
 import { IoClose } from "react-icons/io5";
+import './navbar.css';
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -88,15 +89,15 @@ const Navbar = () => {
             >
                 <div className="max-lg:hidden navbar text-white w-[80%] m-auto h-16 flex justify-between items-center">
                     <div className="max-md:hidden navbar text-white w-[40%] h-16 flex justify-around  m-auto items-center">
-                        <a href="/#about" className="hidden lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
+                        <a href="/#about" className="hidden gradient-hover lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
                             ABOUT
                         </a>
 
-                        <a href="/events" className="hidden lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
+                        <a href="/events" className="hidden gradient-hover lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
                             EVENTS
                         </a>
 
-                        <a href="/#sponsors" className="hidden lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
+                        <a href="/#sponsors" className="hidden gradient-hover lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
                             SPONSORS
                         </a>
                     </div>
@@ -108,15 +109,15 @@ const Navbar = () => {
                         </div>
                     </a>
                     <div className="max-md:hidden navbar text-white w-[40%] h-16 flex justify-around  m-auto items-center">
-                        <a href="/#speakers" className="hidden lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
+                        <a href="/#speakers" className="hidden gradient-hover lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
                             SPEAKERS
                         </a>
 
-                        <a href="/team" className="hidden lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
+                        <a href="/team" className="hidden gradient-hover lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
                             TEAM
                         </a>
 
-                        <a href="/#contact" className="hidden lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
+                        <a href="/#contact" className="hidden gradient-hover lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
                             CONTACT
                         </a>
                     </div>
