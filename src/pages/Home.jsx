@@ -26,7 +26,7 @@ function Home() {
 
     return (
         <>
-            loading ?
+            {loading ?
             <Loading /> :
             <>
 
@@ -39,7 +39,7 @@ function Home() {
                 <NewComp />
                 <Footer />
             </>
-
+}
         </>
     );
 }
