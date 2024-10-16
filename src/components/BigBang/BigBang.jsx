@@ -113,6 +113,7 @@ function BigBang({setBigBang}) {
                 setExit(true);
                 setTimeout(() => {
                     setBigBang(true)
+                    sessionStorage.setItem("BigBangAnim",JSON.stringify(true))
                 }, 3000)
     
             }, 4000)

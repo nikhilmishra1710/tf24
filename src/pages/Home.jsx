@@ -10,7 +10,7 @@ import Speaker from "../components/speakers/Speaker";
 import BigBang from "@components/BigBang/BigBang";
 
 function Home() {
-    const [bigBang, setBigBang] = useState(false)
+    const [bigBang, setBigBang] = useState( sessionStorage.getItem("BigBangAnim") === "true" ? true : false);
 
     return (
         <>

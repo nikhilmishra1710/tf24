@@ -92,7 +92,7 @@ const Navbar = () => {
                             ABOUT
                         </a>
 
-                        <a href="/#events" className="hidden lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
+                        <a href="/events" className="hidden lg:block font-extrabold text-lg opacity-50 cursor-pointer hover:opacity-100">
                             EVENTS
                         </a>
 
