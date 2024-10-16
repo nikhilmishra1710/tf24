@@ -127,6 +127,24 @@ const ClubEvents = ({ name, image, events, id, lead, coLead, phone }) => {
     );
 };
 
+const PrevArrow = (props) => {
+    const { className, style, onClick } = props
+    return (
+        <button className={`${className} h-[50%] w-10 lg:mx-5 flex justify-center items-center nextBtn hover:animate-pulse`} onClick={onClick} style={{...style}}>
+            <ChevronsLeft />
+        </button>
+    )
+}
+
+const NextArrow = (props) => {
+    const { className, style, onClick } = props
+    return (
+        <button className={`${className} h-[50%] w-10 lg:mx-5 flex justify-center items-center nextBtn hover:animate-pulse`} style={{...style}} onClick={onClick}>
+            <ChevronsRight />
+        </button>
+    )
+}
+
 const ClubEvents2 = ({ name, image, events, id, lead, coLead, phone }) => {
     const settings = {
         infinite: events.length >= 2,
@@ -134,6 +152,8 @@ const ClubEvents2 = ({ name, image, events, id, lead, coLead, phone }) => {
         slidesToShow: 2,
         slidesToScroll: 1,
         centerMode: true,
+        prevArrow: <PrevArrow/>,
+        nextArrow: <NextArrow/>,
         centerPadding: "1px",
         responsive: [
             {
@@ -246,7 +266,7 @@ const EventCard2 = ({ image, name, description, prize, date, link }) => {
 
     return (
         <div
-            className="relative h-[62vh] md:h-[65vh] lg:h-full w-[85%] md:w-[44%] lg:w-[80%] min-w-[300px] lg:min-w-[430px] flex flex-none flex-col items-center glass-morph card lg:px-0 clip-path overflow-hidden border-none"
+            className="relative h-[50vh] md:h-[65vh] lg:h-full min-h-[430px] w-[85%] md:w-[44%] lg:w-[80%] min-w-[300px] lg:min-w-[430px] flex flex-none flex-col items-center glass-morph card lg:px-0 clip-path overflow-hidden border-none"
             style={{
                 "--x": `${coords.x}px`,
                 "--y": `${coords.y}px`,
@@ -263,7 +283,7 @@ const EventCard2 = ({ image, name, description, prize, date, link }) => {
                     <p className="text-xs font-normal">{description}</p>
                 </div>
                 <div className="h-full flex flex-col justify-between items-start lg:items-center">
-                    <div className="my-4 lg:my-0 text-left lg:text-right">
+                    <div className="my-4 lg:my-0 text-left lg:text-right grow">
                         <p className="text-lg font-bold">{`Prize Pool : ₹ ${prize}`}</p>
                         <p className="text-sm font-bold">{`Date : ${date}`}</p>
                     </div>
