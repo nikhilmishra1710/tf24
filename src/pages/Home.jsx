@@ -10,7 +10,7 @@ import Navbar from "./../components/Navbar/Navbar";
 import NewComp from "../components/Gallery/NewComp";
 import Speaker from "../components/speakers/Speaker";
 import Loading from "@components/Loading/Loading";
-
+import BigBang from "@components/BigBang/BigBang";
 function Home() {
     const [loading, setLoading] = useState(true);
 
@@ -26,20 +26,20 @@ function Home() {
 
     return (
         <>
-            {loading ?
-                <Loading /> :
-                <>
-                    {/* <Navbar /> */}
-                    <Navbar />
-                    <Hero />
-                    <About />
-                    <Sponsors />
-                    {/* <Speaker/> */}
-                    <EventPage />
-                    <NewComp />
-                    <Footer />
-                </>
-            }
+            loading ?
+            <Loading /> :
+            <>
+
+                <Navbar />
+                <Hero />
+                <About />
+                <Sponsors />
+                {/* <Speaker/> */}
+                <EventPage />
+                <NewComp />
+                <Footer />
+            </>
+
         </>
     );
 }

@@ -69,6 +69,9 @@ const data = [
     {
         name: "IOTICS",
         image: clubImages.iotics,
+        lead:  "Vidit Gupta",
+        coLead: "Kaushik Kuamr",
+        phone: "7054297209",
         events: [
             {
                 image: images.roboRumble,
@@ -215,6 +218,8 @@ const data = [
     {
         name: "ORATOR",
         image: clubImages.orator,
+        lead: "Vaibhav Khanna",
+        phone: "7009181779",
         events: [
             {
                 image: images.cypherChronicles,

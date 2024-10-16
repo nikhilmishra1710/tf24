@@ -1,5 +1,5 @@
 import Team from "../components/Team/Team.jsx";
-import teamData from "../components/Team/data/team.json";
+import teamData from "../components/Team/data/team2.json";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import '../css/TeamPage.css'
 

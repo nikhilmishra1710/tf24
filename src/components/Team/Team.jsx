@@ -39,10 +39,10 @@ const Team = ({ title, members }) => {
                         variants={cardVariants}
                         viewport={{ once: true, amount: 0.3 }}
                     >
-                        <img src={"/eventcards/crispr.png"} alt={member.Name} className="member-image" />
+                        {/* <img src={"/eventcards/crispr.png"} alt={member.Name} className="member-image" /> */}
                         <h4>{member.Name}</h4>
                         <p>{member.designation}</p>
-                        <p><FontAwesomeIcon icon={faPhone} /> {member.Phone}</p>
+                        {/* <p><FontAwesomeIcon icon={faPhone} /> {member.Phone}</p> */}
                     </motion.div>
                 ))}
             </div>
