@@ -146,9 +146,9 @@ const ClubEvents = ({ name, image, events, id, lead, coLead, phone }) => {
     };
 
     return (
-        <div className="w-[100vw] lg:h-[135vh] md:h-[100vh] h-[120vh] flex flex-col px-0 md:px-16 lg:px-0 md-lg:px-16 text-white" id={id}>
+        <div className="w-[100vw] lg:h-[135vh] md:h-fit h-[110vh] flex flex-col px-0 md:px-16 lg:px-0 md-lg:px-16 text-white" id={id}>
             {/* <div className="h-[15vh] w-full bg-green-200">Logo</div> */}
-            <div className=" lg:h-[35vh] md:h-[30vh] h-[30vh] lg:min-h-[300px] w-full flex justify-between mt-14">
+            <div className="lg:h-[35vh] md:h-[30vh] h-[20vh] lg:min-h-[300px] w-full flex justify-between mt-14">
                 <div className="h-full w-full items-start justify-between lg:justify-evenly px-10 flex text-white">
                     <div className="h-fit w-[40%] lg:w-[70%] flex flex-col-reverse lg:flex-row items-start lg:items-center justify-start">
                         <div className="h-full flex items-center justify-between">
@@ -180,7 +180,7 @@ const ClubEvents = ({ name, image, events, id, lead, coLead, phone }) => {
                 </div>
             </div>
             <div className="h-[80vh] w-full flex justify-center items-center lg:-mt-10">
-                <Slider {...settings} className="h-[100vh] lg:h-[30rem] w-[80%] lg:w-[90%] lg:px-5">
+                <Slider {...settings} className="h-fit w-[80%] lg:w-[90%] center lg:px-5">
                     {events.map((event, index) =>
                         <EventCard key={index} {...event} />
                     )}
@@ -246,7 +246,7 @@ const EventCard = ({ image, name, description, prize, date, link }) => {
 
     return (
         <div
-            className="relative h-[62vh] md:h-[65vh] lg:h-full w-[85%] md:w-[44%] lg:w-[60%] min-w-[300px] lg:min-w-[430px] flex flex-none flex-col items-center glass-morph card lg:px-0 clip-path overflow-hidden border-none"
+            className="relative h-[62vh] md:h-[65vh] lg:h-full w-[85%] md:w-[44%] lg:w-[80%] min-w-[300px] lg:min-w-[430px] flex flex-none flex-col items-center glass-morph card lg:px-0 clip-path overflow-hidden border-none"
             style={{
                 "--x": `${coords.x}px`,
                 "--y": `${coords.y}px`,
@@ -255,7 +255,7 @@ const EventCard = ({ image, name, description, prize, date, link }) => {
         >
             <div className="absolute inset-0 z-10 before:absolute before:content-[''] before:top-[var(--y)] before:left-[var(--x)] before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:bg-[radial-gradient(circle,var(--clr,rgba(255,255,255,0.2)),transparent,transparent)] before:w-[700px] before:h-[700px] before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500"></div>
 
-            <img className="h-[30%] min-h-[85px] lg:h-[170px] max-h-[500px] w-full lg:w-[97%] z-0 event-img" src={image} />
+            <img className="h-[30%] min-h-[85px] lg:h-[250px] max-h-[500px] w-full lg:w-[97%] z-0 event-img" src={image} />
 
             <div className="h-[50%] w-full lg:max-h-60 flex flex-col lg:flex-row justify-between items-start px-2 lg:px-5 pb-2 lg:pb-10 pt-2 mt-2 tracking-wide z-9">
                 <div className="w-full lg:w-1/2 mb-2 lg:mb-0">

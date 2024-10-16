@@ -164,3 +164,8 @@
 		width: 100%;
 	}
 }
+
+.slick-track {
+	display: flex;
+	justify-content: center;
+  }
