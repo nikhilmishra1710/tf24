@@ -15,7 +15,7 @@ const data = [
                 description:
                     "Quant Quest is an algorithmic trading competition hosted by IIIT Nagpur. Participants, either solo or in teams of up to three, design trading strategies to maximize Gross ROI. The strategies are tested in a simulated market environment reflecting real-world scenarios, with a focus on Indian or US markets.",
                 prize: "25000",
-                date: "24 October,2024",
+                date: "12 October,2024",
                 link: "https://unstop.com/p/quant-quest-tantrafiesta24-iiit-nagpur-1153126",
                 
             },
@@ -189,7 +189,7 @@ const data = [
                 image: images.brandxperience,
                 name: "BrandXperience",
                 description:
-                    "We're excited to announce our 3D animation competition with the theme 'From Stone to Silicon.' This theme challenges participants to visually depict the evolution of technology—from the earliest stone tools to the advanced digital age we live in today.",
+                    "Dive into a preselected theme, blending your research with humor and your unique style. Use videography and photography skills to create a fun, engaging, and informative showcase. Keep the audience entertained while they learn, and aim for originality to stand out and win the crown!",
                 prize: "25000",
                 date: "20 October,2024",
                 link: "https://unstop.com/competitions/brandxperience-the-ultimate-branding-challenge-tantrafiesta24-iiit-nagpur-1158355",

@@ -1,5 +1,25 @@
 {
     "TantraFiesta_Team_2024": {
+    	"Secretaries":[
+    		{
+    			"Name":"Harsh Suhan",
+    			"Designation":"Genaral Secretary",
+    			"Phone": "8356950713",
+          		"image": "xyz"
+    		},
+    		{
+    			"Name":"Ayush Jain",
+    			"Designation":"Technical Secretary",
+    			"Phone": "9300319597",
+          		"image": "xyz"
+    		},
+    		{
+    			"Name":"Sujal Ahirrao",
+    			"Designation":"Financial Secretary",
+    			"Phone": "7020875865",
+          		"image": "xyz"
+    		}
+    	],
       "EM-logistics": [
         {
           "Name": "Siripuram Bhanu",
@@ -98,7 +118,7 @@
       ],
       "Hospitality": [
         {
-          "Name": "Sanskar Bajaj",
+          "Name": "Sanskar V. Bajaj",
           "Phone": "9021628377",
           "image": "xyz",
           "designation": "lead"
