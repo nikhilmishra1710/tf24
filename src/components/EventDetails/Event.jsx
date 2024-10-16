@@ -154,7 +154,7 @@ const ClubEvents2 = ({ name, image, events, id, lead, coLead, phone }) => {
         centerMode: true,
         prevArrow: <PrevArrow/>,
         nextArrow: <NextArrow/>,
-        centerPadding: "1px",
+        centerPadding: "0px",
         responsive: [
             {
                 breakpoint: 895,
@@ -200,7 +200,7 @@ const ClubEvents2 = ({ name, image, events, id, lead, coLead, phone }) => {
                 </div>
             </div>
             <div className="h-[80vh] w-full flex justify-center items-center lg:-mt-10">
-                <Slider {...settings} className="h-fit w-[80%] lg:w-[90%] center lg:px-5">
+                <Slider {...settings} className="h-fit w-[85%] lg:w-[90%] center lg:px-5">
                     {events.map((event, index) =>
                         <EventCard2 key={index} {...event} />
                     )}
