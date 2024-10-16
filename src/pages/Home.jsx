@@ -7,21 +7,28 @@ import Sponsors from "./../components/Sponsors/Sponsors";
 import Navbar from "./../components/Navbar/Navbar";
 import NewComp from "../components/Gallery/NewComp";
 import Speaker from "../components/speakers/Speaker";
+import BigBang from "@components/BigBang/BigBang";
 
 function Home() {
-    
+    const [bigBang, setBigBang] = useState(false)
+
     return (
         <>
-
-            <Navbar />
-            <Hero />
-            <About />
-            <Sponsors />
-            {/* <Speaker/> */}
-            <EventPage />
-            <NewComp />
-            <Footer />
-
+            {
+                bigBang === false ?
+                    <BigBang setBigBang={setBigBang} />
+                    :
+                    <>
+                        <Navbar />
+                        <Hero />
+                        <About />
+                        <Sponsors />
+                        {/* <Speaker/> */}
+                        <EventPage />
+                        <NewComp />
+                        <Footer />
+                    </>
+            }
 
         </>
     );

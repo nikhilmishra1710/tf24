@@ -3,14 +3,14 @@ import gsap from "gsap";
 import "./bigbang.css";
 import Loading from '@components/Loading/Loading';
 
-function BigBang() {
+function BigBang({setBigBang}) {
     const [loading, setLoading] = useState(true)
     const [exit, setExit] = useState(false)
     useEffect(() => {
 
         const vid = document.querySelector("#bigbang-video")
         console.log(vid)
-        vid.onloadeddata = () => {
+        vid.onloadeddata = function(){
             setLoading(false)
             animateLoader()
         }
@@ -109,15 +109,16 @@ function BigBang() {
 
         setTimeout(() => {
             vid.play();
+            setTimeout(() => {
+                setExit(true);
+                setTimeout(() => {
+                    setBigBang(true)
+                }, 3000)
+    
+            }, 4000)
         }, 8000);
 
-        setTimeout(() => {
-            setExit(true);
-            setTimeout(() => {
-                window.location.href = "/home"
-            }, 3000)
-
-        }, 12000)
+        
 
         gsap.from("h1", {
             opacity: 0,
@@ -150,6 +151,10 @@ function BigBang() {
             stagger: 0.5,
         })
     }
+    useEffect(()=>{
+        console.log("exit",exit)
+
+    },[exit])
 
 
 
@@ -158,8 +163,8 @@ function BigBang() {
             <div className={`${loading ? "" : "hidden"}`}>
                 <Loading />
             </div >
-            <div className={`${loading ? "hidden" : "bigbang"}`}>
-                <div className="bang-container">
+            <div className={`${loading ? "hidden" : "bigbang"} `}>
+                <div className={` bang-container ${exit ? "exit-anim" : ""} `}>
                     <div id="bg-div" className="big-div">
                         <video preload="auto" autoPlay muted loop src="https://upcdn.io/FW25cEp/raw/BigBangVideo.mp4" className="bigbang-video" id="bigbang-video"></video>
                         <div id="overlay"></div>

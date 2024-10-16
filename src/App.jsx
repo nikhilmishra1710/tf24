@@ -6,8 +6,8 @@ import EventPage from "./pages/EventPage";
 import DeveloperPage from "./pages/DeveloperPage";
 import TeamPage from "./pages/TeamPage";
 
-import Loading from "@components/Loading/Loading"; // Loading component
-import BigBang from "@components/BigBang/BigBang";
+// import Loading from "@components/Loading/Loading"; // Loading component
+// import BigBang from "@components/BigBang/BigBang";
 
 function App() {
     
@@ -15,7 +15,7 @@ function App() {
     return (
         <div className="App">
             <Routes>
-                <Route path="/" element={<BigBang />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/events" element={<EventPage />} />
                 <Route path="/developers" element={<DeveloperPage />} />

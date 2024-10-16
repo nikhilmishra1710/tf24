@@ -1,118 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 
-.bigbang{
-    font-family: "Orbitron", sans-serif;
-    overflow: hidden;
+.bigbang {
+  font-family: "Orbitron", sans-serif;
+  overflow: hidden;
 }
 
 .bang-container {
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-    overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
 }
 
 .big-div {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .big-div video {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .big-div #overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.171);
-    z-index: 2;
-    opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.171);
+  z-index: 2;
+  opacity: 1;
 }
 
-
 .loading-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #000;
-    color: #fff;
-    pointer-events: none;
-    overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  pointer-events: none;
+  overflow: hidden;
 }
 
 .loading-screen .cover-div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 30px;
-    width: 200px;
-    transform: translate(-50%, -50%);
-    display: flex;
-    background-color: rgb(80, 80, 80);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30px;
+  width: 200px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background-color: rgb(80, 80, 80);
 }
 
 .loading-screen .cover-div .loader {
-    display: flex;
-    width: 200px;
-    background-color: #fff;
+  display: flex;
+  width: 200px;
+  background-color: #fff;
 }
 
 .loading-screen .cover-div .loader .loader1 {
-    width: 85px;
-    background-color: #fff;
+  width: 85px;
+  background-color: #fff;
 }
 
 .loading-screen .cover-div .loader .loader2 {
-    width: 115px;
-    background-color: #fff;
+  width: 115px;
+  background-color: #fff;
 }
 
 .loading-screen .cover-div .loader .bar {
-    height: 30px;
+  height: 30px;
 }
 
+.bang-container .exit-anim {
+  animation: anim 3s linear;
+}
+
+@keyframes anim {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(5) rotate(180);
+  }
+}
 
 @media (max-width: 768px) {
-    .bg-div video {
-        object-fit: cover;
-        object-position: center;
-    }
+  .bg-div video {
+    object-fit: cover;
+    object-position: center;
+  }
 
-    .loading-screen .cover-div {
-        width: 150px;
-        height: 25px;
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        right: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-    }
+  .loading-screen .cover-div {
+    width: 150px;
+    height: 25px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
 
-    .loading-screen .cover-div .loader .loader1 {
-        width: 65px;
-    }
+  .loading-screen .cover-div .loader .loader1 {
+    width: 65px;
+  }
 
-    .loading-screen .cover-div .loader .loader2 {
-        width: 85px;
-    }
+  .loading-screen .cover-div .loader .loader2 {
+    width: 85px;
+  }
 
-    .loading-screen .cover-div .loader .bar {
-        height: 25px;
-    }
+  .loading-screen .cover-div .loader .bar {
+    height: 25px;
+  }
 
-    .loading-screen .counter {
-        font-size: 60px;
-        line-height: 62px;
-    }
+  .loading-screen .counter {
+    font-size: 60px;
+    line-height: 62px;
+  }
 }
