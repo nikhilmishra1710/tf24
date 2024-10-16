@@ -262,7 +262,7 @@ const data = [
                 description:
                     "The Free Fire Competition requires all teams to thoroughly review and follow the tournament rules and regulations. By participating, teams agree to abide by these rules, and any violations will result in immediate disqualification without further discussion.",
                 prize: "5000",
-                date: "21 October,2024",
+                date: "20 October,2024",
                 link: "https://unstop.com/p/battle-of-fire-freefire-tantrafiesta24-iiit-nagpur-1151619",
             },
             {
@@ -271,7 +271,7 @@ const data = [
                 description:
                     "\"Warzone Warrior\" is an adrenaline-pumping Call of Duty Mobile (CODM) tournament designed to test your gaming prowess. Get ready for intense combat, strategic plays, and thrilling action as you battle for victory and exciting prizes.",
                 prize: "5000",
-                date: "21 October,2024",
+                date: "20 October,2024",
                 link: "https://unstop.com/p/warzone-warrior-codm-tantrafiesta24-iiit-nagpur-1151609",
             },
             {
@@ -280,7 +280,7 @@ const data = [
                 description:
                     "Join the fast-paced arena of Clash Royale, where strategy and skill collide! Build your deck, deploy powerful troops, and outsmart your opponents in real-time battles. Prove your tactical prowess and claim victory as you rise through the ranks!",
                 prize: "2000",
-                date: "21 October,2024",
+                date: "20 October,2024",
                 link: "https://unstop.com/p/royal-showdown-clash-royale-tantrafiesta24-iiit-nagpur-1151587",
             },
             {
@@ -289,8 +289,17 @@ const data = [
                 description:
                     "The Checkmate Challenge is a two-day chess competition held as part of Tantrafiesta 2k24, offering participants the chance to showcase their chess skills.",
                 prize: "5000",
-                date: "21 October,2024",
+                date: "20 October,2024",
                 link: "https://unstop.com/p/the-shatranj-up-chess-competition-tantrafiesta24-iiit-nagpur-1151548",
+            },
+            {
+                image: images.bgmi,
+                name: "BGMI",
+                description:
+                    "The BGMI event is a competitive battle royale where players or teams fight to be the last one standing, showcasing their skills in fast-paced combat for prizes and recognition.",
+                prize: "10,000",
+                date: "20 October,2024",
+                link: "https://unstop.com/competitions/battle-royale-bgmi-tantrafiesta24-iiit-nagpur-1177488",
             }
         ],
     },
