@@ -57,9 +57,9 @@ const data = [
             },
             {
                 image: images.gpt,
-                name: "Solve-A-Thon",
+                name: "GPT 4o Solve-A-Thon",
                 description:
-                    "Gen-AI Hackathon is an online and offline event where participants create innovative solutions to problem statements, focusing on code functionality, efficiency, creativity, and AI model use (e.g., GPT-4).",
+                    "Gen-AI Hackathon is an offline event where participants create innovative solutions to problem statements, focusing on code functionality, efficiency, creativity.",
                 prize: "25000",
                 date: "23 October,2024",
                 link: "https://unstop.com/p/gpt-4o-solve-a-thon-tantrafiesta24-iiit-nagpur-1153065",
@@ -116,7 +116,7 @@ const data = [
                 description:
                     "Genathon 2.0 is a hackathon where participants develop innovative solutions using any tech stack, including Web Development or AI/ML. Multiple judging rounds will select the top three teams with the most effective solutions.",
                 prize: "30000",
-                date: "24 October,2024",
+                date: "23 October,2024",
                 link: "https://unstop.com/p/genathon-20-tantrafiesta24-iiit-nagpur-1151648",
                 
             },
@@ -209,7 +209,7 @@ const data = [
                 description:
                     "The design competition has two rounds: an online case study with design improvements, and a 12-hour offline round at IIITN, where participants tackle real-world design challenges with surprise twists.",
                 prize: "25000",
-                date: "24 October,2024",
+                date: "23 October,2024",
                 link: "https://unstop.com/p/design-a-thon-tantrafiesta24-iiit-nagpur-1153172",
                 
             }
@@ -333,8 +333,7 @@ const data = [
     {
         name: "Crestoraxia",
         image: clubImages.tf,
-        lead: "Aditya Shrivastava",
-        coLead: "Rhythm Agrawal",
+        lead: "Aditya Shrivastava, Rhythm Agrawal",
         phone: "8109134887",
         events: [
             {
@@ -344,7 +343,7 @@ const data = [
                     "Uncover hidden secrets in the immersive mystery event. Work in teams to solve thrilling puzzles, crack cryptic clues, and follow an exciting storyline in the entire campus. This is to test your detective skills, creativity, and teamwork as you race to unravel the final mystery and claim the title of ultimate solver.",
                 prize: "10000",
                 date: "24 October,2024",
-                link: "https://unstop.com/p/innovation-oasis24-tantrafiesta24-iiit-nagpur-1153814",
+                link: "https://unstop.com/p/mystery-solver-tantrafiesta24-iiit-nagpur-1178407?lb=7qZJDuw&utm_medium=Share&utm_source=WhatsApp",
                 
             }
         ],

@@ -200,7 +200,7 @@
           "designation": "co-lead"
         }
       ],
-      "DISCO": [
+      "Discilinary Committee": [
         {
           "Name": "Keyur Londhe",
           "Phone": "9766246909",
@@ -211,7 +211,8 @@
           "Name": "Yuvraj Singh",
           "Phone": "9461186757",
           "image": "xyz",
-          "designation": "co-lead"
+          "designation": "co-lead",
+          "ytLink": "https://youtu.be/ts7oLiVqwb0?si=X8y9AwwezKpcYJng&t=31"
         }
       ],
       "Web-Dev": [
