@@ -1408,7 +1408,7 @@
   transition: 0.5s ease-in-out;
 }
 .cardofevent.is-second:hover {
-  transform: rotate(4deg)translate(-32vw)scale(1.2);
+  transform: rotate(4deg)translate(-26vw)scale(1.2);
   transition: 0.5s ease-in-out;
 }
 
