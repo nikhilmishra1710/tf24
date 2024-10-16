@@ -72,7 +72,7 @@ const ClubEvents = ({ name, image, events, id, lead, coLead, phone }) => {
     };
 
     return (
-        <div className="w-[100vw] lg:h-[135vh] md:h-[100vh] h-[120vh] flex flex-col px-0 md:px-16 text-white" id={id}>
+        <div className="w-[100vw] lg:h-[135vh] md:h-[100vh] h-[120vh] flex flex-col px-0 md:px-16 lg:px-0 md-lg:px-16 text-white" id={id}>
             {/* <div className="h-[15vh] w-full bg-green-200">Logo</div> */}
             <div className=" lg:h-[35vh] md:h-[30vh] h-[30vh] w-full flex justify-between mt-14">
                 <div className="h-full w-full items-start justify-between lg:justify-evenly px-10 flex text-white">
@@ -137,7 +137,7 @@ const EventCard = ({ image, name, description, prize, date, link }) => {
     return (
         <div
             className="card-wrapper-eventPage
-            relative h-[62vh] md:h-[65vh] md-lg:h-[100%] w-[100%] md:w-[10rem] md-lg:w-[44%] min-w-[270px] max-w-[44%] flex flex-none flex-col items-center glass-morph card md-lg:px-0 clip-path overflow-hidden border-none"
+            relative h-[62vh] md:h-[65vh] lg:h-[100%] w-[100%] md:w-[10rem] lg:w-[44%] min-w-[270px] lg:min-w-[400px] max-w-[44%] flex flex-none flex-col items-center glass-morph card lg:px-0 clip-path overflow-hidden border-none"
             style={{
                 "--x": `${coords.x}px`,
                 "--y": `${coords.y}px`,
@@ -147,16 +147,16 @@ const EventCard = ({ image, name, description, prize, date, link }) => {
         >
             <div className="absolute inset-0 z-10 before:absolute before:content-[''] before:top-[var(--y)] before:left-[var(--x)] before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:bg-[radial-gradient(circle,var(--clr,rgba(255,255,255,0.2)),transparent,transparent)] before:w-[700px] before:h-[700px] before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500"></div>
 
-            <img className="h-[40%] min-h-[85px] md-lg:h-[700px] max-h-[500px] w-full md-lg:w-[97%] z-0 event-img" src={image} />
+            <img className="h-[40%] min-h-[85px] lg:h-[700px] max-h-[500px] w-full lg:w-[97%] z-0 event-img" src={image} />
 
-            <div className="h-[500px] w-full md-lg:max-h-60 flex flex-col md-lg:flex-row justify-between items-start px-2 md-lg:px-5 pb-2 md-lg:pb-10 pt-2 mt-2 tracking-wide z-9">
-                <div className="w-full md-lg:w-1/2 mb-2 md-lg:mb-0">
-                    <p className="text-md-lg md-lg:text-xl font-extrabold break-words uppercase tracking-wide mb-0 orbitron">{name}</p>
+            <div className="h-[500px] w-full lg:max-h-60 flex flex-col lg:flex-row justify-between items-start px-2 lg:px-5 pb-2 lg:pb-10 pt-2 mt-2 tracking-wide z-9">
+                <div className="w-full lg:w-1/2 mb-2 lg:mb-0">
+                    <p className="text-lg lg:text-xl font-extrabold break-words uppercase tracking-wide mb-0 orbitron">{name}</p>
                     <p className="text-xs font-normal">{description}</p>
                 </div>
-                <div className="h-full flex flex-col justify-between items-start md-lg:items-center">
-                    <div className="my-4 md-lg:my-0 text-left md-lg:text-right">
-                        <p className="text-md-lg font-bold">{`Prize Pool : ₹ ${prize}`}</p>
+                <div className="h-full flex flex-col justify-between items-start lg:items-center">
+                    <div className="my-4 lg:my-0 text-left lg:text-right">
+                        <p className="text-lg font-bold">{`Prize Pool : ₹ ${prize}`}</p>
                         <p className="text-sm font-bold">{`Date : ${date}`}</p>
                     </div>
                     {link && <div className="mb-5">
