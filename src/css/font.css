@@ -1,6 +1,7 @@
 @font-face {
     font-family: "bstyle.bold";
     src: url("/fonts/bstyle.bold.ttf") format("truetype");
+    font-display: block;
 }
 
 .bstyle-bold{
@@ -10,6 +11,7 @@
 @font-face {
     font-family: "offbit-bold";
     src: url("/fonts/OffBit-Bold.ttf") format("truetype");
+    font-display: block;
 }
 
 .offbit-bold{
@@ -19,6 +21,7 @@
 @font-face {
     font-family: "frontman";
     src: url("/fonts/frontman.ttf") format("truetype");
+    font-display: block;
 }
 
 .frontman{
