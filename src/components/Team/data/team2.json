@@ -32,7 +32,7 @@
         "designation": "Financial Secretary",
         "Phone": "7020875865",
         "image": "xyz",
-        "ytLink" : "https://youtu.be/XsOPuQ9Z7Eo?si=R-Lq70nklHU2hfQc&t=53"
+        "ytLink": "https://youtu.be/XsOPuQ9Z7Eo?si=R-Lq70nklHU2hfQc&t=53"
       },
       {
         "Name": "Atharva Wadekar",
@@ -45,7 +45,7 @@
         "designation": "ERC",
         "Phone": "7020875865",
         "image": "xyz",
-        "ytLink":"https://youtube.com/shorts/X-cBKzQe7_I?si=YArQSTwaNKh3GHWB"
+        "ytLink": "https://youtube.com/shorts/X-cBKzQe7_I?si=YArQSTwaNKh3GHWB"
       },
       {
         "Name": "Abhinay Bandaru",
@@ -54,48 +54,45 @@
         "image": "xyz"
       }
     ],
-    "EM-logistics": [
+    "Event Management": [
       {
         "Name": "Siripuram Bhanu",
         "Phone": "9866284593",
         "image": "xyz",
-        "designation": "lead"
+        "designation": "EM-logistics lead"
       },
       {
         "Name": "Mridul Pandey",
         "Phone": "9667444244",
         "image": "xyz",
-        "designation": "co-lead"
-      }
-    ],
-    "EM-ops": [
+        "designation": "EM-logistics co-lead"
+      },
       {
         "Name": "Rudra Pratap Singh",
         "Phone": "9721124826",
         "image": "xyz",
-        "designation": "lead"
+        "designation": "EM-ops lead"
       },
       {
         "Name": "Shashi Preetham",
         "Phone": "9989921926",
         "image": "xyz",
-        "designation": "co-lead"
-      }
-    ],
-    "EM-stage": [
+        "designation": "EM-ops co-lead"
+      },
       {
         "Name": "Akshat Singh Chauhan",
         "Phone": "9893766366",
         "image": "xyz",
-        "designation": "lead"
+        "designation": "EM-stage lead"
       },
       {
         "Name": "Harsh Jaiswal",
         "Phone": "9764268681",
         "image": "xyz",
-        "designation": "co-lead"
+        "designation": "EM-stage co-lead"
       }
     ],
+
     "Corporate-Relations": [
       {
         "Name": "Aahil Parkar",
@@ -116,39 +113,37 @@
         "designation": "co-lead"
       }
     ],
-    "Public-Relations-stall": [
+    "Public-Relations": [
       {
         "Name": "Hardik Deore",
         "Phone": "9136754076",
         "image": "xyz",
-        "designation": "lead"
+        "designation": "PR Stall lead"
       },
       {
         "Name": "Vipin Mishra",
         "Phone": "9696304749",
         "image": "xyz",
-        "designation": "co-lead"
+        "designation": "PR Stall co-lead"
       },
       {
         "Name": "Amitabh Mane",
         "Phone": "8329437099",
         "image": "xyz",
-        "designation": "co-lead",
-        "ytLink" : "https://youtu.be/AlnHNi0hdO0?si=37752ypJA0eQtCz2&t=4"
-      }
-    ],
-    "Public-Relations-outreach": [
+        "designation": "PR Stall co-lead",
+        "ytLink": "https://youtu.be/AlnHNi0hdO0?si=37752ypJA0eQtCz2&t=4"
+      },
       {
         "Name": "Himanshu Singh",
         "Phone": "7763855036",
         "image": "xyz",
-        "designation": "lead"
+        "designation": "PR Outreach lead"
       },
       {
         "Name": "Johad Podili",
         "Phone": "9652514786",
         "image": "xyz",
-        "designation": "co-lead"
+        "designation": "PR Outreach co-lead"
       }
     ],
     "Hospitality": [
@@ -186,6 +181,14 @@
         "designation": "co-lead"
       }
     ],
+    "Creatives": [
+      {
+        "Name": "Udbhav Mittal",
+        "Phone": "9893286655",
+        "image": "xyz",
+        "designation": "lead"
+      }
+    ],
     "Videography-Photography": [
       {
         "Name": "Vasu Parashar",
@@ -198,14 +201,6 @@
         "Phone": "8209925377",
         "image": "xyz",
         "designation": "co-lead"
-      }
-    ],
-    "Creatives": [
-      {
-        "Name": "Udbhav Mittal",
-        "Phone": "9893286655",
-        "image": "xyz",
-        "designation": "lead"
       }
     ],
     "Content-and-Anchoring": [
@@ -248,12 +243,6 @@
         "Phone": "9421406930",
         "image": "xyz",
         "designation": "lead"
-      },
-      {
-        "Name": "Om Barapatre",
-        "Phone": "9021456521",
-        "image": "xyz",
-        "designation": "co-lead"
       }
     ],
     "Discilinary Committee": [
@@ -262,14 +251,14 @@
         "Phone": "9766246909",
         "image": "xyz",
         "designation": "lead",
-        "ytLink":"https://youtu.be/N-pQtxvTbr8?si=KcpD-e1bKkJuSoFr"
+        "ytLink": "https://youtu.be/N-pQtxvTbr8?si=KcpD-e1bKkJuSoFr"
       },
       {
         "Name": "Yuvraj Singh",
         "Phone": "9461186757",
         "image": "xyz",
         "designation": "co-lead",
-        "ytLink" : "https://youtu.be/ktp0KdyywDc?si=2P-Q6WTscTIob64S&t=31"
+        "ytLink": "https://youtu.be/ktp0KdyywDc?si=2P-Q6WTscTIob64S&t=31"
       }
     ],
     "Web-Dev": [
@@ -343,12 +332,17 @@
       {
         "Name": "Aditya Shrivastava",
         "image": "xyz",
-        "designation": "lead"
+        "designation": "Estoria lead"
       },
       {
         "Name": "Rhythm Agrawal",
         "image": "xyz",
-        "designation": "co-lead"
+        "designation": "Crescendo lead"
+      },
+      {
+        "Name": "Jwalit Lal",
+        "image": "xyz",
+        "designation": "D-Taraxia lead"
       }
     ],
     "Elevate": [
