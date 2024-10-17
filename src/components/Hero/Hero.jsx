@@ -8,6 +8,12 @@ function Hero2() {
     const [soundActive, setSoundActive] = useState(false);
     const [showToggleDiv, setShowToggleDiv] = useState(true);
     const [currentTime, setCurrentTime] = useState("");
+    const [dDayTimer, setDDayTimer] = useState({
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+    });
     const audioRef = useRef(null);
 
     const containerVariants = {
@@ -91,6 +97,18 @@ function Hero2() {
             const minutes = now.getMinutes().toString().padStart(2, "0");
             const seconds = now.getSeconds().toString().padStart(2, "0");
             setCurrentTime(`[ TIME : ${hours} : ${minutes} ]`);
+
+            const eventDate = new Date("2024-10-24T00:00:00Z").getTime();
+            const currentDate = now.getTime();
+            const difference = eventDate - currentDate;
+
+            const days_diff = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours_diff = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes_diff = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds_diff = Math.floor((difference % (1000 * 60)) / 1000);
+
+            setDDayTimer({ days:days_diff, hours:hours_diff, minutes:minutes_diff, seconds:seconds_diff });
+
         };
 
         const interval = setInterval(updateTime, 1000);
@@ -181,13 +199,13 @@ function Hero2() {
                                 </AnimatePresence>
                             </div>
                             <div className="notch right-notch">
-                                <p>Right Notch</p>
+                                <p className="uppercase tracking-tighter text-[9.55px] pt-[0.35rem] orbitron">Into the Abyss...</p>
                             </div>
                             <div className="notch left-notch">
-                                <p>Left Notch</p>
+                                <p className="uppercase tracking-tighter text-[9.55px] pt-[0.375rem] orbitron">SYSTEM: LOADING</p>
                             </div>
                             <div className="notch bottom-notch">
-                                <p>SYSTEM: LOADING</p>
+                                <p>D-Day: {dDayTimer.days}D : {dDayTimer.hours}H : {dDayTimer.minutes}M</p>
                             </div>
                         </div>
                     </motion.div>

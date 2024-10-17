@@ -16,9 +16,9 @@ const Team = ({ title, members }) => {
 
     const handleClick = (ytLink) => {
         if (ytLink) {
-            window.location.href = ytLink; // Redirect to YouTube if a link is provided
+            window.open(ytLink, '_blank', 'noopener,noreferrer');
         } else {
-            console.log('No YouTube link provided for this member'); // You can handle no redirect scenario here
+            console.log('No YouTube link provided for this member');
         }
     };
 

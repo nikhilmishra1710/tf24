@@ -152,7 +152,7 @@ const data = [
                 name: "GAME JAM: COSMIC CRAFTATHON",
                 description:
                     "Participants in this game jam are tasked with developing a 2D space exploration game. The theme encourages creativity in designing gameplay mechanics that allow players to navigate space.",
-                prize: "35000",
+                prize: "25000",
                 date: "24 October,2024",
                 link: "https://unstop.com/p/cosmic-craftathon-game-jam-tantrafiesta24-iiit-nagpur-1153155",
                 
