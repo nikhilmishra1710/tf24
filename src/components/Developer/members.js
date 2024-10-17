@@ -11,7 +11,7 @@ export const members = [
     {
         name: "Nikhil Mishra",
         role: "Lead",
-        githubLink: "https://github.com/NikhilMishra",
+        githubLink: "https://github.com/nikhilmishra1710",
         linkedinLink: "https://www.linkedin.com/in/nikhil-mishra17",
         dataImage: images[6]
     },

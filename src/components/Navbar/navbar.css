@@ -18,7 +18,8 @@
     width: 100%;
 }
 
-.wnavLeft, .wnavRight {
+.wnavLeft,
+.wnavRight {
     width: 35%;
 }
 
@@ -35,3 +36,28 @@
     width: 100%;
     z-index: 2147483640;
 }
+
+
+  .gradient-hover:hover {
+     background: linear-gradient(90deg, #cff67b 30%,#4cebb3 40%, #40c0ef 60%, #4cebb3 80%,#c8f769 90% );
+     background-size: 200%;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+     text-fill-color: transparent;
+     animation: moveGradient 5s ease-in-out infinite reverse;
+     display: inline-block; 
+  }
+  
+  @keyframes moveGradient {
+    0% {
+      background-position: 100% 100%;
+    }
+    50% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 0% 100%;
+    }
+  }
+  
