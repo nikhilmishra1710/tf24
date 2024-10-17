@@ -24,6 +24,9 @@ export const images = {
     vyaparVichar: "images/EventImages/vyaparVichar.png",
     innovationOasis: "images/EventImages/innovationOasis.png",
     codefiesta: "images/EventImages/codefiesta.png",
-    mysterySolver: "images/EventImages/mysterySolver.png"
+    mysterySolver: "images/EventImages/mysterySolver.png",
+    bgmi: "images/EventImages/BGMI.png",
+    brandXperienceStrokes: "images/EventImages/brandXperienceStrokes.png",
+    brandXperienceOrator: "images/EventImages/brandXperienceOrator.png",
   };
   

@@ -212,7 +212,16 @@ const data = [
                 date: "23 October,2024",
                 link: "https://unstop.com/p/design-a-thon-tantrafiesta24-iiit-nagpur-1153172",
                 
-            }
+            },
+            {
+                image: images.brandXperienceStrokes,
+                name: "BrandXperience",
+                description:
+                    "Dive into a preselected theme, blending your research with humor and your unique style. Use videography and photography skills to create a fun, engaging, and informative showcase. Keep the audience entertained while they learn, and aim for originality to stand out and win the crown!",
+                prize: "25000",
+                date: "25 October,2024",
+                link: "https://unstop.com/competitions/brandxperience-the-ultimate-branding-challenge-tantrafiesta24-iiit-nagpur-1158355",
+            },
         ],
     },
     {
@@ -230,7 +239,16 @@ const data = [
                 date: "25 October,2024",
                 link: "https://unstop.com/p/the-cypher-chronicles-tantrafiesta24-iiit-nagpur-1154112",
                 
-            }
+            },
+            {
+                image: images.brandXperienceOrator,
+                name: "BrandXperience",
+                description:
+                    "Dive into a preselected theme, blending your research with humor and your unique style. Use videography and photography skills to create a fun, engaging, and informative showcase. Keep the audience entertained while they learn, and aim for originality to stand out and win the crown!",
+                prize: "25000",
+                date: "25 October,2024",
+                link: "https://unstop.com/competitions/brandxperience-the-ultimate-branding-challenge-tantrafiesta24-iiit-nagpur-1158355",
+            },
         ],
     },
     {
