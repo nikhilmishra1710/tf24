@@ -18,7 +18,7 @@ const DownloadApp = () => {
 
         >
             <a
-                className="gap-2 fixed bottom-4 right-4 h-auto w-auto flex items-center justify-center bg-slate-800 text-white border-2 px-4 p-2 rounded-full shadow-lg cursor-pointer"
+                className="gap-2 fixed z-[100] bottom-4 right-4 h-auto w-auto flex items-center justify-center bg-slate-800 text-white border-2 px-4 p-2 rounded-full shadow-lg cursor-pointer"
                 onClick={handleDownload}
                 download href="/downloads/TantraFiestaApp.apk">
                 {
