@@ -20,7 +20,7 @@ const DownloadApp = () => {
             <a
                 className="gap-2 fixed bottom-4 right-4 h-auto w-auto flex items-center justify-center bg-slate-800 text-white border-2 px-4 p-2 rounded-full shadow-lg cursor-pointer"
                 onClick={handleDownload}
-                download href="./Tantrafiesta_Official.apk">
+                download href="/downloads/app-release (2).apk">
                 {
                     started ? <> <span>Download started...</span> <Check /></> :
                         <>
