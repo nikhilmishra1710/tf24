@@ -8,6 +8,7 @@ import Navbar from "./../components/Navbar/Navbar";
 import NewComp from "../components/Gallery/NewComp";
 import Speaker from "../components/speakers/Speaker";
 import BigBang from "@components/BigBang/BigBang";
+import DownloadApp from "@components/DownloadApp/DownloadApp";
 
 function Home() {
     const [bigBang, setBigBang] = useState( sessionStorage.getItem("BigBangAnim") === "true" ? true : false);
@@ -27,6 +28,7 @@ function Home() {
                         <EventPage />
                         <NewComp />
                         <Footer />
+                        <DownloadApp />
                     </>
             }
 
