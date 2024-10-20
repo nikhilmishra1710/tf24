@@ -19,13 +19,15 @@
         "Name": "Harsh Suhan",
         "designation": "General Secretary",
         "Phone": "8356950713",
-        "image": "xyz"
+        "image": "xyz",
+        "ytLink": "https://www.youtube.com/watch?v=hcCvSmjHwGY&t=46s"
       },
       {
         "Name": "Aayush Jain",
         "designation": "Technical Secretary",
         "Phone": "9300319597",
-        "image": "xyz"
+        "image": "xyz",
+        "ytLink": "https://www.youtube.com/watch?v=Az2pLrfKMTc&t=11s"
       },
       {
         "Name": "Sujal Ahirrao",
@@ -38,7 +40,8 @@
         "Name": "Atharva Wadekar",
         "designation": "Cultural Secretary",
         "Phone": "7020875865",
-        "image": "xyz"
+        "image": "xyz",
+        "ytLink": "https://www.youtube.com/watch?v=maAMh_BzZic&t=15s"
       },
       {
         "Name": "Abhishek Sarkar",
