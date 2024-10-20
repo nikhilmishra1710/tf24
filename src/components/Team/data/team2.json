@@ -161,7 +161,8 @@
         "Name": "Hardik Sharma",
         "Phone": "9461090239",
         "image": "xyz",
-        "designation": "co-lead"
+        "designation": "co-lead",
+        "ytLink":"https://www.youtube.com/shorts/e3j6zGvgH48"
       }
     ],
     "Marketing": [
@@ -269,19 +270,22 @@
         "Name": "Nikhil Mishra",
         "Phone": "8850952513",
         "image": "xyz",
-        "designation": "lead"
+        "designation": "lead",
+        "ytLink": "https://www.youtube.com/shorts/Y6prciPboLg"
       },
       {
         "Name": "Supratit Datta",
         "Phone": "9875324347",
         "image": "xyz",
-        "designation": "co-lead"
+        "designation": "co-lead",
+        "ytLink": "https://www.youtube.com/shorts/UPlYfQvGpWw"
       },
       {
         "Name": "Sharit Vaishnav",
         "Phone": "7223927236",
         "image": "xyz",
-        "designation": "co-lead"
+        "designation": "co-lead",
+        "ytLink":"https://www.youtube.com/shorts/Hp2kywHPkJ0"
       }
     ],
     "CTF": [
