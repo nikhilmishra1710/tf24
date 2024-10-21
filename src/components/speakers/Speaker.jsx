@@ -6,10 +6,10 @@ import './Speaker.css'
 
 const Speaker = () => {
     return (
-        <div className='speakers-container'>
+        <div className='speakers-container' id='speakers'>
             <div className='speaker-title'>Speakers</div>
             <div className='speakers'>
-                <Card3 img={"speakercards/Kanwar_Singh.jpeg"}  name={'CFO and Vice President of Finance at Oracle India Pvt. Ltd'} number={'Mr. Kanwar Singh'} boxType1={'A'} boxType2={'B'}/>
+                <Card3 img={"speakercards/Kanwar_Singh.jpeg"}  name={'CFO & Vice President of Finance at Oracle India Pvt. Ltd'} number={'Mr. Kanwar Singh'} boxType1={'A'} boxType2={'B'}/>
                 <Card3 img={"speakercards/Sanjay_Arora.jpeg"}  name={'Founder & CEO at Shells Advertising '} number={' Dr. Sanjay Arora'}/>
                 <Card3 img={"speakercards/Gajendra_purohit.jpeg"}  name={'Founder and CEO of Mathscare'} number={'Dr. Gajendra Purohit'}/>
                 <Card3 img={"speakercards/Roshni_Chhabra.jpg"}  name={' Senior Success Manager at Sprinklr'} number={'Ms. Roshni Chhabra'} />
