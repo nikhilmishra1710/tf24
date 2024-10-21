@@ -14,7 +14,7 @@ const data = [
                 name: "QUANT QUEST",
                 description:
                     "Quant Quest is an algorithmic trading competition hosted by IIIT Nagpur. Participants, either solo or in teams of up to three, design trading strategies to maximize Gross ROI. The strategies are tested in a simulated market environment reflecting real-world scenarios, with a focus on Indian or US markets.",
-                prize: "25000",
+                prize: "25,000",
                 date: "12 October,2024",
                 link: "https://unstop.com/p/quant-quest-tantrafiesta24-iiit-nagpur-1153126",
                 
@@ -24,7 +24,7 @@ const data = [
                 name: "Algorithimia",
                 description:
                     "Algorithmia is an ICPC-style competitive programming contest by IIIT Nagpur, featuring two rounds: an online round on Codeforces, and an offline round at IIITN campus. Teams of 1-3 solve 6-10 problems across varying difficulty levels.",
-                prize: "35000",
+                prize: "30,000",
                 date: "25 October,2024",
                 link: "https://unstop.com/p/algorithmia-tantrafiesta24-iiit-nagpur-1152434",
             },
@@ -33,8 +33,8 @@ const data = [
                 name: "Codefiesta",
                 description:
                     "Come and take a part in the thrilling contest full of actual problems, creative brains only @ CODEFIESTA 2024! Show your skills and team efforts to compete with other fellow programmers, for some cool prizes as well special recognitions. Prepare yourself to show off your competitive programming skills at CODEFIESTA 2024!!",
-                prize: "10000",
-                date: "22 October,2024",
+                prize: "15,000",
+                date: "24 October,2024",
             }
         ],
     },
@@ -57,9 +57,9 @@ const data = [
             },
             {
                 image: images.gpt,
-                name: "Solve-A-Thon",
+                name: "GPT 4o Solve-A-Thon",
                 description:
-                    "Gen-AI Hackathon is an online and offline event where participants create innovative solutions to problem statements, focusing on code functionality, efficiency, creativity, and AI model use (e.g., GPT-4).",
+                    "Gen-AI Hackathon is an offline event where participants create innovative solutions to problem statements, focusing on code functionality, efficiency, creativity.",
                 prize: "25000",
                 date: "23 October,2024",
                 link: "https://unstop.com/p/gpt-4o-solve-a-thon-tantrafiesta24-iiit-nagpur-1153065",
@@ -70,7 +70,7 @@ const data = [
         name: "IOTICS",
         image: clubImages.iotics,
         lead:  "Vidit Gupta",
-        coLead: "Kaushik Kuamr",
+        coLead: "Kaushik Kumar",
         phone: "7054297209",
         events: [
             {
@@ -79,7 +79,7 @@ const data = [
                 description:
                     "The Robo Rumble event challenges teams from different colleges to design and build their own RC cars according to our specifications. The event is designed to test the participant’s engineering skills, creativity, and strategy through a series of competitive rounds.",
                 prize: "35000",
-                date: "24 October,2024",
+                date: "25 October,2024",
                 link: "https://unstop.com/p/robo-rumble-tantrafiesta24-iiit-nagpur-1152270",
                 
             },
@@ -87,9 +87,9 @@ const data = [
                 image: images.trailTracer,
                 name: "Trail Tracer",
                 description:
-                    "Trail Tracer is a competition where participants build autonomous robots to follow a dark path on a white background, navigating twists and turns while avoiding dead ends to reach the endpoint with precision and speed.",
+                    "Trail Tracer is a competition where participants build autonomous bots to follow a dark path on a white background, navigating twists and turns while avoiding dead ends to reach the endpoint with precision and speed.",
                 prize: "20000",
-                date: "25 October,2024",
+                date: "24 October,2024",
                 link: "https://unstop.com/p/trail-tracer-line-following-bot-tantrafiesta24-iiit-nagpur-1152285",
             },
             {
@@ -98,7 +98,7 @@ const data = [
                 description:
                     "This competition invites teams to explore the potential of AIoT in healthcare, developing a prototype that solves real-world problems, optimizes operations, and creates intelligent environments to improve quality of life.",
                 prize: "20000",
-                date: "25 October,2024",
+                date: "24 October,2024",
                 link: "https://unstop.com/p/bytecraft-aiot-challenge-tantrafiesta24-iiit-nagpur-1152296",
             }
         ],
@@ -116,7 +116,7 @@ const data = [
                 description:
                     "Genathon 2.0 is a hackathon where participants develop innovative solutions using any tech stack, including Web Development or AI/ML. Multiple judging rounds will select the top three teams with the most effective solutions.",
                 prize: "30000",
-                date: "24 October,2024",
+                date: "23 October,2024",
                 link: "https://unstop.com/p/genathon-20-tantrafiesta24-iiit-nagpur-1151648",
                 
             },
@@ -152,7 +152,7 @@ const data = [
                 name: "GAME JAM: COSMIC CRAFTATHON",
                 description:
                     "Participants in this game jam are tasked with developing a 2D space exploration game. The theme encourages creativity in designing gameplay mechanics that allow players to navigate space.",
-                prize: "35000",
+                prize: "25000",
                 date: "24 October,2024",
                 link: "https://unstop.com/p/cosmic-craftathon-game-jam-tantrafiesta24-iiit-nagpur-1153155",
                 
@@ -181,7 +181,7 @@ const data = [
                 description:
                     "The Digital Time Capsule is an initiative capturing the essence of TantraFiesta, where participants submit creative content showcasing their memorable festival moments. This content will be digitally preserved.",
                 prize: "20000",
-                date: "13 October,2024",
+                date: "25 October,2024",
                 link: "https://unstop.com/p/digital-time-capsule-tantrafiesta-memories-tantrafiesta24-iiit-nagpur-1154178",
                 
             },
@@ -191,7 +191,7 @@ const data = [
                 description:
                     "Dive into a preselected theme, blending your research with humor and your unique style. Use videography and photography skills to create a fun, engaging, and informative showcase. Keep the audience entertained while they learn, and aim for originality to stand out and win the crown!",
                 prize: "25000",
-                date: "20 October,2024",
+                date: "25 October,2024",
                 link: "https://unstop.com/competitions/brandxperience-the-ultimate-branding-challenge-tantrafiesta24-iiit-nagpur-1158355",
             },
         ],
@@ -209,10 +209,19 @@ const data = [
                 description:
                     "The design competition has two rounds: an online case study with design improvements, and a 12-hour offline round at IIITN, where participants tackle real-world design challenges with surprise twists.",
                 prize: "25000",
-                date: "24 October,2024",
+                date: "23 October,2024",
                 link: "https://unstop.com/p/design-a-thon-tantrafiesta24-iiit-nagpur-1153172",
                 
-            }
+            },
+            {
+                image: images.brandXperienceStrokes,
+                name: "BrandXperience",
+                description:
+                    "Dive into a preselected theme, blending your research with humor and your unique style. Use videography and photography skills to create a fun, engaging, and informative showcase. Keep the audience entertained while they learn, and aim for originality to stand out and win the crown!",
+                prize: "25000",
+                date: "25 October,2024",
+                link: "https://unstop.com/competitions/brandxperience-the-ultimate-branding-challenge-tantrafiesta24-iiit-nagpur-1158355",
+            },
         ],
     },
     {
@@ -227,10 +236,19 @@ const data = [
                 description:
                     "Become an investigative reporter who will explore, digest, and discover new, undiscovered facts for your readers. Like seasoned journalists, explore mysteries that lie deep inside, and unravel the unknown!",
                 prize: "28000",
-                date: "24 October,2024",
+                date: "25 October,2024",
                 link: "https://unstop.com/p/the-cypher-chronicles-tantrafiesta24-iiit-nagpur-1154112",
                 
-            }
+            },
+            {
+                image: images.brandXperienceOrator,
+                name: "BrandXperience",
+                description:
+                    "Dive into a preselected theme, blending your research with humor and your unique style. Use videography and photography skills to create a fun, engaging, and informative showcase. Keep the audience entertained while they learn, and aim for originality to stand out and win the crown!",
+                prize: "25000",
+                date: "25 October,2024",
+                link: "https://unstop.com/competitions/brandxperience-the-ultimate-branding-challenge-tantrafiesta24-iiit-nagpur-1158355",
+            },
         ],
     },
     {
@@ -262,7 +280,7 @@ const data = [
                 description:
                     "The Free Fire Competition requires all teams to thoroughly review and follow the tournament rules and regulations. By participating, teams agree to abide by these rules, and any violations will result in immediate disqualification without further discussion.",
                 prize: "5000",
-                date: "21 October,2024",
+                date: "20 October,2024",
                 link: "https://unstop.com/p/battle-of-fire-freefire-tantrafiesta24-iiit-nagpur-1151619",
             },
             {
@@ -271,7 +289,7 @@ const data = [
                 description:
                     "\"Warzone Warrior\" is an adrenaline-pumping Call of Duty Mobile (CODM) tournament designed to test your gaming prowess. Get ready for intense combat, strategic plays, and thrilling action as you battle for victory and exciting prizes.",
                 prize: "5000",
-                date: "21 October,2024",
+                date: "20 October,2024",
                 link: "https://unstop.com/p/warzone-warrior-codm-tantrafiesta24-iiit-nagpur-1151609",
             },
             {
@@ -280,7 +298,7 @@ const data = [
                 description:
                     "Join the fast-paced arena of Clash Royale, where strategy and skill collide! Build your deck, deploy powerful troops, and outsmart your opponents in real-time battles. Prove your tactical prowess and claim victory as you rise through the ranks!",
                 prize: "2000",
-                date: "21 October,2024",
+                date: "20 October,2024",
                 link: "https://unstop.com/p/royal-showdown-clash-royale-tantrafiesta24-iiit-nagpur-1151587",
             },
             {
@@ -289,8 +307,17 @@ const data = [
                 description:
                     "The Checkmate Challenge is a two-day chess competition held as part of Tantrafiesta 2k24, offering participants the chance to showcase their chess skills.",
                 prize: "5000",
-                date: "21 October,2024",
+                date: "20 October,2024",
                 link: "https://unstop.com/p/the-shatranj-up-chess-competition-tantrafiesta24-iiit-nagpur-1151548",
+            },
+            {
+                image: images.bgmi,
+                name: "BGMI",
+                description:
+                    "The BGMI event is a competitive battle royale where players or teams fight to be the last one standing, showcasing their skills in fast-paced combat for prizes and recognition.",
+                prize: "10,000",
+                date: "20 October,2024",
+                link: "https://unstop.com/competitions/battle-royale-bgmi-tantrafiesta24-iiit-nagpur-1177488",
             }
         ],
     },
@@ -314,7 +341,7 @@ const data = [
                 image: images.vyaparVichar,
                 name: "Vyapar Vichar",
                 description:
-                    "Vyapaar Vichar is an event aimed at showcasing the marketing talents of aspiring entrepreneurs, encouraging participants to think creatively, strategize effectively, and present their ideas with confidence in the dynamic entrepreneurial landscape.",
+                    "A thrilling test of innovation, strategic thinking, and management skills, where teams turn ideas into actionable business startegies. Innovate, strategize, dominate!",
                 prize: "25000",
                 date: "24 October,2024",
                 link: "https://unstop.com/p/vyapar-vichar24-the-case-study-event-tantrafiesta24-iiit-nagpur-1153782",
@@ -324,8 +351,7 @@ const data = [
     {
         name: "Crestoraxia",
         image: clubImages.tf,
-        lead: "Aditya Shrivastava",
-        coLead: "Rhythm Agrawal",
+        lead: "Aditya Shrivastava, Rhythm Agrawal",
         phone: "8109134887",
         events: [
             {
@@ -335,7 +361,7 @@ const data = [
                     "Uncover hidden secrets in the immersive mystery event. Work in teams to solve thrilling puzzles, crack cryptic clues, and follow an exciting storyline in the entire campus. This is to test your detective skills, creativity, and teamwork as you race to unravel the final mystery and claim the title of ultimate solver.",
                 prize: "10000",
                 date: "24 October,2024",
-                link: "https://unstop.com/p/innovation-oasis24-tantrafiesta24-iiit-nagpur-1153814",
+                link: "https://unstop.com/p/mystery-solver-tantrafiesta24-iiit-nagpur-1178407?lb=7qZJDuw&utm_medium=Share&utm_source=WhatsApp",
                 
             }
         ],

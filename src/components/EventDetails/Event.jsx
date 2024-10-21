@@ -91,15 +91,15 @@ const ClubEvents = ({ name, image, events, id, lead, coLead, phone }) => {
                         <div className="text-xs md:text-base">
                             <div className="mt-2">
                                 <p>Lead</p>
-                                <p className="-mt-1 md:-mt-2 text-[#717A80]">{lead}</p>
+                                <p className="-mt-1 md:-mt-2 text-[#c0c0c0]">{lead}</p>
                             </div>
                             {coLead && <div>
                                 <p>Co-Lead</p>
-                                <p className="-mt-1 md:-mt-2 text-[#717A80]">{coLead}</p>
+                                <p className="-mt-1 md:-mt-2 text-[#c0c0c0]">{coLead}</p>
                             </div>}
                             <div>
                                 <p>Phone</p>
-                                <p className="-mt-1 md:-mt-2 text-[#717A80]">{phone}</p>
+                                <p className="-mt-1 md:-mt-2 text-[#c0c0c0]">{phone}</p>
                             </div>
                         </div>
                     </div>
