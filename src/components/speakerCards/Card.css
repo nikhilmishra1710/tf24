@@ -11,6 +11,8 @@
 	aspect-ratio: 1;
 	overflow: hidden;
 	position: relative;
+	justify-self: center;
+	align-self: center;
 	display: grid;
 	border: 1px solid #fff;
 	grid-template-columns: repeat(2, 1fr);
@@ -20,6 +22,7 @@
 	grid-template-areas: 'box-a box-b' 'box-c box-d';
 	cursor: pointer;
 	min-height: 200px; /*Change this to modify the size of card*/
+	max-height: 75vh;
 }
 
 .card__img {
@@ -39,7 +42,7 @@
 }
 
 .card__img3 {
-	transform: scale3d(1.2, 1.2, 1.2);
+	transform: scale3d(1.15, 1.15, 1.15);
 }
 
 .card__box {

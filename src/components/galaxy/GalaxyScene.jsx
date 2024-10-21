@@ -14,12 +14,12 @@ const GalaxyScene = () => {
 
         const isMobile = window.innerWidth < 768;
         const params = isMobile ? {
-            counts: 50000,
-            size: 0.005,
+            counts: 30000,
+            size: 0.001,
             radius: 1.75,
             branches: 8,
             spin: 2,
-            randomness: 1.63,
+            randomness: 1.13,
             insideColor: "#d9b59c",
             midColor: "#ff8700",
             outsideColor: "#5f00a2",
@@ -161,17 +161,19 @@ const GalaxyScene = () => {
             camera.updateProjectionMatrix();
 
             renderer.setSize(width, height);
-            renderer.setPixelRatio(2);
+            renderer.setPixelRatio(isMobile ? 1.5 : 2);
         };
         setRendererSize();
 
         let mouseX = 0,
             mouseY = 0;
 
-        window.addEventListener("mousemove", (event) => {
-            mouseX = (event.clientX / window.innerWidth) * 2 - 1;
-            mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
-        });
+        if (!isMobile) {
+            window.addEventListener("mousemove", (event) => {
+                mouseX = (event.clientX / window.innerWidth) * 2 - 1;
+                mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
+            });
+        }
 
         const clock = new THREE.Clock(true);
         const animation = () => {
