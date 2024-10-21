@@ -1,18 +1,19 @@
 {
-    "left": [
-      "images/Sponsors/past/TF_24 Spon Brochure (A4 (Landscape)) (1).png",
-      "images/Sponsors/past/TF_24 Spon Brochure (A4 (Landscape)) (2).png",
-      "images/Sponsors/past/TF_24 Spon Brochure (A4 (Landscape)) (3).png",
-      "images/Sponsors/past/TF_24 Spon Brochure (A4 (Landscape)) (4).png",
-      "images/Sponsors/past/TF_24 Spon Brochure (A4 (Landscape)) (5).png",
-      "images/Sponsors/past/TF_24 Spon Brochure (A4 (Landscape)) (6).png"
-    ],
-    "right": [
-      "images/Sponsors/past/TF_24 Spon Brochure (A4 (Landscape)) (7).png",
-      "images/Sponsors/past/TF_24 Spon Brochure (A4 (Landscape)) (8).png",
-      "images/Sponsors/past/TF_24 Spon Brochure (A4 (Landscape)) (9).png",
-      "images/Sponsors/past/TF_24 Spon Brochure (A4 (Landscape)) (10).png",
-      "images/Sponsors/past/TF_24 Spon Brochure (A4 (Landscape)) (11).png",
-      "images/Sponsors/past/TF_24 Spon Brochure (A4 (Landscape)) (12).png"
-    ]
-  }  
+  "left": [
+    "images/Sponsors/current/ongc.jpg",
+    "images/Sponsors/current/easeMyTrip.png",
+    "images/Sponsors/current/benq.png",
+    "images/Sponsors/current/lavie.jpg",
+    "images/Sponsors/current/decathlon.png",
+    "images/Sponsors/current/harleyDavidson.jpg"
+
+  ],
+  "right": [
+    "images/Sponsors/current/koreanMaggiNoodles.png",
+    "images/Sponsors/current/abhibus.png",
+    "images/Sponsors/current/kolourfly.png",
+    "images/Sponsors/current/giveMyCertificate.png",
+    "images/Sponsors/current/iiitiansNetwork.png",
+    "images/Sponsors/current/shreeCompSystems.jpg"
+  ]
+}

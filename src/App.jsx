@@ -5,6 +5,7 @@ import "./css/app.css";
 import EventPage from "./pages/EventPage";
 import DeveloperPage from "./pages/DeveloperPage";
 import TeamPage from "./pages/TeamPage";
+import SponsorPage from "./pages/SponsorPage";
 
 // import Loading from "@components/Loading/Loading"; // Loading component
 // import BigBang from "@components/BigBang/BigBang";
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/events" element={<EventPage />} />
                 <Route path="/developers" element={<DeveloperPage />} />
                 <Route path="/team" element={<TeamPage />} />
+                <Route path="/sponsor" element={<SponsorPage />} />
             </Routes>
         </div>
     );
