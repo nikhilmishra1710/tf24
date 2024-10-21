@@ -1,0 +1,119 @@
+{
+  "TantraFiesta_Sponsors_2024": {
+    "Title Sponsor": [
+      {
+        "images": [
+          {
+            "img":"images/Sponsors/current/ongc.jpg",
+            "name":"ONGC"
+          }
+        ]
+      }
+    ],
+    "Powered By": [
+      {
+        "images": [
+          {
+            "img":"images/Sponsors/current/easeMyTrip.png",
+            "name": "Ease My Trip"
+          },
+          {
+            "img": "images/Sponsors/current/benq.png",
+            "name": "BenQ"
+          }
+        ]
+      }
+    ],
+
+    "Associate": [
+      {
+        "images": [
+          {
+            "img":"images/Sponsors/current/lavie.jpg",
+            "name": "Lavie"
+          }
+        ]
+      }
+    ],
+    "Sporting Partner": [
+      {
+        "images": [
+          {
+            "img": "images/Sponsors/current/decathlon.png",
+            "name": "Decathlon"
+          }
+        ]
+      }
+    ],
+    "Riding Partner": [
+      {
+        "images": [
+          {
+            "img":"images/Sponsors/current/harleyDavidson.jpg",
+            "name": "Harley Davidson"
+          }
+        ]
+      }
+    ],
+    "Noodles Partner": [
+      {
+        "images": [
+          {
+            "img": "images/Sponsors/current/koreanMaggiNoodles.png",
+            "name": "Korean Maggie Noodles"
+          }
+        ]
+      }
+    ],
+    "Bus Travel Partner": [
+      {
+        "images": [
+          {
+            "img":"images/Sponsors/current/abhibus.png",
+            "name": "AbhiBus"
+          }
+        ]
+      }
+    ],
+    "Gifting Partner": [
+      {
+        "images": [
+          {
+            "img":"images/Sponsors/current/kolourfly.png",
+            "name":"Kolourfly"
+          }
+        ]
+      }
+    ],
+    "Certificate Partner": [
+      {
+        "images": [
+          {
+            "img":"images/Sponsors/current/giveMyCertificate.png",
+            "name":"GiveMyCertificate"
+          }
+        ]
+      }
+    ],
+    "Community Partner": [
+      {
+        "images": [
+          {
+            "img":"images/Sponsors/current/iiitiansNetwork.png",
+            "name":"IIITians Network"
+          }
+        ]
+      }
+    ],
+    "Networking Partner": [
+      {
+        "images": [
+          {
+            "img":"images/Sponsors/current/shreeCompSystems.jpg",
+            "name": "Shree Comp Systems"
+          }
+        ]
+      }
+    ]
+  }
+}
