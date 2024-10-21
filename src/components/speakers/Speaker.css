@@ -11,7 +11,7 @@
 
 .speaker-title{
     text-align: center;
-    font-size: 35px;
+    font-size: 65px;
     padding: 40px 0;
     font-weight: 500;
 }
@@ -23,19 +23,6 @@
     justify-items: center; 
     align-items: center;
 }
-
-
-
-
-
-/* Medium screens (tablets) */
-/* @media (max-width: 960px) {
-    
-    .card{
-        height: auto;
-    }
-} */
-
 
 @media (max-width: 1207px) {
     .speakers {
