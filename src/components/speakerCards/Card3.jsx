@@ -84,7 +84,7 @@ const Card3 = ({ img, number, tags, name, boxType1, boxType2 }) => {
             {/* Card Box A */}
             <div className={`card__box card__box--${boxType1}`} ref={boxARef}>
                 <span className="card__box-number">{number}</span>
-                <span className="card__box-tags">{tags}</span>
+                {/* <span className="card__box-tags">{tags}</span> */}
             </div>
 
             {/* Card Box B */}

@@ -6,7 +6,7 @@
     color: #fff;
     display: flex;
     flex-direction: column;
-
+    
   }
 
 .speaker-title{
@@ -20,8 +20,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
     gap: 50px;
-    justify-items: center;
+    justify-items: center; 
+    align-items: center;
 }
+
+
+
 
 
 /* Medium screens (tablets) */
@@ -56,5 +60,10 @@
 @media (max-width: 523px){
     .speakers-container{
         padding: 100px 50px;
+    }
+    .card{
+        width: 100%;
+        height: auto;
+        
     }
 }

@@ -23,7 +23,7 @@ function Home() {
                         <Hero />
                         <About />
                         <Sponsors />
-                        {/* <Speaker/> */}
+                        <Speaker/>
                         <EventPage />
                         <NewComp />
                         <Footer />
