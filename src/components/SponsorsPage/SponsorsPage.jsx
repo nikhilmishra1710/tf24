@@ -12,14 +12,6 @@ const SponsorsPage = ({ title, sponsors }) => {
         setMousePos({ x: `${x}%`, y: `${y}%` });
     };
 
-    // const handleClick = (ytLink) => {
-    //     if (ytLink) {
-    //         window.open(ytLink, '_blank', 'noopener,noreferrer');
-    //     } else {
-    //         console.log('No YouTube link provided for this member');
-    //     }
-    // };
-
     const cardVariants = {
         hidden: { opacity: 0, y: 50 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.3, ease: 'easeInOut' } },

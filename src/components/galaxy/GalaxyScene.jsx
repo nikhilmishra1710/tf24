@@ -12,7 +12,19 @@ const GalaxyScene = () => {
             height: window.innerHeight,
         };
 
-        const params = {
+        const isMobile = window.innerWidth < 768;
+        const params = isMobile ? {
+            counts: 50000,
+            size: 0.005,
+            radius: 1.75,
+            branches: 8,
+            spin: 2,
+            randomness: 1.63,
+            insideColor: "#d9b59c",
+            midColor: "#ff8700",
+            outsideColor: "#5f00a2",
+            colorTransitionSpeed: 0.25
+        } : {
             counts: 300000,
             size: 0.007,
             radius: 2,
@@ -39,7 +51,6 @@ const GalaxyScene = () => {
 
         const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
         scene.add(ambientLight);
-        const isMobile = window.innerWidth < 768;
         const cameraDistance = isMobile ? 5.5 : 3;
         const camera = new THREE.PerspectiveCamera(60, 1, 1, 1000);
         camera.position.z = cameraDistance;
@@ -185,7 +196,7 @@ const GalaxyScene = () => {
             galaxyPoints.rotation.y = elapsed * -0.09;
             galaxyPoints.rotation.x += (targetRotationX - galaxyPoints.rotation.x) * 0.05;
             galaxyPoints.rotation.y += (targetRotationY - galaxyPoints.rotation.y) * 0.05;
-            
+
             window.requestAnimationFrame(animation);
         };
         animation();

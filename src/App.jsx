@@ -21,7 +21,7 @@ function App() {
                 <Route path="/events" element={<EventPage />} />
                 <Route path="/developers" element={<DeveloperPage />} />
                 <Route path="/team" element={<TeamPage />} />
-                <Route path="/sponsor" element={<SponsorPage />} />
+                <Route path="/sponsors" element={<SponsorPage />} />
             </Routes>
         </div>
     );

@@ -7,7 +7,7 @@ import './Speaker.css'
 const Speaker = () => {
     return (
         <div className='speakers-container' id='speakers'>
-            <div className='speaker-title'>Speakers</div>
+            <div className='speaker-title bstyle-bold uppercase'>Speakers</div>
             <div className='speakers'>
                 <Card3 img={"speakercards/Kanwar_Singh.jpeg"}  name={'CFO & Vice President of Finance at Oracle India Pvt. Ltd'} number={'Mr. Kanwar Singh'} boxType1={'A'} boxType2={'B'}/>
                 <Card3 img={"speakercards/Sanjay_Arora.jpeg"}  name={'Founder & CEO at Shells Advertising '} number={' Dr. Sanjay Arora'}/>
