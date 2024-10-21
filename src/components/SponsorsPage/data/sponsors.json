@@ -95,6 +95,46 @@
         ]
       }
     ],
+    "Coding Partner": [
+      {
+        "images": [
+          {
+            "img":"images/Sponsors/current/gfg.png",
+            "name":"GeeksForGeeks"
+          }
+        ]
+      }
+    ],
+    "Groove Partner": [
+      {
+        "images": [
+          {
+            "img":"images/Sponsors/current/ape.jpg",
+            "name":"APE Talent Event Host"
+          }
+        ]
+      }
+    ],
+    "Athleisure Partner": [
+      {
+        "images": [
+          {
+            "img":"images/Sponsors/current/skechers.png",
+            "name":"Skechers"
+          }
+        ]
+      }
+    ],
+    "Travel Partner": [
+      {
+        "images": [
+          {
+            "img":"images/Sponsors/current/ixigo.png",
+            "name":"Ixigo"
+          }
+        ]
+      }
+    ],
     "Community Partner": [
       {
         "images": [
