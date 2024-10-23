@@ -68,6 +68,16 @@
         ]
       }
     ],
+    "Fashion Partner": [
+      {
+        "images": [
+          {
+            "img": "images/Sponsors/current/trends.jpg",
+            "name": "Reliance Trends"
+          }
+        ]
+      }
+    ],
     "Riding Partner": [
       {
         "images": [
@@ -124,6 +134,16 @@
           {
             "img":"images/Sponsors/current/gfg.png",
             "name":"GeeksForGeeks"
+          }
+        ]
+      }
+    ],
+    "Lifestyle Partner": [
+      {
+        "images": [
+          {
+            "img":"images/Sponsors/current/kazo.jpg",
+            "name":"Kazo"
           }
         ]
       }
