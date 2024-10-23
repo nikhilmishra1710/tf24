@@ -10,6 +10,20 @@
         ]
       }
     ],
+    "Co-Sponsor": [
+      {
+        "images": [
+          {
+            "img":"images/Sponsors/current/sbi.png",
+            "name":"SBI"
+          },
+          {
+            "img":"images/Sponsors/current/cocaCola.png",
+            "name":"Coca-Cola"
+          }
+        ]
+      }
+    ],
     "Powered By": [
       {
         "images": [
@@ -24,7 +38,16 @@
         ]
       }
     ],
-
+    "Brought To You By": [
+      {
+        "images": [
+          {
+            "img":"images/Sponsors/current/canara.png",
+            "name": "Canara Bank"
+          }
+        ]
+      }
+    ],
     "Associate": [
       {
         "images": [
@@ -105,12 +128,32 @@
         ]
       }
     ],
+    "Telecom Partner": [
+      {
+        "images": [
+          {
+            "img":"images/Sponsors/current/bsnl.jpg",
+            "name":"BSNL"
+          }
+        ]
+      }
+    ],
     "Groove Partner": [
       {
         "images": [
           {
             "img":"images/Sponsors/current/ape.jpg",
             "name":"APE Talent Event Host"
+          }
+        ]
+      }
+    ],
+    "Workshop Partner": [
+      {
+        "images": [
+          {
+            "img":"images/Sponsors/current/nvidia.jpg",
+            "name":"Nvidia"
           }
         ]
       }
@@ -141,6 +184,16 @@
           {
             "img":"images/Sponsors/current/iiitiansNetwork.png",
             "name":"IIITians Network"
+          }
+        ]
+      }
+    ],
+    "News Partner": [
+      {
+        "images": [
+          {
+            "img":"images/Sponsors/current/hitavada.jpg",
+            "name":"Hitavada"
           }
         ]
       }
