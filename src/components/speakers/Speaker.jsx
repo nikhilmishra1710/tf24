@@ -16,6 +16,7 @@ const Speaker = () => {
                 {/* <Card3 img={"speakercards/Salin_Agrawal.jpeg"}  name={'CA, Finance Strategy maker at CRED'} number={' Mr. Salin Agarwal'}/> */}
                 <Card3 img={"speakercards/Keerti_Purswani.jpg"}  name={' Founder of Educosys'} number={' Ms. Keerti Purswani'}/>
                 <Card3 img={"speakercards/Abhishek_Mungoli.jpg"}  name={' Data Scientist at InMobi, an AdTech firm'} number={' Mr. Abhishek Mungoli '}/>
+                <Card3 img={"speakercards/Ashish_Patel.jpg"}  name={' Director at AppXBuild Technologies'} number={' Ashish Kumar Petel'}/>
             </div>
         </div>
     )
