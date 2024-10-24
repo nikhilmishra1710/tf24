@@ -202,10 +202,10 @@ function Hero2() {
                                 <p className="uppercase tracking-tighter text-[9.55px] pt-[0.35rem] orbitron">Into the Abyss...</p>
                             </div>
                             <div className="notch left-notch">
-                                <p className="uppercase tracking-tighter text-[9.55px] pt-[0.375rem] orbitron">SYSTEM: LOADING</p>
+                                <p className="uppercase tracking-tighter text-[9.55px] pt-[0.375rem] orbitron">SYSTEM: ONLINE</p>
                             </div>
                             <div className="notch bottom-notch">
-                                <p>D-Day: {dDayTimer.days}D : {dDayTimer.hours}H : {dDayTimer.minutes}M</p>
+                                <p>EXPLORE NOW</p>
                             </div>
                         </div>
                     </motion.div>
