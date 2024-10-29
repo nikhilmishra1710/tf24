@@ -168,7 +168,7 @@ function BigBang({setBigBang}) {
                 <div className={` bang-container ${exit ? "exit-anim" : ""} `}>
                     <div id="bg-div" className="big-div">
                         {/* <video preload="auto" autoPlay muted loop src="https://upcdn.io/FW25cEp/raw/BigBangVideo.mp4" className="bigbang-video" id="bigbang-video"></video> */}
-                        <video preload="auto" autoPlay muted loop src="videos/BigBangVideo.mp4" className="bigbang-video" id="bigbang-video"></video>
+                        <video preload="auto" autoPlay muted loop src="/videos/BigBangVideo.mp4" className="bigbang-video" id="bigbang-video"></video>
                         <div id="overlay"></div>
                     </div>
                 </div>
